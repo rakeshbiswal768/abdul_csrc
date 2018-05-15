@@ -1,0 +1,19 @@
+<div class="row" *ngIf="!showWizard;else showWizardSteps">
+  <div class="col-lg-8">
+    <h2 class="subTitle pb-0 mb-0" aria-labelledby="TemplatesHelpBlock">Template setup wizard</h2>
+    <small id="TemplatesHelpBlock" class="form-text text-muted">
+      Templates include input forms,data categories and tags common to your sector. Use the wizard to get started, or to make adjustments
+      to previous selections.
+    </small>
+    <div class="row pt-2 pb-5">
+      <div class="col-lg-12 pt-20">
+        <button type="button" class="btn btn-primary" (click)="startWizard()" id="startWizard" [ngStyle]="{'background-color': app.localStoragebtn(),'border-color': app.localStoragebtn()}">
+          Start wizard
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+<ng-template #showWizardSteps>
+    <app-template-wizard (showWizard)="eventShowWizard($event)"></app-template-wizard>
+</ng-template>

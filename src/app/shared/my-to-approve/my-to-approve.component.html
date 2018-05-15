@@ -1,0 +1,36 @@
+<div class="table-responsive-sm">
+  <table class="table table-hover">
+    <thead>
+      <tr>
+        <th class="headerRow border-top-0 w-20" scope="col">
+          Request ID
+        </th>
+        <th class="headerRow border-top-0" scope="col">
+          Data prepared by
+        </th>
+        <th class="headerRow border-top-0 w-15" scope="col">
+          Received
+        </th>
+        <th class="headerRow border-top-0 w-15" scope="col">
+          Due in
+        </th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr class="cursorStyle" *ngFor='let req of mytoApprove;let i=index' (click)="goToReqest(req?.requestId,req?.requestStatus,req?.dueInDays,req?.user,req?.dueDate)">
+        <th class="idCol" scope="row">
+          {{req?.requestId}}
+        </th>
+        <td>
+          {{req?.assignedTo}}
+        </td>
+        <td>
+          {{req?.requestCreatedDate| date:"MMM d"}}
+        </td>
+        <td>
+          <span [ngClass]="{'text-deadline':req?.dueInDays<10}">{{req?.dueInDays}} Days</span>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>

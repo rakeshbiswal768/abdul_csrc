@@ -1,0 +1,58 @@
+<div class="tmpItel-row" id="dateRange" [attr.data-guid]="guid" *ngIf="showItem">
+    <div class="row align-items-center" [ngClass]="{'tmpItel-col-left': true,'isSelected':!inputFocusClass}">
+        <div class="col-sm-10">
+            <!-- <form> -->
+            <div class="form-group row">
+                <label for="datetimepicker1" class="col-sm-4 col-form-label pl-1 tmpllabel ">{{data.value}}</label>
+                <div class="col-sm-4">
+                    <!-- <input class="form-control safePlaceHolder" id="datetimepicker1" type="text" aria-required="true"> -->
+                    <div class='input-group date' id='datetimepicker1'>
+                        <small id="fromdtHelpBlock" class="form-text text-muted mr-1">{{data.value1}}</small>
+                        <input type='text' class="form-control readonly" readonly aria-describedby="fromdtHelpBlock" />
+                        <span class="input-group-addon"><span class="fa fa-calendar"></span>
+                        </span>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <!-- <input class="form-control safePlaceHolder" id="datetimepicker1" type="text" aria-required="true"> -->
+                    <div class='input-group date' id='datetimepicker2'>
+                        <small id="toDtHelpBlock" class="form-text text-muted mr-1">{{data.value2}}</small>
+                        <input type='text' class="form-control readonly" readonly aria-describedby="toDtHelpBlock" />
+                        <span class="input-group-addon"><span class="fa fa-calendar"></span>
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <!-- </form> -->
+        </div>
+        <div class="col-sm-2">
+
+            <img src="/assets/images/icon-tb-settings.svg" (click)="openSettings(data)" class="tmplIcon mr-1 pr-0" alt="Modify this field" />
+            <img src="/assets/images/icon-tb-trash.svg" (click)="deleteItem(data?.guid)" class="tmplIcon" alt="Delete this field" />
+
+        </div>
+    </div>
+</div>
+
+
+<!-- <div *ngIf="showItem">
+    <span class="tmplitemHeader">Date</span>
+    <div class="row">
+        <div>
+            <form>
+                <div class="form-group">
+                    <div class='input-group date' id='datetimepicker1'>
+                        <input type='text' class="form-control" (focus)="focusFunction()" (focusout)="focusOutFunction()" />
+                        <span class="input-group-addon"><span class="fa fa-calendar"></span>
+                        </span>
+                    </div>
+                </div>
+
+            </form>
+        </div>
+        <div class="col-sm-3">
+                <img src="/assets/images/icon-tb-settings.svg" class="tmplIcon mr-1 pr-0" alt="Modify this field" />
+                <img src="/assets/images/icon-tb-trash.svg" class="tmplIcon" alt="Delete this field" />
+                  </div>
+    </div>
+</div> -->

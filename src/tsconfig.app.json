@@ -1,0 +1,23 @@
+{
+    "extends": "../tsconfig.json",
+    "compilerOptions": {
+        "outDir": "../out-tsc/app",
+        "module": "es2015",
+        "baseUrl": "",
+        "types": []
+    },
+    "exclude": [
+        "test.ts",
+        "**/*.spec.ts"
+    ],
+    "include": [
+        "../src/**/*",
+        "../node_modules/angular2-tag-input/index.ts",
+        "../node_modules/angular2-tag-input/lib/components/tag-input/tag-input.component.ts",
+        "../node_modules/angular2-tag-input/lib/tag-input.module.ts",
+        "../node_modules/angular2-tag-input/lib/components/tag-input-autocomplete/tag-input-autocomplete.component.ts",
+        "../node_modules/angular2-tag-input/lib/components/tag-input-item/tag-input-item.component.ts",
+        "../node_modules/angular2-tag-input/lib/shared/tag-input-keys.ts",
+        "../node_modules/angular2-tag-input/lib/components/tag-input/tag-input.component.ngfactory.js"
+    ]
+}

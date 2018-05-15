@@ -1,0 +1,78 @@
+<!-- <svg class="safeApS-icon icon-angle-left"><use xlink:href="#icon-angle-left"></use></svg>
+<svg viewBox="0 0 250 250"></svg> -->
+<div class="login-wrapper">
+  <div class="backBtn">
+    <a href="/login">
+      <svg height="36" viewBox="0 0 24 24" width="36" xmlns="http://www.w3.org/2000/svg">
+        <title id="catTitle">Back to login</title>
+        <path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z" class="backBtnColor" />
+        <path d="M0 0h24v24H0z" fill="none" />
+      </svg>
+    </a>
+    <!-- <span class="sr-only sr-only-focusable">Back to login</span> -->
+  </div>
+  <div class="login-wrapper-inner">
+    <div class="login-container row justify-content-center">
+      <div class="col-md-offset-4 col-md-4 login">
+        <div class="text-center mb-5">
+          <a href="/login">
+            <img class="idLink-logo" src="/assets/images/idlink_logo_h.svg" alt="IDLink">
+          </a>
+        </div>
+        <label class="register-title" for="login-email">Create new account</label>
+        <p>Please enter your company email address and choose a password containing at least one uppercase letter, one lowercase
+          letter, and one number.</p>
+        <form (ngSubmit)="onSubmit()" [formGroup]="joinForm" class="joinForm">
+          <div class="form-group">
+            <div class="col-md-12">
+              <div *ngIf="joinForm.controls.email.hasError('required') && joinForm.controls.email.touched" class="errorMessages pb-0 mb-0">
+                email is required
+              </div>
+              <div *ngIf="joinForm.controls.email.hasError('email') && joinForm.controls.email.touched" class="errorMessages pb-0 mb-0">
+                email is invalid
+              </div>
+              <label for="login-email">EMAIL</label>
+              <div class="input-group">
+                <input formControlName="email" class="emailImg form-control" class="form-control" id="login-email" type="email" email aria-required="true">
+              </div>
+            </div>
+          </div>
+          <div class="form-group">
+            <div class="col-md-12">
+              <div *ngIf="joinForm.controls.password.hasError('required') && joinForm.controls.password.touched" class="errorMessages pb-0 mb-0">
+                Password is required
+              </div>
+              <label for="login-password">PASSWORD</label>
+              <div class="input-group">
+                <input type="password" formControlName="password" class="form-control passwordImg" id="login-password" aria-required="true">
+              </div>
+            </div>
+          </div>
+          <div class="form-group">
+            <div class="col-md-12">
+              <div *ngIf="joinForm.controls.confirmPassword.hasError('required') && joinForm.controls.confirmPassword.touched" class="errorMessages pb-0 mb-0">
+                Confirm Password is required
+              </div>
+              <label for="login-confirmPassword">CONFIRM PASSWORD</label>
+              <div class="input-group">
+                <input type="password" formControlName="confirmPassword" class="form-control passwordImg" id="login-confirmPassword" aria-required="true">
+              </div>
+            </div>
+          </div>
+          <div class="errorMessages pb-0 mb-0" *ngIf="joinForm.controls.confirmPassword.errors?.MatchPassword">Password not match</div>
+          <!-- <div *ngIf="error" class="errorMessages">{{error}}</div> -->
+          <div class="form-group loginBtn">
+            <button type="submit" class="btn btn-primary btn-block" id="signupBtn" [disabled]="!joinForm.valid">CREATE ACCOUNT</button>
+          </div>
+          <div *ngIf="newAccMsg" class="col-md-12">
+            <div class="alert alert-success" role="alert">You account has been created. Please click on the activation link in your mail to activate your account</div>
+            <a href="/login">Click here to go to the Login Page</a>
+          </div>
+        </form>
+      </div>
+      <div class="bgWrapper" aria-hidden="true">
+        <img src="/assets/images/group.svg" alt="" />
+      </div>
+    </div>
+  </div>
+</div>

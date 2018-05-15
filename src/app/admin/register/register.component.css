@@ -1,0 +1,39 @@
+.modal-header {
+  border: 0;
+  padding-bottom: 0px;
+}
+
+.modal-body {
+  max-height: 380px;
+  overflow: auto;
+  border: 1px solid #ccc;
+  margin: 15px;
+}
+
+.modal-footer {
+  padding-top: 0px;
+  margin: 0 auto;
+  border: 0;
+}
+
+.btn.btn-link.text-large {
+  text-decoration: none;
+}
+
+.icon {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  stroke-width: 0;
+  stroke: currentColor;
+  fill: currentColor;
+}
+
+.icon-long-arrow-right {
+  width: 0.9642857142857142em;
+}
+
+.icon-long-arrow-left {
+  margin-top: -3px;
+  width: 1.0357142857142856em;
+}

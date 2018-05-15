@@ -1,0 +1,53 @@
+<div class="row justify-content-md-center">
+  <div class="col-md-8 text-center">
+    <h1 class="title">{{title}}</h1>
+    <p class="muted">{{titleHelpTxt}}</p>
+    <a href="#">{{titleHelpTxtLink}}</a>
+  </div>
+</div>
+<div class="row justify-content-md-center pt-5">
+  <div class="col-md-8 SfGenericTemplates sfTmplInputForms">
+    <p-carousel [value]="items">
+      <ng-template let-item pTemplate="item">
+        <div class="card border-0">
+          <div class="header text-center">
+            {{item.ifName}}
+          </div>
+          <div class="body pt-2 pb-2">
+            <span>Name</span>
+            <div class="progress inputForms mb-2">
+              <div class="progress-bar bg-white w-100 border" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+            <span>Phone</span>
+            <div class="progress inputForms mb-2">
+              <div class="progress-bar bg-white w-100 border" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+            <span>Address</span>
+            <div class="progress inputForms mb-2">
+              <div class="progress-bar bg-white w-100 border" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+            <span>etc...</span>
+            <div class="progress inputForms mb-2">
+              <div class="progress-bar bg-white w-100 border" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+          </div>
+          <div class="selected">
+            <i class="fa fa-check text-white" aria-hidden="true"></i>
+          </div>
+        </div>
+        <!-- <div class="card" style="border: 1px solid rgba(0,0,0,.125);border-radius: 0.5rem">
+
+          <span class="card-title text-center">Profile{{item}}</span>
+
+          <div class="card-body">
+            <img src="/assets/images/templates/temp/thumb_demographics.svg" alt="" width="170px;margin: 0 auto" />
+            <i class="fa fa-check-circle cyanTxt pull-right" style="font-size: 1.538rem;position: absolute;
+                                    bottom: -8px;
+                                    right: -9px;"></i>
+          </div>
+
+        </div> -->
+      </ng-template>
+    </p-carousel>
+  </div>
+</div>

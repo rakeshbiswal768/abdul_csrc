@@ -1,0 +1,69 @@
+<div class="login-wrapper">
+  <div class="backBtn">
+    <a href="/login">
+      <svg height="36" viewBox="0 0 24 24" width="36" xmlns="http://www.w3.org/2000/svg">
+        <title id="catTitle">Back to login</title>
+        <path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z" class="backBtnColor" />
+        <path d="M0 0h24v24H0z" fill="none" />
+      </svg>
+    </a>
+  </div>
+  <div class="login-wrapper-inner">
+    <div class="login-container">
+
+      <div class="row justify-content-center">
+        <!-- <div class="col-md-offset-4 col-md-4 login"> -->
+        <div class="col-md-4 text-center mt-5">
+          <a href="/login">
+            <img class="idLink-logo" src="/assets/images/idlink_logo_h.svg" alt="IDLink">
+          </a>
+        </div>
+      </div>
+
+      <div class="row justify-content-center">
+        <div class="col-md-4 login">
+          <div *ngIf="!isLinkValid;else link" class="register-title text-center" for="login-email">Forgot password?</div>
+          <ng-template #link>
+            <div class="register-title text-center" for="login-email">Sorry, that link is no longer valid.</div>
+          </ng-template>
+          <p class="text-center">Enter your registered email address and we’ll send you a link to reset your password.</p>
+          <!-- <div *ngIf="!isLinkValid" class="errorMessages ml-30">Sorry, we don’t recognize that email address.</div> -->
+          <form (ngSubmit)="onSubmit()" [formGroup]="joinForm" class="joinForm">
+            <div class="form-group">
+              <!-- <div *ngIf="error" class="errorMessages ml-30">{{error}}</div> -->
+              <div *ngIf="(joinForm.controls.email.hasError('required') && joinForm.controls.email.touched) || (joinForm.controls.email.hasError('email') && joinForm.controls.email.touched)"
+                class="errorMessages pb-0 mb-0">
+                Sorry, we don’t recognize that email address.
+              </div>
+              <div class="input-group mdl-textfield mdl-js-textfield mdl-textfield--floating-label pb-0">
+                <div class="input-group-addon noBorder">
+                  <img src="/assets/images/icon-email.svg" alt="" />
+                </div>
+                <input formControlName="email" class="mdl-textfield__input noBorder safePlaceHolder" id="login-email" type="email" email
+                  aria-required="true">
+                <label class="inputLabel" for="login-email">EMAIL</label>
+              </div>
+
+              <!-- <label class="sr-only" for="login-email">EMAIL</label>
+                              <div class="input-group">
+                                  <div class="input-group-addon noBorder"><img src="/assets/images/icon-email.svg" alt="" /></div>
+                                  <input formControlName="email" class="form-control noBorder safePlaceHolder" id="login-email" type="email"
+                                      email placeholder="EMAIL" aria-required="true">
+                              </div> -->
+            </div>
+            <div class="form-group loginBtn">
+              <button type="submit" class="btn btn-primary btn-block" id="signupBtn" [disabled]="!joinForm.valid">SEND LINK</button>
+            </div>
+            <div *ngIf="forgotMsg" class="col-md-12">
+              <div class="alert alert-success" role="alert">Reset password link has been sent to your mail</div>
+              <a [routerLink]="['/login']">Click here to go to the Login Page</a>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div class="bgWrapper" aria-hidden="true">
+      <img src="/assets/images/group.svg" alt="" />
+    </div>
+  </div>
+</div>

@@ -1,0 +1,25 @@
+<div class="row">
+  <div class="col-lg-8 mr-auto">
+    <h2 class="subTitle">Request portal URL</h2>
+    <p class="pb-2">
+      This is the URL of the portal from which your customers can request data. You can make this portal available by adding a
+      link to your website, or however you choose.
+    </p>
+    <svg class="icon icon-link" aria-hidden="true">
+      <use xlink:href="#icon-link"></use>
+      <symbol id="icon-link" viewBox="0 0 32 32">
+        <title>Copy Link</title>
+        <path d="M13.757 19.868c-0.416 0-0.832-0.159-1.149-0.476-2.973-2.973-2.973-7.81 0-10.783l6-6c1.44-1.44 3.355-2.233 5.392-2.233s3.951 0.793 5.392 2.233c2.973 2.973 2.973 7.81 0 10.783l-2.743 2.743c-0.635 0.635-1.663 0.635-2.298 0s-0.635-1.663 0-2.298l2.743-2.743c1.706-1.706 1.706-4.481 0-6.187-0.826-0.826-1.925-1.281-3.094-1.281s-2.267 0.455-3.094 1.281l-6 6c-1.706 1.706-1.706 4.481 0 6.187 0.635 0.635 0.635 1.663 0 2.298-0.317 0.317-0.733 0.476-1.149 0.476z"></path>
+        <path d="M8 31.625c-2.037 0-3.952-0.793-5.392-2.233-2.973-2.973-2.973-7.81 0-10.783l2.743-2.743c0.635-0.635 1.664-0.635 2.298 0s0.635 1.663 0 2.298l-2.743 2.743c-1.706 1.706-1.706 4.481 0 6.187 0.826 0.826 1.925 1.281 3.094 1.281s2.267-0.455 3.094-1.281l6-6c1.706-1.706 1.706-4.481 0-6.187-0.635-0.635-0.635-1.663 0-2.298s1.663-0.635 2.298 0c2.973 2.973 2.973 7.81 0 10.783l-6 6c-1.44 1.44-3.355 2.233-5.392 2.233z"></path>
+      </symbol>
+    </svg>
+    <span class="pl-2">
+      <a target="_blank" [attr.href]="'/consumer/request/' + companyId" #value1>{{urlLocation}}/consumer/request/{{companyId}}</a>
+    </span>
+    <button aria-hidden="true" class="btn btn-light mb-2 mt-3 d-block" id="copyLinks" type="button" [clipboard]="urlLocation+'/consumer/request/'+companyId">Copy Link</button>
+    <h2 class="subTitle pt-5">Request portal data categories</h2>
+    <p>
+      The data categories that appear in the request portals correspond to the categories and information types chosen under ‘Templates’
+    </p>
+  </div>
+</div>

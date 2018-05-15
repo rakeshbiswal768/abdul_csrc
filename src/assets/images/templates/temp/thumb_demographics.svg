@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="80px" height="90px" viewBox="0 0 80 90" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49.3 (51167) - http://www.bohemiancoding.com/sketch -->
+    <title>template_thumbails/thumb_demographics</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="40.2525425%" y1="62.4924395%" x2="40.2525425%" y2="92.719254%" id="linearGradient-1">
+            <stop stop-color="#FFFFFF" stop-opacity="0.02" offset="0%"></stop>
+            <stop stop-color="#FFFFFF" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="template_thumbails/thumb_demographics" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <rect id="Rectangle-2" stroke="#E2E2E2" stroke-width="0.966257669" x="0.483128834" y="81.0998725" width="79.0337423" height="8.29204002" rx="1.93251534"></rect>
+        <rect id="Rectangle-2" stroke="#E2E2E2" stroke-width="0.966257669" x="0.483128834" y="57.0282986" width="79.0337423" height="8.29204002" rx="1.93251534"></rect>
+        <rect id="Rectangle-2" stroke="#E2E2E2" stroke-width="0.966257669" x="0.483128834" y="32.9567246" width="79.0337423" height="8.29204002" rx="1.93251534"></rect>
+        <rect id="Rectangle-2" stroke="#E2E2E2" stroke-width="0.966257669" x="0.483128834" y="8.88515057" width="79.0337423" height="8.29204002" rx="1.93251534"></rect>
+        <text id="Item-4" font-family="Roboto-Regular, Roboto" font-size="7.73006135" font-weight="normal" fill="#333333">
+            <tspan x="0" y="78.1701675">Age</tspan>
+        </text>
+        <text id="Item-3" font-family="Roboto-Regular, Roboto" font-size="7.73006135" font-weight="normal" fill="#333333">
+            <tspan x="0" y="54.0985935">Gender Identity</tspan>
+        </text>
+        <text id="Item-2" font-family="Roboto-Regular, Roboto" font-size="7.73006135" font-weight="normal" fill="#333333">
+            <tspan x="0" y="30.0270195">Language</tspan>
+        </text>
+        <text id="Item-1" font-family="Roboto-Regular, Roboto" font-size="7.73006135" font-weight="normal" fill="#333333">
+            <tspan x="0" y="5.95544554">Nationality</tspan>
+        </text>
+        <rect id="Rectangle" fill="url(#linearGradient-1)" x="0" y="-3.26849658e-13" width="80" height="90"></rect>
+    </g>
+</svg>

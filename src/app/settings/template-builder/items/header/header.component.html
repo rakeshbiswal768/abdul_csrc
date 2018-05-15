@@ -1,0 +1,17 @@
+<div *ngIf="showItem" class="tmpItel-row" [attr.data-guid]="guid" id="header">
+    <div class="row align-items-center" [ngClass]="{'tmpItel-col-left': true,'isSelected':!inputFocusClass}">
+        <div class="col-sm-10">
+            <!-- <form> -->
+            <div class="form-group row">
+                <div class="col-sm-8">
+                    <input type="text" id="heading" [(ngModel)]="data.value" class="form-control safePlaceHolder noBorder tmplsubHeading_1" placeholder="Enter Form Field Heading..." aria-required="true" (focus)="focusFunction()" (focusout)="focusOutFunction()" />
+                </div>
+            </div>
+            <!-- </form> -->
+        </div>
+        <div class="col-sm-2">
+            <img src="/assets/images/icon-tb-settings.svg" (click)="openSettings(data)" class="tmplIcon mr-1 pr-0" alt="Modify this field" />
+            <img src="/assets/images/icon-tb-trash.svg" (click)="deleteItem(data?.guid)" class="tmplIcon" alt="Delete this field" />
+        </div>
+    </div>
+</div>

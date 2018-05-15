@@ -1,0 +1,28 @@
+{
+    "extends": "../tsconfig.json",
+    "compilerOptions": {
+        "outDir": "../out-tsc/spec",
+        "module": "commonjs",
+        "target": "es5",
+        "baseUrl": "",
+        "types": [
+            "jasmine",
+            "node"
+        ]
+    },
+    "files": [
+        "test.ts"
+    ],
+    "include": [
+        "**/*.spec.ts",
+        "**/*.d.ts",
+        "../src/**/*",
+        "../node_modules/angular2-tag-input/index.ts",
+        "../node_modules/angular2-tag-input/lib/components/tag-input/tag-input.component.ts",
+        "../node_modules/angular2-tag-input/lib/tag-input.module.ts",
+        "../node_modules/angular2-tag-input/lib/components/tag-input-autocomplete/tag-input-autocomplete.component.ts",
+        "../node_modules/angular2-tag-input/lib/components/tag-input-item/tag-input-item.component.ts",
+        "../node_modules/angular2-tag-input/lib/shared/tag-input-keys.ts",
+        "../node_modules/angular2-tag-input/lib/components/tag-input/tag-input.component.ngfactory.js"
+    ]
+}

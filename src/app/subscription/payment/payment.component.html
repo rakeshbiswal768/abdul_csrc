@@ -1,0 +1,49 @@
+<div class="login-wrapper">
+  <div class="login-wrapper-inner">
+    <div class="login-container row justify-content-center">
+      <div class="col-md-offset-4 col-md-4 login">
+
+        <h1 class="register-title text-center">{{pageTitle}}</h1>
+        <h2 class="sub-heading text-center">PAYMENT DETAILS</h2>
+        <form (ngSubmit)="confirmSubscription()" [formGroup]="createForm" class="createForm">
+          <div class="form-group">
+            <div *ngIf="createForm.controls.paymentDetails1.hasError('required') && createForm.controls.paymentDetails1.touched" class="errorMessages">
+              PAYMENT DETAILS is required.
+            </div>
+            <label class="sr-only sr-only-focusable" for="login-paymentDetails1">??</label>
+            <input formControlName="paymentDetails1" class="form-control" id="login-paymentDetails1" id="login-paymentDetails1" type="text"
+              placeholder="??" aria-required="true">
+          </div>
+          <div class="form-group">
+            <div *ngIf="createForm.controls.paymentDetails2.hasError('required') && createForm.controls.paymentDetails2.touched" class="errorMessages">
+              PAYMENT DETAILS is required.
+            </div>
+            <label class="sr-only sr-only-focusable" for="login-paymentDetails2">??</label>
+            <input formControlName="paymentDetails2" class="form-control" id="login-paymentDetails2" id="login-paymentDetails2" type="text"
+              placeholder="??" aria-required="true">
+          </div>
+          <div class="form-group">
+            <div *ngIf="createForm.controls.paymentDetails3.hasError('required') && createForm.controls.paymentDetails3.touched" class="errorMessages">
+              PAYMENT DETAILS is required.
+            </div>
+            <label class="sr-only sr-only-focusable" for="login-paymentDetails3">??</label>
+            <input formControlName="paymentDetails3" class="form-control" id="login-paymentDetails3" id="login-paymentDetails3" type="text"
+              placeholder="??" aria-required="true">
+          </div>
+
+          <hr>
+          <h2 class="sub-heading text-center">You have selected: €75/ month
+            <br> {{plan}} Plan €5/ data transfer</h2>
+          <hr>
+
+          <div class="form-group loginBtn">
+            <button type="button" class="btn btnDefault btn-block" id="signupBtn" (click)="confirmSubscription()" [disabled]="!createForm.valid">CONFIRM SUBSCRIPTION</button>
+          </div>
+        </form>
+      </div>
+      <div class="bgWrapper" aria-hidden="true">
+        <img src="/assets/images/group.svg" alt="" />
+      </div>
+    </div>
+  </div>
+</div>

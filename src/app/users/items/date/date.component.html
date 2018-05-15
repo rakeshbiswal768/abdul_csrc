@@ -1,0 +1,25 @@
+<div class="tmpItel-row" id="date" [attr.data-guid]="guid" *ngIf="showItem">
+    <div class="row align-items-center" [ngClass]="{'tmpItel-col-left': true,'isSelected':!inputFocusClass}">
+        <div class="col-sm-10">
+
+            <div class="form-group row">
+                <label for="datetimepicker1" (focus)="focusFunction()" (focusout)="focusOutFunction()" class="col-sm-4 col-form-label tmpllabel">{{data.value}}</label>
+                <div class="col-sm-8">
+
+                    <div class="input-group date" id="datetimepicker1">
+
+                        <p-calendar [showIcon]="true" (focus)="focusFunction()" (focusout)="focusOutFunction()" [(ngModel)]="value"></p-calendar>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="col-sm-2">
+
+            <img src="/assets/images/icon-tb-settings.svg" (click)="openSettings(data)" class="tmplIcon mr-1 pr-0" alt="Modify this field" />
+            <img src="/assets/images/icon-tb-trash.svg" (click)="deleteItem(data?.guid)" class="tmplIcon" alt="Delete this field" />
+
+        </div>
+    </div>
+</div>

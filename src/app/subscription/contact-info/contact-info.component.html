@@ -1,0 +1,65 @@
+<div class="login-wrapper">
+  <div class="login-wrapper-inner">
+    <div class="login-container row justify-content-center">
+      <div class="col-md-offset-4 col-md-4 login">
+        <div class="text-center">
+          <a [routerLink]="['/']">
+            <img class="logo-round" src="/assets/images/idLink_logo.svg" alt="ID Link">
+          </a>
+        </div>
+        <h1 class="register-title text-center">{{pageTitle}}</h1>
+        <h2 class="sub-heading text-center">YOUR INFO</h2>
+
+        <form [formGroup]="createForm" class="createForm">
+          <div class="form-group">
+            <div *ngIf="createForm.controls.firstName.hasError('required') && createForm.controls.firstName.touched" class="errorMessages">
+              First Name is required.
+            </div>
+            <label class="sr-only sr-only-focusable" for="login-firstName">First Name</label>
+            <input formControlName="firstName" class="form-control" id="login-firstName" type="text" placeholder="First Name" aria-required="true">
+          </div>
+
+          <div class="form-group">
+            <div *ngIf="createForm.controls.lastName.hasError('required') && createForm.controls.lastName.touched" class="errorMessages">
+              Last Name is required.
+            </div>
+            <label class="sr-only sr-only-focusable" for="login-lastName">Last Name</label>
+            <input formControlName="lastName" class="form-control" id="login-lastName" type="text" placeholder="Last Name" aria-required="true">
+          </div>
+          <div class="form-group">
+            <div *ngIf="createForm.controls.jobTitle.hasError('required') && createForm.controls.jobTitle.touched" class="errorMessages">
+              Job Title is required.
+            </div>
+            <label class="sr-only sr-only-focusable" for="login-jobTitle">Job Title</label>
+            <input formControlName="jobTitle" class="form-control" id="login-jobTitle" type="text" placeholder="Job Title" aria-required="true">
+          </div>
+
+          <div class="form-group">
+            <div *ngIf="createForm.controls.email.hasError('required') && createForm.controls.email.touched" class="errorMessages">
+              email is required.
+            </div>
+            <div *ngIf="createForm.controls.email.hasError('email') && createForm.controls.email.touched" class="errorMessages">
+              email is invalid.
+            </div>
+            <label class="sr-only sr-only-focusable" for="login-email">EMAIL</label>
+            <input formControlName="email" class="form-control" id="login-email" type="email" email placeholder="EMAIL" aria-required="true">
+          </div>
+          <div class="form-group">
+            <div *ngIf="createForm.controls.companyPhone.hasError('required') && createForm.controls.companyPhone.touched" class="errorMessages">
+              Phone is required.
+            </div>
+            <label class="sr-only sr-only-focusable" for="login-phone">Phone</label>
+            <input formControlName="companyPhone" class="form-control" id="login-phone" type="text" placeholder="Phone" aria-required="true">
+          </div>
+
+          <div class="form-group loginBtn">
+            <button type="button" class="btn btnDefault btn-block" id="signupBtn" (click)="contactInfo()" [disabled]="!createForm.valid">DONE</button>
+          </div>
+        </form>
+      </div>
+      <div class="bgWrapper" aria-hidden="true">
+        <img src="/assets/images/group.svg" alt="" />
+      </div>
+    </div>
+  </div>
+</div>

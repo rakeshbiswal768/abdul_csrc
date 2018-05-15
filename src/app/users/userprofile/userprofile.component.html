@@ -1,0 +1,149 @@
+<div class="confirmAssignee card minStage mt-2-5">
+  <div class="closeBtnModal">
+    <button aria-label="Close" class="btn close" type="button" (click)="goBack()">
+      <span aria-hidden="true">×</span>
+    </button>
+  </div>
+  <p-dialog [(visible)]="displayAddDataWarning" modal="modal" [responsive]="true" width="400">
+    <div class="text-center">
+      <div class="childTitle pb-3">Warning:</div>
+      <span class="text-bold pb-3">
+      If you add data, you will become the assignee, and you will need to select another approver before marking the request as
+      ‘ready for delivery’
+      </span>
+      <div class="childTitle mb-5">Are you sure you wish to proceed?</div>
+      <button class="btn w-btn btn-secondary" (click)="goToLink('no')"> No </button>
+      <button class="btn w-btn btn-primary" (click)="goToLink('yes')"> Yes </button>
+    </div>
+  </p-dialog>
+  <div class="card-header">
+    <div class="row align-items-center">
+      <div class="col">
+        <app-user-details [name]="name" [dueInDays]="dueInDays" [reqStatus]="reqStatus" [dueDate]="dueDate"></app-user-details>
+      </div>
+      <div class="col-md-auto">
+        <div *ngIf="reqStatus=='N'||reqStatus=='New'||reqStatus?.toLowerCase()=='incomplete'||reqStatus?.toLowerCase()=='inprogress'"
+          class="col-md-auto">
+          <div class="btn-group">
+            <button type="button" class="btn btn-secondary w-btn dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Add Data
+            </button>
+            <div class="dropdown-menu dropdown-menu-right">
+              <button class="dropdown-item" (click)="addData('import-file')" type="button">Import data files</button>
+              <button class="dropdown-item" (click)="addData('import-data')" type="button">Start with a template</button>
+              <button class="dropdown-item" (click)="addData('add-manual')" type="button">Add data manually</button>
+            </div>
+          </div>
+          <button type="button" class="btn btn-primary w-btn" [ngClass]="{'disabled' : reqStatus=='N'||reqStatus=='New'}" [disabled]="reqStatus=='N'||reqStatus=='New'"
+            (click)="readyForApprove()" [ngStyle]="{'background-color': app.localStoragebtn(),'border-color': app.localStoragebtn()}">
+            Ready for delivery
+          </button>
+        </div>
+        <p-growl [(value)]="msgs"></p-growl>
+        <div *ngIf="reqStatus?.toLowerCase()=='pendingapproval'" class="col-md-auto">
+          <div *ngIf="isApprover;else dataLocked">
+            <h3 class="childTitle pb-0"> Do you approve delivery of this user’s data? </h3>
+            <button type="button" (click)="cancelDelivery()" class="btn btn-secondary w-btn mr-3"> No </button>
+            <button type="button" (click)="sendData()" class="btn btn-primary" [ngStyle]="{'background-color': app.localStoragebtn(),'border-color': app.localStoragebtn()}">
+              Yes, send it </button>
+          </div>
+          <ng-template #dataLocked>
+            <h3 class="childTitle pb-0"> This data is locked while pending approval for delivery. </h3>
+          </ng-template>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="card-body tmplMinheight">
+    <div class="import-data mb30 mt-3 pl-3">
+      <div class="row">
+        <div class="col-lg-2 filterPanel" id="fitlerResult">
+          <form class="">
+            <div class="form-group">
+              <label for="userSeachbox" class="textLabel font-weight-bold text-small text-uppercase">Collected Data</label>
+              <input type="text" id="userSeachbox" aria-describedby="Filter Collected Data" class="form-control searchIcon" name="userSeachbox"
+              />
+            </div>
+          </form>
+          <span class="importDataTitle pt-1 pb-1">BROWSE BY CATEGORY</span>
+          <p-panelMenu [model]="items"></p-panelMenu>
+        </div>
+        <div class="col-lg-10" *ngIf="!showRecords">
+          <ng-container *ngIf="reqStatus=='N'||reqStatus=='New';else otherReq">
+            <h2 class="subTitle">Start collecting data for this user</h2>
+            <div class="list-group">
+              <a routerLink="/users/import-file/{{requestId}}" class="list-group-item list-group-item-action flex-column align-items-start pl-3">
+                <div class="row">
+                  <div class="col-10">
+                    <span class="importlistTitle">Import data files</span>
+                    <p class="text-muted">import any type of file containing of user data</p>
+                  </div>
+                  <div class="col-2 pt-3 text-right">
+                    <i class="fa fa-chevron-right text-large" aria-hidden="true"></i>
+                  </div>
+                </div>
+              </a>
+              <a routerLink="/users/import-data/{{requestId}}" class="list-group-item list-group-item-action flex-column align-items-start pl-3">
+                <div class="row">
+                  <div class="col-10">
+                    <span class="importlistTitle">Start with an input form</span>
+                    <p class="text-muted">Choose from the input forms that you have created</p>
+                  </div>
+                  <div class="col-2 pt-3 text-right">
+                    <i class="fa fa-chevron-right" aria-hidden="true"></i>
+                  </div>
+                </div>
+              </a>
+              <a routerLink="/users/add-manual/{{requestId}}" class="list-group-item list-group-item-action flex-column align-items-start pl-3">
+                <div class="row">
+                  <div class="col-10">
+                    <span class="importlistTitle">Add data manually</span>
+                    <p class="text-muted">Add individual pieces of data one field add a time</p>
+                  </div>
+                  <div class="col-2 pt-3 text-right">
+                    <i class="fa fa-chevron-right" aria-hidden="true"></i>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </ng-container>
+          <ng-template #otherReq>
+            <ng-container *ngIf="reqStatus?.toLowerCase()=='incomplete'||reqStatus?.toLowerCase()=='inprogress';else pendingApproval">
+              <h2 class="subTitle">This request is {{reqStatus}}</h2>
+              <p class="text-muted">See the data that has been collected on the left. Add more data using the ‘add data’ button above</p>
+
+            </ng-container>
+          </ng-template>
+          <ng-template #pendingApproval>
+            <ng-container *ngIf="reqStatus?.toLowerCase()=='pendingapproval' && !isApprover; else isApproved">
+              <h2 class="subTitle">This request is {{reqStatus}}</h2>
+              <h3 class="childTitle pb-0">The data can be unlocked only by the person authorized to approve delivery.</h3>
+            </ng-container>
+          </ng-template>
+          <ng-template #isApproved>
+
+            <h2 class="subTitle">This request is {{reqStatus}}</h2>
+            <h3 class="childTitle pb-0">See the data that has been collected on the left.</h3>
+
+          </ng-template>
+        </div>
+        <div class="col-lg-10" *ngIf="showRecords">
+          <div class="tempTabs">
+            <ngb-tabset>
+              <ngb-tab title="Records">
+                <ng-template ngbTabContent>
+                  <app-records [informationTypeId]="informationTypeId"></app-records>
+                </ng-template>
+              </ngb-tab>
+              <ngb-tab title="Imported Files">
+                <ng-template ngbTabContent>
+                  <app-imported-files [requestId]="requestId" [informationTypeId]="informationTypeId"></app-imported-files>
+                </ng-template>
+              </ngb-tab>
+            </ngb-tabset>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,94 @@
+<div class="row">
+  <div class="col-lg-2 filterPanel" id="fitlerResult">
+    <!-- <form class="" (keyup)=onKey($event)> -->
+    <form class="">
+      <div class="form-group">
+        <label for="userSeachbox" class="textLabel headerRowFilter text-uppercase">Filter</label>
+        <!-- <input type="text" id="userSeachbox" [(ngModel)]="reqStatus" aria-describedby="Type name of person to filter requesting data"
+          class="form-control searchIcon" name="userSeachbox" /> -->
+        <input type="text" id="userSeachbox" aria-describedby="Type status to filter requesting data" class="form-control searchIcon"
+          name="userSeachbox" placeholder="Filter data Requested by person" aria-placeholder="Filter data Requested by person"
+          #rUser (keyup.enter)="searchUser(rUser.value)" (blur)="searchUser(rUser.value); rUser.value='' " [(ngModel)]="searchValue"
+        />
+        <small class="form-text text-muted">Filter data Requested by person</small>
+      </div>
+    </form>
+    <div class="filterPanel reqFilter">
+      <div class="list-group">
+        <div class="list-item active" [ngClass]="{'activeFilter': filterFlag === 'allfilter'}">
+          <a class="clean" href="javascript:void(0);" (click)="filterData('showall')">
+            <span class="list-data font-weight-bold" role="button" tabindex="-1">Show all</span>
+          </a>
+          <!-- <span class="cancelFilter" (click)="cancelFilter()">X</span> -->
+        </div>
+        <div class="list-item" [ngClass]="{'activeFilter': filterFlag === 'newfilter'}">
+          <a class="clean" href="javascript:void(0);" (click)="filterData('New')">
+            <span class="circle circle-newrequest circle-lg"></span>
+            <span class="list-data" role="button" tabindex="-1">New requests</span>
+          </a>
+          <span class="cancelFilter" (click)="cancelFilter()">X</span>
+        </div>
+        <div class="list-item" [ngClass]="{'activeFilter': filterFlag === 'InProgress', 'customFilter': filterFlag === 'processfilter'}">
+          <a class="clean" href="javascript:void(0);" (click)="filterData('InProgress')">
+            <span class="circle circle-pendingapproval circle-lg"></span>
+            <span class="list-data" role="button" tabindex="-1">In progress</span>
+          </a>
+          <span class="cancelFilter" (click)="cancelFilter()">X</span>
+        </div>
+        <div class="list-item" [ngClass]="{'activeFilter': filterFlag === 'problem', 'customFilter': filterFlag === 'processfilter'}">
+          <a class="clean" href="javascript:void(0);" (click)="filterData('Problem')">
+            <span class="circle circle-rejected circle-lg"></span>
+            <span class="list-data" role="button" tabindex="-1">Problem</span>
+          </a>
+          <span class="cancelFilter" (click)="cancelFilter()">X</span>
+        </div>
+        <div class="list-item" [ngClass]="{'activeFilter': filterFlag === 'success'}">
+          <a class="clean" href="javascript:void(0);" (click)="filterData('Completed')">
+            <span class="circle circle-completed circle-lg"></span>
+            <span class="list-data" role="button" tabindex="-1">Completed</span>
+          </a>
+          <span class="cancelFilter" (click)="cancelFilter()">X</span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="col-lg-10">
+    <h2 class="subTitle pt-0 pb-3">Data requests assigned to you</h2>
+    <div class="table-responsive-sm">
+      <table class="table table-hover">
+        <thead>
+          <tr>
+            <th class="headerRow border-top-0 w-10 pl-0" scope="col">Request ID</th>
+            <th class="headerRow border-top-0 w-30" scope="col">Description</th>
+            <th class="headerRow border-top-0 w-10" scope="col">Requested by</th>
+            <th class="headerRow border-top-0 w-10" scope="col">Assigned to</th>
+            <th class="headerRow border-top-0 w-15" scope="col">Status</th>
+            <th class="headerRow border-top-0 w-10" scope="col">Received</th>
+            <th class="headerRow border-top-0 w-10" scope="col">Due in</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="cursorStyle" *ngFor='let req of yourReq' (click)="goToReqest(req?.requestId,req?.requestStatus,req?.dueInDays,req?.user,req?.dueDate)">
+            <th scope="row" class="pl-0">
+              {{req?.requestId}}
+            </th>
+            <td>{{req?.recentActivity?.activityDescription}}</td>
+            <td>{{req?.user}}</td>
+            <td>
+              {{req?.assignedTo}}
+            </td>
+            <td>
+              <span class="circle circle-lg mr-1 circle-{{req?.requestStatus.toString() | lowercase}}"></span> {{req?.requestStatus}}
+            </td>
+            <td>
+              {{req?.requestCreatedDate | date: 'MMM dd'}}
+            </td>
+            <td>
+              {{req?.dueInDays }} Days
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>

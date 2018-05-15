@@ -1,0 +1,54 @@
+<div class="login-wrapper">
+  <div class="backBtn">
+    <a href="/login">
+      <svg height="36" viewBox="0 0 24 24" width="36" xmlns="http://www.w3.org/2000/svg">
+        <title id="catTitle">Back to login</title>
+        <path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z" class="backBtnColor" />
+        <path d="M0 0h24v24H0z" fill="none" />
+      </svg>
+    </a>
+    <!-- <span class="sr-only sr-only-focusable">Back to login</span> -->
+  </div>
+  <div class="login-wrapper-inner">
+    <div class="login-container row justify-content-center">
+      <div class="col-md-offset-4 col-md-4 login">
+        <div class="text-center mb-5">
+          <a href="/login">
+            <img class="idLink-logo" src="/assets/images/idlink_logo_h.svg" alt="IDLink">
+          </a>
+        </div>
+        <label class="register-title" for="login-email">Join an existing account</label>
+        <p>Please enter your company email address. If you have not yet been invited to SP, a email requesting access will be
+          sent to the account administrator.</p>
+        <form (ngSubmit)="onSubmit(joinForm.controls.email)" [formGroup]="joinForm" class="joinForm">
+          <div class="form-group">
+            <div *ngIf="joinForm.controls.email.hasError('required') && joinForm.controls.email.touched" class="errorMessages pb-0 mb-0">
+              email is required
+            </div>
+            <div *ngIf="joinForm.controls.email.hasError('email') && joinForm.controls.email.touched" class="errorMessages pb-0 mb-0">
+              email is invalid
+            </div>
+            <!-- <div *ngIf="error" class="errorMessages">{{error}}</div> -->
+            <label for="login-email">EMAIL</label>
+            <!-- <div class="input-group"> -->
+            <input formControlName="email" class="form-control noBorder safePlaceHolder" id="login-email" class="form-control" type="email"
+              email aria-required="true">
+            <!-- </div> -->
+          </div>
+
+
+          <div class="form-group loginBtn">
+            <button type="submit" class="btn btn-primary btn-block" id="signupBtn" [disabled]="!joinForm.valid">SUBMIT</button>
+          </div>
+          <div *ngIf="joinMsg" class="col-md-12">
+            <div class="alert alert-success" role="alert">Mail sent to Administrator</div>
+            <a href="/login">Click here to go to the Login Page</a>
+          </div>
+        </form>
+      </div>
+      <div class="bgWrapper" aria-hidden="true">
+        <img src="/assets/images/group.svg" alt="" />
+      </div>
+    </div>
+  </div>
+</div>

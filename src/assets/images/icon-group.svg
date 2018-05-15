@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="22" height="18" viewBox="0 0 22 18">
+    <g fill="none" fill-rule="evenodd">
+        <path stroke="#333" d="M19.051 4H2.464C1.657 4 1 4.657 1 5.463v7.074C1 13.343 1.657 14 2.464 14H19.05c.807 0 1.464-.657 1.464-1.463V5.463c0-.806-.657-1.463-1.464-1.463z"/>
+        <g stroke="#333" stroke-linecap="square">
+            <path d="M13.45 1.35h5.4M13.45 16.65h5.4M16.15 1.35v15.3"/>
+        </g>
+        <text fill="#000" font-family="Roboto-Medium, Roboto" font-size="5" font-weight="400" letter-spacing="-.14" transform="translate(1)">
+            <tspan x="2" y="11">ABC</tspan>
+        </text>
+    </g>
+</svg>

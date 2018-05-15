@@ -1,0 +1,168 @@
+<div class="login-wrapper">
+  <div class="login-wrapper-inner">
+    <div class="login-container row justify-content-center">
+      <div class="col-md-offset-4 col-md-4 login">
+        <div class="text-center">
+          <a [routerLink]="['/']">
+            <img class="logo-round" src="/assets/images/idLink_logo.svg" alt="ID Link">
+          </a>
+        </div>
+        <h1 class="register-title text-center">{{pageTitle}}</h1>
+        <h2 class="sub-heading text-center">BILLING ADDRESS</h2>
+
+        <form (ngSubmit)="confirmSubscription()" [formGroup]="createForm" class="createForm">
+
+          <div class="form-group">
+            <div *ngIf="createForm.controls.street.hasError('required') && createForm.controls.street.touched" class="errorMessages">
+              Street is required.
+            </div>
+            <label class="sr-only sr-only-focusable" for="login-street">Street</label>
+            <input formControlName="street" class="form-control" id="login-street" type="text" placeholder="Street" aria-required="true">
+          </div>
+
+          <div class="form-group">
+            <div *ngIf="createForm.controls.cPCode.hasError('required') && createForm.controls.cPCode.touched" class="errorMessages">
+              Country Code + Postal Code is required.
+            </div>
+            <label class="sr-only sr-only-focusable" for="login-cPCode">Country Code + Postal Code</label>
+            <input formControlName="cPCode" class="form-control" id="login-cPCode" type="text" placeholder="Country Code + Postal Code">
+          </div>
+
+          <div class="form-group">
+            <div *ngIf="createForm.controls.city.hasError('required') && createForm.controls.city.touched" class="errorMessages">
+              City is required.
+            </div>
+            <label class="sr-only sr-only-focusable" for="login-city">City</label>
+            <input formControlName="city" class="form-control" id="login-city" type="text" placeholder="City" aria-required="true">
+          </div>
+          <div class="form-group">
+            <div *ngIf="createForm.controls.country.hasError('required') && createForm.controls.country.touched" class="errorMessages">
+              Country is required.
+            </div>
+            <label class="sr-only sr-only-focusable" for="login-country">Country</label>
+            <input formControlName="country" class="form-control" id="login-country" type="text" placeholder="Country" aria-required="true">
+          </div>
+
+          <h2 class="sub-heading text-center">BILLING CONTACT INFORMATION</h2>
+
+          <div class="form-group">
+            <div *ngIf="createForm.controls.firstName.hasError('required') && createForm.controls.firstName.touched" class="errorMessages">
+              First Name is required.
+            </div>
+            <label class="sr-only sr-only-focusable" for="login-firstName">First Name</label>
+            <input formControlName="firstName" class="form-control" id="login-firstName" type="text" placeholder="First Name" aria-required="true">
+          </div>
+
+          <div class="form-group">
+            <div *ngIf="createForm.controls.lastName.hasError('required') && createForm.controls.lastName.touched" class="errorMessages">
+              Last Name is required.
+            </div>
+            <label class="sr-only sr-only-focusable" for="login-lastName">Last Name</label>
+            <input formControlName="lastName" class="form-control" id="login-lastName" type="text" placeholder="Last Name" aria-required="true">
+          </div>
+
+          <div class="form-group">
+            <div *ngIf="createForm.controls.email.hasError('required') && createForm.controls.email.touched" class="errorMessages">
+              email is required.
+            </div>
+            <div *ngIf="createForm.controls.email.hasError('email') && createForm.controls.email.touched" class="errorMessages">
+              email is invalid.
+            </div>
+            <label class="sr-only sr-only-focusable" for="login-email">EMAIL</label>
+            <input formControlName="email" class="form-control" id="login-email" type="email" email placeholder="EMAIL" aria-required="true">
+          </div>
+          <div class="form-group">
+            <div *ngIf="createForm.controls.billingPhone.hasError('required') && createForm.controls.billingPhone.touched" class="errorMessages">
+              Billing Phone is required.
+            </div>
+            <label class="sr-only sr-only-focusable" for="login-billingPhone">Billing Phone</label>
+            <input formControlName="billingPhone" class="form-control" id="login-billingPhone" type="text" placeholder="Billing Phone"
+              aria-required="true">
+          </div>
+          <div class="form-group">
+            <div *ngIf="createForm.controls.cvrNumber.hasError('required') && createForm.controls.cvrNumber.touched" class="errorMessages">
+              CVR Number is required.
+            </div>
+            <label class="sr-only sr-only-focusable" for="login-cvrNumber">CVR Number</label>
+            <input formControlName="cvrNumber" class="form-control" id="login-cvrNumber" type="text" placeholder="CVR Number" aria-required="true">
+          </div>
+          <h2 class="sub-heading text-center">PAYMENT DETAILS</h2>
+
+          <div class="form-group">
+            <div *ngIf="createForm.controls.paymentDetails1.hasError('required') && createForm.controls.paymentDetails1.touched" class="errorMessages">
+              PAYMENT DETAILS is required.
+            </div>
+            <label class="sr-only sr-only-focusable" for="login-paymentDetails1">??</label>
+            <input formControlName="paymentDetails1" class="form-control" id="login-paymentDetails1" type="text" placeholder="??" aria-required="true">
+          </div>
+          <div class="form-group">
+            <div *ngIf="createForm.controls.paymentDetails2.hasError('required') && createForm.controls.paymentDetails2.touched" class="errorMessages">
+              PAYMENT DETAILS is required.
+            </div>
+            <label class="sr-only sr-only-focusable" for="login-paymentDetails2">??</label>
+            <input formControlName="paymentDetails2" class="form-control" id="login-paymentDetails2" type="text" placeholder="??" aria-required="true">
+          </div>
+          <div class="form-group">
+            <div *ngIf="createForm.controls.paymentDetails3.hasError('required') && createForm.controls.paymentDetails3.touched" class="errorMessages">
+              PAYMENT DETAILS is required.
+            </div>
+            <label class="sr-only sr-only-focusable" for="login-paymentDetails3">??</label>
+            <input formControlName="paymentDetails3" class="form-control" id="login-paymentDetails3" type="text" placeholder="??" aria-required="true">
+          </div>
+
+          <hr>
+          <h2 class="sub-heading text-center">You have selected: €75/ month
+            <br> {{plan}} €5/ data transfer</h2>
+          <hr>
+          <div class="form-check">
+            <div *ngIf="createForm.controls.chkTerms.hasError('required') && createForm.controls.chkTerms.touched" class="errorMessages">
+              Accept terms is required.
+            </div>
+            <label class="form-check-label">
+              <input aria-required="true" class="form-check-input" type="checkbox" formControlName="chkTerms" (change)="showPolicy(content,$event)"
+              /> I have read, understood and accept the
+              <a href="javascript:void(0);" class="btn-link" (click)="showTerms(content)">Terms of Service.</a>
+            </label>
+          </div>
+
+
+
+          <!-- <div class="form-check">
+                        <label class="form-check-label">
+                            <input type="checkbox" class="form-check-input">
+                            Check me out
+                        </label>
+                    </div> -->
+
+          <div class="form-group loginBtn">
+            <button type="button" class="btn btnDefault btn-block" id="signupBtn" (click)="confirmSubscription()" [disabled]="!createForm.valid">CONFIRM SUBSCRIPTION</button>
+          </div>
+        </form>
+      </div>
+      <div class="bgWrapper" aria-hidden="true">
+        <img src="/assets/images/group.svg" alt="" />
+      </div>
+    </div>
+  </div>
+</div>
+<ng-template #content let-c="close" let-d="dismiss">
+  <div class="modal-header">
+    <h3 class="modal-title">IDLink terms of service</h3>
+    <!-- <h6 class="modal-title">Before using the software, you must read and accept the terms of service</h6> -->
+    <!-- <button type="button" class="close" aria-label="Close" (click)="d('Cross click')">
+      <span aria-hidden="true">&times;</span>
+    </button> -->
+  </div>
+  <div class="modal-body termsModal">
+    <iframe src="https://www.idlink.eu/subscription-agreement" width="600" height="400" scrolling="auto"></iframe>
+  </div>
+  <div class="modal-footer">
+    <button type="button" class="btn btn-secondary" (click)="c('Dismiss')">Decline</button>
+    <button type="button" class="btn btn-primary" (click)="c('Accept')" [ngStyle]="{'background-color': app.localStoragebtn(),'border-color': app.localStoragebtn()}">Accept</button>
+  </div>
+</ng-template>
+
+<!-- 
+<a [routerLink]="['/join-org']">Join an Organization</a> <br>
+<a [routerLink]="['/new-account']">Create a new account</a>
+-->

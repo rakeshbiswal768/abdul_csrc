@@ -1,0 +1,38 @@
+/* .node-content-wrapper,
+.tree-children {
+    position: relative;
+}
+
+.node-content-wrapper,
+.tree-children {
+    content: "";
+    position: absolute;
+}
+
+.node-content-wrapper {
+    border-bottom: 1px solid lightgrey;
+    border-left: 1px solid lightgrey;
+    height: 28px;
+    top: -17px;
+    width: 20px;
+    left: -28px;
+}
+
+.tree-node-leaf>.node-wrapper>.node-content-wrapper {
+    width: 25px;
+}
+
+.tree-children {
+    border-left: 1px solid lightgrey;
+    height: 100%;
+    top: -15px;
+    left: -15px;
+}
+
+treenode:last-child>.tree-node>.tree-children {
+    border-left: none;
+}
+
+.toggle-children {
+    z-index: 1;
+} */

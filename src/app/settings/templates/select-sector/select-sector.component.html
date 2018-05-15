@@ -1,0 +1,185 @@
+<div class="row justify-content-md-center">
+  <div class="col-md-8 text-center">
+    <h1 class="title">{{title}}</h1>
+    <p class="muted">{{titleHelpTxt}}</p>
+    <a href="#">{{titleHelpTxtLink}}</a>
+  </div>
+</div>
+<div class="row justify-content-md-center pt-5">
+  <div class="col-md-8">
+    <div class="row SfGenericTemplates">
+      <div class="col-3">
+        <div class="card text-center">
+          <div class="header">
+            Generic
+          </div>
+          <div class="body pt-2 pb-2">
+            <div class="row">
+              <div class="col-5 text-center">
+                <img src="/assets/images/templates/temp/men.png" alt="" />
+              </div>
+              <div class="col-7 text-left">
+                <span>Profile</span>
+                <div class="progress mb-2">
+                  <div class="progress-bar bg-danger w-15" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+                <span>Medical</span>
+                <div class="progress mb-2">
+                  <div class="progress-bar bg-success w-15" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+                <span>Social</span>
+                <div class="progress mb-2">
+                  <div class="progress-bar bg-primary w-15" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+                <span>Financial</span>
+                <div class="progress mb-2">
+                  <div class="progress-bar bg-info w-35" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+                <span>Historical</span>
+                <div class="progress mb-2">
+                  <div class="progress-bar bg-purple w-20" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+                <span>Tracking</span>
+                <div class="progress">
+                  <div class="progress-bar bg-secondary w-50" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="selected">
+            <i class="fa fa-check text-white" aria-hidden="true"></i>
+          </div>
+        </div>
+      </div>
+      <div class="col-3">
+        <div class="card text-center">
+          <div class="header">
+            Financial
+          </div>
+          <div class="body pt-2 pb-2">
+            <div class="row">
+              <div class="col-5 text-center">
+                <img src="/assets/images/templates/temp/men.png" alt="" />
+              </div>
+              <div class="col-7 text-left">
+                <span>Profile</span>
+                <div class="progress mb-2">
+                  <div class="progress-bar bg-danger w-50" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+                <span>Medical</span>
+                <div class="progress mb-2">
+                  <div class="progress-bar bg-success w-5" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+                <span>Social</span>
+                <div class="progress mb-2">
+                  <div class="progress-bar bg-primary w-50" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+                <span>Financial</span>
+                <div class="progress mb-2">
+                  <div class="progress-bar bg-info w-75" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+                <span>Historical</span>
+                <div class="progress mb-2">
+                  <div class="progress-bar bg-purple w-50" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+                <span>Tracking</span>
+                <div class="progress">
+                  <div class="progress-bar bg-secondary w-50" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div *ngIf="isSelected" class="selected">
+            <i class="fa fa-check text-white" aria-hidden="true"></i>
+          </div>
+        </div>
+      </div>
+      <div class="col-3">
+        <div class="card text-center">
+          <div class="header">
+            Insurance
+          </div>
+          <div class="body pt-2 pb-2">
+            <div class="row">
+              <div class="col-5 text-center">
+                <img src="/assets/images/templates/temp/men.png" alt="" />
+              </div>
+              <div class="col-7 text-left">
+                <span>Profile</span>
+                <div class="progress mb-2">
+                  <div class="progress-bar bg-danger w-15" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+                <span>Medical</span>
+                <div class="progress mb-2">
+                  <div class="progress-bar bg-success w-15" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+                <span>Social</span>
+                <div class="progress mb-2">
+                  <div class="progress-bar bg-primary w-15" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+                <span>Financial</span>
+                <div class="progress mb-2">
+                  <div class="progress-bar bg-info w-35" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+                <span>Historical</span>
+                <div class="progress mb-2">
+                  <div class="progress-bar bg-purple w-20" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+                <span>Tracking</span>
+                <div class="progress">
+                  <div class="progress-bar bg-secondary w-50" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="selected">
+            <i class="fa fa-check text-white" aria-hidden="true"></i>
+          </div>
+        </div>
+      </div>
+      <div class="col-3">
+        <div class="card text-center">
+          <div class="header">
+            Medical
+          </div>
+          <div class="body pt-2 pb-2">
+            <div class="row">
+              <div class="col-5 text-center">
+                <img src="/assets/images/templates/temp/men.png" alt="" />
+              </div>
+              <div class="col-7 text-left">
+                <span>Profile</span>
+                <div class="progress mb-2">
+                  <div class="progress-bar bg-danger w-15" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+                <span>Medical</span>
+                <div class="progress mb-2">
+                  <div class="progress-bar bg-success w-15" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+                <span>Social</span>
+                <div class="progress mb-2">
+                  <div class="progress-bar bg-primary w-15" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+                <span>Financial</span>
+                <div class="progress mb-2">
+                  <div class="progress-bar bg-info w-35" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+                <span>Historical</span>
+                <div class="progress mb-2">
+                  <div class="progress-bar bg-purple w-20" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+                <span>Tracking</span>
+                <div class="progress">
+                  <div class="progress-bar bg-secondary w-50" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div *ngIf="isSelected" class="selected">
+            <i class="fa fa-check text-white" aria-hidden="true"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

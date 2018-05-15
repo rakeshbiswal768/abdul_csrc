@@ -1,0 +1,333 @@
+/* .leftCont {
+    display: block;
+}
+
+.leftCont h3 {
+    font-size: 14px;
+    color: #9f9f9f;
+    padding: 15px 0;
+    font-weight: bold;
+    margin: 0;
+}
+
+.leftCont .badgesList {
+    display: block;
+    margin: 0;
+    padding: 0;
+}
+
+.leftCont .badgesList li {
+    display: block;
+    margin-bottom: 8px;
+}
+
+.leftCont .badgesList li a {
+    background: #cdcdcd;
+    border-radius: 4px;
+    color: #fff;
+    line-height: 18px;
+    font-size: 12px;
+    padding: 3px 8px;
+    margin-right: 8px;
+}
+
+.leftCont .badgesList li a.active {
+    background: #575757;
+}
+
+.leftCont .badgesList li a:hover {
+    text-decoration: none;
+}
+
+.leftCont .badgesList li .badge {
+    background: #0080ff;
+    color: #fff;
+    border-radius: 1rem;
+}
+
+.panel {
+    box-shadow: inherit;
+}
+
+.rightCont {
+    display: block;
+}
+
+.rightCont .dragFileArea {
+    border: dotted 2px #eaeaea;
+    padding: 25px 0;
+    text-align: center;
+    font-size: 18px;
+    color: #0080ff;
+    display: block;
+    margin: 20px 0 25px;
+}
+
+.rightCont .dragFileArea a {
+    display: block;
+}
+
+.rightCont .panel-default {
+    border: none;
+}
+
+.rightCont .panel-default .panel-heading {
+    padding: 0;
+    background: #fff;
+}
+
+.rightCont .panel-default .panel-heading .nav-tabs {
+    border: none;
+}
+
+.rightCont .panel-default .panel-heading .nav-tabs li {
+    background: #efefef;
+    width: 130px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    color: #595959;
+    margin-right: 10px;
+}
+
+.rightCont .panel-default .panel-heading .nav-tabs li a {
+    color: #595959;
+    padding: 8px 15px 4px;
+    margin: 0;
+}
+
+.rightCont .panel-default .panel-heading .nav-tabs li.active {
+    background: #fff;
+}
+
+.rightCont .panel-default .panel-heading .nav-tabs li.active a {
+    border-top: solid 2px #50e3c2;
+}
+
+.rightCont .recordCont {
+    display: block;
+    margin: 30px 0;
+}
+
+.rightCont .recordCont h4 {
+    font-size: 14px;
+    color: #595959;
+    border-bottom: solid 1px #e6e6e6;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding-bottom: 5px;
+    width: 60%;
+    clear: both;
+}
+
+.rightCont .recordCont .addBox {
+    margin: 0;
+    padding: 0;
+    width: 70%;
+}
+
+@media screen and (max-width: 414px) {
+    .rightCont .recordCont .addBox {
+        width: 100%;
+    }
+}
+
+.rightCont .recordCont .addBox li {
+    float: left;
+    margin-right: 20px;
+    width: 112px;
+    text-align: center;
+    position: relative;
+    font-size: 0;
+    margin-bottom: 30px;
+}
+
+.rightCont .recordCont .addBox li a {
+    color: #bdbdbd;
+    font-size: 14px;
+    border: dotted 2px #eaeaea;
+    min-height: 130px;
+    display: block;
+}
+
+.rightCont .recordCont .addBox li span {
+    display: block;
+    font-size: 25px;
+    padding-top: 44px;
+    line-height: 25px;
+}
+
+.rightCont .recordCont .addBox li .progress {
+    height: 5px;
+    overflow: hidden;
+    background-color: #f5f5f5;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+    width: 100%;
+}
+
+.rightCont .recordCont .addBox li .progress .progress-bar {
+    background-color: #50e3c2;
+    box-shadow: none !important;
+}
+
+.rightCont .recordCont .addBox li .progressOk {
+    background: #50e3c2;
+    border-radius: 50%;
+    position: absolute;
+    bottom: -12px;
+    right: -14px;
+    height: 30px;
+    width: 30px;
+    color: #fff;
+}
+
+.rightCont .recordCont .addBox li .progressinComp {
+    background: #fff;
+    border-radius: 50%;
+    border: solid 1px #d0d0d0;
+    position: absolute;
+    bottom: -12px;
+    right: -14px;
+    height: 30px;
+    width: 30px;
+    color: #fff;
+}
+
+.rightCont .recordCont .addBox li.attached {
+    border: none;
+    box-shadow: 0 0 4px #939393;
+    display: inline-block;
+}
+
+.rightCont .recordCont .addBox li.attached .attachedCont {
+    display: block;
+    text-align: center;
+    padding: 0 6px;
+}
+
+.rightCont .recordCont .addBox li.attached .attachedCont .nameTxt {
+    font-size: 10px;
+    color: #999;
+    padding-top: 0;
+    padding: 0;
+    line-height: 8px;
+    text-align: left;
+}
+
+.rightCont .recordCont .addBox li.attached .attachedCont .inputBox {
+    position: inherit;
+    height: 12px;
+    width: 100px;
+}
+
+.rightCont .recordCont .filesList {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+.rightCont .recordCont .filesList li {
+    display: block;
+    border-bottom: solid 1px #e3e3e3;
+    padding: 10px 0;
+}
+
+.rightCont .recordCont .filesList li .fileName {
+    width: 20%;
+    display: inline-block;
+}
+
+.rightCont .recordCont .filesList li .fileName .nametxt {
+    display: block;
+    font-size: 12px;
+}
+
+.rightCont .recordCont .filesList li .fileName .uploadTime {
+    font-size: 11px;
+    color: #b2b2b2;
+}
+
+.rightCont .recordCont .filesList li .fileName .progressFile {
+    height: 5px;
+    overflow: hidden;
+    background-color: #f5f5f5;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    width: 100px;
+}
+
+.rightCont .recordCont .filesList li .fileName .progressFile .progress-bar {
+    background-color: #50e3c2;
+    box-shadow: none !important;
+}
+
+.rightCont .recordCont .filesList li .dataTag {
+    width: 75%;
+    display: inline-block;
+}
+
+.rightCont .recordCont .filesList li .dataTag a.addTag {
+    font-size: 12px;
+    color: #9d9d9d;
+    padding: 6px 8px 5px;
+    border-radius: 50%;
+    width: 29px;
+}
+
+.rightCont .recordCont .filesList li .dataTag a.addTag fa {
+    background: #17c7bc;
+    color: #fff;
+    border-radius: 50%;
+    padding: 4px 5px 2px 5px;
+}
+
+.rightCont .recordCont .filesList li .dataTag .tagName {
+    background: #7d7d7d;
+    border-radius: 4px;
+    padding: 3px 6px;
+    display: inline-block;
+    margin-right: 5px;
+    font-size: 12px;
+    color: #fff;
+}
+
+.rightCont .recordCont .filesList li .dataTag .tagName .closeButt {
+    font-size: 14px;
+    color: #7d7d7d;
+    border-radius: 50%;
+    display: inline-block;
+    margin-right: 5px;
+    background: #bbb;
+    padding: 0 6px;
+    font-weight: bold;
+}
+
+.rightCont .recordCont .filesList li a.menuIcon {
+    width: 13px;
+    height: 13px;
+    float: right;
+}
+
+.rightCont .recordCont .filesList li:last-child {
+    border: none;
+}
+
+.nav-link {
+    display: block;
+    padding: 0.5rem 1rem;
+    background: #efefef;
+    border-radius: inherit;
+    margin: 0 10px 0 0;
+    color: #585858;
+    font-weight: bold;
+    border-radius: 0 !important;
+}
+
+.nav-link.active {
+    border-top: solid 2px #50e3c2 !important;
+} */
