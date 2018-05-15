@@ -6,9 +6,18 @@
                     <div class="col-lg-9 col-md-9 col-sm-9 col-xs-12 userDetails">
                         <span class="avatarLetter">U2</span>
                         <div class="btn-group ">
-                            <button type="button" class="" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                ...
+                            <button type="button" class="dropButt" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">                                
+                                <i class="fa fa-ellipsis-h" aria-hidden="true"></i>                                
                             </button>
+                            <span class="nameTxt">Tom Clarke</span>
+                            <span class="requestTxt">Request #314944</span>
+                            <button type="button" class="blueDropButt" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">                                
+                                <i class="fa fa-angle-down" aria-hidden="true"></i>                                
+                            </button>
+                            <span class="timeTxt">
+                                <i class="fa fa-clock-o" aria-hidden="true"></i>
+                            Due in 5 Days
+                            </span>
                             <div class="dropdown-menu dropdown-menu-right">
                                 <button class="dropdown-item" type="button">Link One</button>
                                 <button class="dropdown-item" type="button">Link One</button>
@@ -40,7 +49,7 @@
             </div>
             <div class="col-lg-9 col-md-9 col-sm-9 col-xs-12 rightCont">
                 <div class="dragFileArea">
-                    <h2 class="subTitle text-center">To import, drag and drop your files, or click:</h2>
+                    
                     <ng-template matStepLabel>Chose Files</ng-template>
                     <div class="stageEmpty isSmall">
                         <span>Drag files here or click to upload</span>
@@ -208,17 +217,18 @@
 
 
                                     <div class="importstage" *ngIf="uploadedFiles.length">
-                                        <div class="row">
+                                        <!-- <div class="row">
                                             <div class="col-md-6">
                                                 <strong>File Name</strong>
                                             </div>
                                             <div class="col-md-6">
                                                 <strong>Information Types</strong>
                                             </div>
-                                        </div>
+                                        </div> -->
                                         <div *ngFor="let file of uploadedFiles" class="row align-items-center">
                                             <div class="col-md-6">
                                                 {{file.name}}
+                                                <span class="uploadTime">Uploaded just now</span>
                                             </div>
                                             <div class="col-md-6">
                                                 <angular2-multiselect [data]="dropdownList" [(ngModel)]="file.autocompleteTags" [settings]="dropdownSettings" (onSelect)="onItemSelect($event)"
@@ -240,8 +250,8 @@
                                             </div>
                                             <a href="#" class="menuIcon"></a>
                                             <div class="btn-group ">
-                                                <button type="button" class="" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                                    ...
+                                                <button type="button" class="dropButt" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                    <i class="fa fa-ellipsis-h" aria-hidden="true"></i>
                                                 </button>
                                                 <div class="dropdown-menu dropdown-menu-right">
                                                     <button class="dropdown-item" type="button">Link One</button>

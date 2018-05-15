@@ -75,14 +75,12 @@
 
 .rightCont{
     display: block;
-    .dragFileArea{
-        border:dotted 2px #eaeaea;
-        padding: 25px 0;
+    .dragFileArea{      
         text-align: center;
         font-size: 18px;
         color:#0080ff;
         display: block;
-        margin: 20px 0 25px;
+        margin: 20px 0 0;
         a{
             display: block;
         }
@@ -314,7 +312,7 @@
 
 .nav-link{
     display: block;
-    padding: .5rem 1rem;
+    padding: .5rem 3rem;
     background: #efefef;
     border-radius: inherit;
     margin: 0 10px 0 0;
@@ -324,4 +322,18 @@
 }
 .nav-link.active{
     border-top:solid 2px #50e3c2!important;
+}
+.stageEmpty.isSmall{
+    background: none!important;
+}
+.ui-widget-header{
+    background: none!important;
+    border:none!important;
+}
+.ui-corner-bottom{
+    display: none!important;
+}
+
+.nav-link{
+    background: #000;
 }
