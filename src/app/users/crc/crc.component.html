@@ -5,6 +5,16 @@
                 <div class="row">
                     <div class="col-lg-9 col-md-9 col-sm-9 col-xs-12 userDetails">
                         <span class="avatarLetter">U2</span>
+                        <div class="btn-group ">
+                            <button type="button" class="" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                ...
+                            </button>
+                            <div class="dropdown-menu dropdown-menu-right">
+                                <button class="dropdown-item" type="button">Link One</button>
+                                <button class="dropdown-item" type="button">Link One</button>
+                                <button class="dropdown-item" type="button">Link One</button>
+                            </div>
+                        </div>
                     </div>
                     <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 closeBut">
                         <button aria-label="Close" class="btn close" type="button">
@@ -30,7 +40,17 @@
             </div>
             <div class="col-lg-9 col-md-9 col-sm-9 col-xs-12 rightCont">
                 <div class="dragFileArea">
-                    <a href="#">+ Clicks or Drag files here</a>
+                    <h2 class="subTitle text-center">To import, drag and drop your files, or click:</h2>
+                    <ng-template matStepLabel>Chose Files</ng-template>
+                    <div class="stageEmpty isSmall">
+                        <span>Drag files here or click to upload</span>
+                        <span>(Document, video, image, etc)</span>
+                        <div class="importFile">
+                            <p-fileUpload name="myfile[]" url="https://httpbin.org/post" (onUpload)="onUpload($event)" multiple="multiple" auto="auto"
+                                maxFileSize="10000000">
+                            </p-fileUpload>
+                        </div>
+                    </div>
                 </div>
                 <div class="tabArea">
                     <ngb-tabset>
@@ -85,6 +105,9 @@
                                 <!--Files Content-->
                                 <div class="recordCont" *ngIf="media.length !== 0">
                                     <h4>media information</h4>
+
+
+
 
                                     <ul class="addBox">
                                         <li class="attached" *ngFor="let item of media">
@@ -181,6 +204,32 @@
                         <ngb-tab title="Files">
                             <ng-template ngbTabContent>
                                 <div class="recordCont">
+
+
+
+                                    <div class="importstage" *ngIf="uploadedFiles.length">
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <strong>File Name</strong>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <strong>Information Types</strong>
+                                            </div>
+                                        </div>
+                                        <div *ngFor="let file of uploadedFiles" class="row align-items-center">
+                                            <div class="col-md-6">
+                                                {{file.name}}
+                                            </div>
+                                            <div class="col-md-6">
+                                                <angular2-multiselect [data]="dropdownList" [(ngModel)]="file.autocompleteTags" [settings]="dropdownSettings" (onSelect)="onItemSelect($event)"
+                                                    (onDeSelect)="OnItemDeSelect($event)" (onSelectAll)="onSelectAll($event)"
+                                                    (onDeSelectAll)="onDeSelectAll($event)">
+                                                </angular2-multiselect>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
                                     <ul class="filesList">
                                         <li>
                                             <div class="fileName">

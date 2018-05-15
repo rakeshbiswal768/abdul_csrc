@@ -10,11 +10,25 @@ import { GlobalVariable, GlobalStorage } from '../../global';
 })
 export class CrcComponent implements OnInit {
 
+  public uploadedFiles: any[] = []
+  public dropdownList: any[] = [{ 'id': 1, 'itemName': 'name1' }, { 'id': 2, 'itemName': 'name2' }];
+  public dropdownSettings = {};
+
   constructor(public app: GlobalStorage, private authenticationService: AuthenticationService, private commonApiService: CommonApiService) {
     this.authenticationService.emitChange(authenticationService.isUserLoggedIn);
   }
 
   ngOnInit() {
+
+    this.dropdownSettings = {
+      singleSelection: false,
+      text: '',
+      selectAllText: 'Select All',
+      unSelectAllText: 'UnSelect All',
+      enableSearchFilter: true,
+      classes: 'myclass custom-class'
+    };
+
   }
 
   public filters: any[] = [
@@ -50,5 +64,29 @@ export class CrcComponent implements OnInit {
     { fName: 'backup_3.zip', tag: ['identifying', 'unAuthenticating'] },
     { fName: 'backup_3.zip', tag: ['identifying', 'Authenticating', 'unAuthenticating'] }
   ]
+
+  onUpload(event) {
+    for (const file of event.files) {
+      const fileDetails = { 'file': file, 'name': file.name, 'autocompleteTags': [] };
+      this.uploadedFiles.push(fileDetails);
+      // this.goForward(this.stepper);
+    }
+  }
+
+  onItemSelect(item: any) {
+    // console.log(item);
+    // console.log(this.selectedItems);
+  }
+  OnItemDeSelect(item: any) {
+    // console.log(item);
+    // console.log(this.selectedItems);
+  }
+  onSelectAll(items: any) {
+    // console.log(items);
+  }
+  onDeSelectAll(items: any) {
+    // console.log(items);
+  }
+
 
 }

@@ -1,8 +1,8 @@
 <div class="card minStage mt-2-5">
     <div class="closeBtnModal">
         <button aria-label="Close" class="btn close" type="button" [routerLink]="['/dashboard']">
-              <span aria-hidden="true">×</span>
-            </button>
+            <span aria-hidden="true">×</span>
+        </button>
     </div>
     <div class="card-header">
         <div class="row align-items-center">
@@ -13,7 +13,7 @@
                 <div class="btn-group">
                     <button type="button" class="btn btn-secondary w-btn dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         Add Data
-                      </button>
+                    </button>
                     <div class="dropdown-menu dropdown-menu-right">
                         <button class="dropdown-item" routerLink="/users/import-file/{{requestId}}" type="button">Import data files</button>
                         <button class="dropdown-item" routerLink="/users/import-data/{{requestId}}" type="button">Start with a template</button>
@@ -21,8 +21,8 @@
                     </div>
                 </div>
                 <button type="button" class="btn btn-primary w-btn" (click)="sendData()" [ngStyle]="{'background-color': app.localStoragebtn(),'border-color': app.localStoragebtn()}">
-                      Ready for delivery
-                    </button>
+                    Ready for delivery
+                </button>
                 <!-- <h3 class="childTitle pb-0"> Do you approve delivery of this user’s data? </h3>
                     <button type="button" (click)="cancelDelivery()" class="btn btn-secondary w-btn mr-3"> No, cancel delivery </button>
                     <button type="button" (click)="sendData()" class="btn btn-primary" [ngStyle]="{'background-color': app.localStoragebtn(),'border-color': app.localStoragebtn()}"> Yes, send it </button> -->
@@ -37,9 +37,11 @@
             </div>
             <div class="col-md-auto pt3 mt-3">
                 <button type="button" class="btn btn-secondary w-btn mr-3" (click)="cancelAction()"> Cancel </button>
-                <button type="button" *ngIf="isNext;else showBtn" (click)="goForward(stepper)" class="btn btn-primary w-btn" [ngStyle]="{'background-color': app.localStoragebtn(),'border-color': app.localStoragebtn()}"> Next </button>
+                <button type="button" *ngIf="isNext;else showBtn" (click)="goForward(stepper)" class="btn btn-primary w-btn" [ngStyle]="{'background-color': app.localStoragebtn(),'border-color': app.localStoragebtn()}">
+                Next </button>
                 <ng-template #showBtn>
-                    <button type="button" (click)="import()" class="btn btn-primary" [ngStyle]="{'background-color': app.localStoragebtn(),'border-color': app.localStoragebtn()}"> Import </button>
+                    <button type="button" (click)="import()" class="btn btn-primary" [ngStyle]="{'background-color': app.localStoragebtn(),'border-color': app.localStoragebtn()}">
+                    Import </button>
                 </ng-template>
             </div>
         </div>
@@ -54,7 +56,8 @@
                                 <span>Drag files here or click to upload</span>
                                 <span>(Document, video, image, etc)</span>
                                 <div class="importFile">
-                                    <p-fileUpload name="myfile[]" url="https://httpbin.org/post" (onUpload)="onUpload($event)" multiple="multiple" auto="auto" maxFileSize="10000000">
+                                    <p-fileUpload name="myfile[]" url="https://httpbin.org/post" (onUpload)="onUpload($event)" multiple="multiple" auto="auto"
+                                        maxFileSize="10000000">
                                     </p-fileUpload>
                                 </div>
                             </div>
@@ -78,7 +81,8 @@
                                     {{file.name}}
                                 </div>
                                 <div class="col-md-6">
-                                    <angular2-multiselect [data]="dropdownList" [(ngModel)]="file.autocompleteTags" [settings]="dropdownSettings" (onSelect)="onItemSelect($event)" (onDeSelect)="OnItemDeSelect($event)" (onSelectAll)="onSelectAll($event)" (onDeSelectAll)="onDeSelectAll($event)">
+                                    <angular2-multiselect [data]="dropdownList" [(ngModel)]="file.autocompleteTags" [settings]="dropdownSettings" (onSelect)="onItemSelect($event)"
+                                        (onDeSelect)="OnItemDeSelect($event)" (onSelectAll)="onSelectAll($event)" (onDeSelectAll)="onDeSelectAll($event)">
                                     </angular2-multiselect>
                                 </div>
                             </div>
