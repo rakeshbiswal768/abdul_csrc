@@ -13,7 +13,8 @@ import { MatStepper } from '@angular/material';
 export class TemplateWizardComponent implements OnInit {
   @Output()
   showWizard = new EventEmitter<boolean>();
-  isLinear = true;
+  isLinear = false;
+  selectedIndex = 1;
   constructor(public app: GlobalStorage, private commonApiService: CommonApiService, private router: Router, private route: ActivatedRoute) { }
 
   ngOnInit() {
@@ -26,5 +27,10 @@ export class TemplateWizardComponent implements OnInit {
   cancelTmplStepper() {
     this.showWizard.emit(false);
   }
-  
+
+  onChange(event: any) {
+    this.selectedIndex = event.selectedIndex;
+
+  }
+
 }

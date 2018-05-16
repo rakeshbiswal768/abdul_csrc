@@ -8,7 +8,7 @@
 <div class="row justify-content-md-center pt-5">
   <div class="col-md-8">
     <div class="row SfGenericTemplates">
-      <div class="col-3">
+      <div class="col-md-3">
         <div class="card text-center">
           <div class="header">
             Generic
@@ -46,12 +46,15 @@
               </div>
             </div>
           </div>
-          <div class="selected">
+          <button class="highlightSector" (click)="selectSector($event)">
             <i class="fa fa-check text-white" aria-hidden="true"></i>
-          </div>
+          </button>
+          <!-- <div class="highlightSector" (click)="selectSector($event)">
+            <i class="fa fa-check text-white" aria-hidden="true"></i>
+          </div> -->
         </div>
       </div>
-      <div class="col-3">
+      <div class="col-md-3">
         <div class="card text-center">
           <div class="header">
             Financial
@@ -89,12 +92,12 @@
               </div>
             </div>
           </div>
-          <div *ngIf="isSelected" class="selected">
+          <button class="highlightSector" (click)="selectSector($event)">
             <i class="fa fa-check text-white" aria-hidden="true"></i>
-          </div>
+          </button>
         </div>
       </div>
-      <div class="col-3">
+      <div class="col-md-3">
         <div class="card text-center">
           <div class="header">
             Insurance
@@ -132,12 +135,12 @@
               </div>
             </div>
           </div>
-          <div class="selected">
+          <button class="highlightSector" (click)="selectSector($event)">
             <i class="fa fa-check text-white" aria-hidden="true"></i>
-          </div>
+          </button>
         </div>
       </div>
-      <div class="col-3">
+      <div class="col-md-3">
         <div class="card text-center">
           <div class="header">
             Medical
@@ -175,9 +178,9 @@
               </div>
             </div>
           </div>
-          <div *ngIf="isSelected" class="selected">
+          <button class="highlightSector" (click)="selectSector($event)">
             <i class="fa fa-check text-white" aria-hidden="true"></i>
-          </div>
+          </button>
         </div>
       </div>
     </div>

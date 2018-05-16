@@ -1973,10 +1973,9 @@ small.text-muted,
   }
 }
 
-.mat-stepper-horizontal-line {
-  border-top-color: $green !important;
-}
-
+// .mat-stepper-horizontal-line {
+//     border-top-color: $green !important;
+// }
 .sfRegistrationStepper {
   .mat-horizontal-stepper-header-container {
     margin-left: -24px;
@@ -2700,18 +2699,36 @@ table {
   .body {
     font-size: $text-11;
     text-rendering: optimizeLegibility;
+    max-height: 200px;
+    overflow: hidden;
+    &.fadeBottom {
+      background: -moz-linear-gradient(top, rgba(255, 255, 255, 0) 80%, rgba(255, 255, 255, 0.72) 96%, rgba(255, 255, 255, 0.9) 100%);
+      background: -webkit-linear-gradient(top, rgba(255, 255, 255, 0) 80%, rgba(255, 255, 255, 0.72) 96%, rgba(255, 255, 255, 0.9) 100%);
+      background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 80%, rgba(255, 255, 255, 0.72) 96%, rgba(255, 255, 255, 0.9) 100%);
+      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#e6ffffff', GradientType=0);
+    }
   }
   .footer {
     font-size: $text-14;
   }
-  .selected {
+  .highlightSector {
     position: absolute;
     right: -6px;
     bottom: -12px;
     font-size: 18px;
     border-radius: 100%;
-    padding: 2px 6px;
-    background-color: $green;
+    padding: 0;
+    background-color: $white;
+    border: 1px solid $greyish;
+    z-index: 99999999;
+    i {
+      padding: 5px 5px;
+      border-radius: 100%;
+      border-color: transparent;
+    }
+    .selected {
+      background-color: $green;
+    }
   }
   .progress {
     height: 5px;
@@ -2736,7 +2753,10 @@ table {
     padding: 0;
     border: 0;
   }
-  .ui-carousel-header-title, .ui-carousel-page-links, .ui-carousel .ui-carousel-dropdown, .ui-carousel .ui-carousel-mobiledropdown {
+  .ui-carousel-header-title,
+  .ui-carousel-page-links,
+  .ui-carousel .ui-carousel-dropdown,
+  .ui-carousel .ui-carousel-mobiledropdown {
     display: none;
   }
   .ui-carousel-button.ui-carousel-next-button {
@@ -2756,6 +2776,7 @@ table {
     height: 290px;
   }
 }
+
 
 @media (min-width: 576px) {
   .modal-dialog {

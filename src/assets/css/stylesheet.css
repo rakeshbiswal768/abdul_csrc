@@ -1,120 +1,171 @@
 /*used in dashboard notification*/
+/* line 3, C:/Nimmi/IDL_S2_Template/src/assets/sass/stylesheet.scss */
 html {
   height: 98%;
   font-size: 14px;
-  overflow-x: hidden; }
+  overflow-x: hidden;
+}
 
+/* line 9, C:/Nimmi/IDL_S2_Template/src/assets/sass/stylesheet.scss */
 body {
   height: 100%;
-  overflow-x: hidden; }
+  overflow-x: hidden;
+}
 
 /***** start: General resets *****/
+/* line 16, C:/Nimmi/IDL_S2_Template/src/assets/sass/stylesheet.scss */
 body {
   font-family: "roboto", sans-serif;
-  background-color: #f3f3f3; }
+  background-color: #f3f3f3;
+}
 
+/* line 21, C:/Nimmi/IDL_S2_Template/src/assets/sass/stylesheet.scss */
 ul,
 ol {
-  font-size: 1.077rem; }
+  font-size: 1.077rem;
+}
 
+/* line 26, C:/Nimmi/IDL_S2_Template/src/assets/sass/stylesheet.scss */
 .mdl-radio__label {
-  font-size: 1rem !important; }
+  font-size: 1rem !important;
+}
 
+/* line 30, C:/Nimmi/IDL_S2_Template/src/assets/sass/stylesheet.scss */
 h1,
 .h1,
 .mainTitle {
   font-size: 1.846rem;
-  color: #575757; }
+  color: #575757;
+}
 
+/* line 37, C:/Nimmi/IDL_S2_Template/src/assets/sass/stylesheet.scss */
 h2.subTitle,
 .subTitle {
   font-size: 1.692rem;
   font-weight: bold;
   color: #575757;
-  padding: 1rem 0 0.75rem 0; }
+  padding: 1rem 0 0.75rem 0;
+}
 
+/* line 45, C:/Nimmi/IDL_S2_Template/src/assets/sass/stylesheet.scss */
 .childTitle,
 h3.childTitle {
   font-size: 1.231rem;
   font-weight: bold;
   color: #575757;
-  padding: 1em 0 0.75rem 0; }
+  padding: 1em 0 0.75rem 0;
+}
 
+/* line 53, C:/Nimmi/IDL_S2_Template/src/assets/sass/stylesheet.scss */
 .childTitle-2 {
   font-size: 1.077rem;
   font-weight: bold;
   color: #575757;
-  padding: 1em 0 0.75rem 0; }
+  padding: 1em 0 0.75rem 0;
+}
 
+/* line 65, C:/Nimmi/IDL_S2_Template/src/assets/sass/stylesheet.scss */
 .childTitle-3 {
   font-size: 1.538rem;
   color: #575757;
-  padding: 1rem 0 0.75rem 0; }
+  padding: 1rem 0 0.75rem 0;
+}
 
+/* line 71, C:/Nimmi/IDL_S2_Template/src/assets/sass/stylesheet.scss */
 a.clean {
-  text-decoration: none !important; }
+  text-decoration: none !important;
+}
 
+/* line 75, C:/Nimmi/IDL_S2_Template/src/assets/sass/stylesheet.scss */
 .noMargin {
-  margin: 0 !important; }
+  margin: 0 !important;
+}
 
+/* line 79, C:/Nimmi/IDL_S2_Template/src/assets/sass/stylesheet.scss */
 .noPadding {
-  padding: 0 !important; }
+  padding: 0 !important;
+}
 
+/* line 83, C:/Nimmi/IDL_S2_Template/src/assets/sass/stylesheet.scss */
 .noShadow {
   box-shadow: none !important;
   -webkit-box-shadow: none !important;
-  -ms-box-shadow: none !important; }
+  -ms-box-shadow: none !important;
+}
 
+/* line 89, C:/Nimmi/IDL_S2_Template/src/assets/sass/stylesheet.scss */
 .border0 {
-  border: 0px !important; }
+  border: 0px !important;
+}
 
+/* line 93, C:/Nimmi/IDL_S2_Template/src/assets/sass/stylesheet.scss */
 .borderBottom {
   border-bottom: 2px solid #cccccc;
-  padding-bottom: 1rem; }
+  padding-bottom: 1rem;
+}
 
+/* line 98, C:/Nimmi/IDL_S2_Template/src/assets/sass/stylesheet.scss */
 .mb30 {
-  margin-bottom: 30px; }
+  margin-bottom: 30px;
+}
 
 /***** end: General resets *****/
 /***** start: color buttons definations *****/
+/* line 106, C:/Nimmi/IDL_S2_Template/src/assets/sass/stylesheet.scss */
 .btn {
-  cursor: pointer; }
+  cursor: pointer;
+}
 
+/* line 110, C:/Nimmi/IDL_S2_Template/src/assets/sass/stylesheet.scss */
 .btn-primary {
   background-color: #1da6fc;
   border-color: #1da6fc;
-  color: #ffffff; }
+  color: #ffffff;
+}
 
+/* line 116, C:/Nimmi/IDL_S2_Template/src/assets/sass/stylesheet.scss */
 .btn-primaryGreen {
   background-color: #28a745;
   border-color: #28a745;
-  color: #ffffff; }
+  color: #ffffff;
+}
 
+/* line 122, C:/Nimmi/IDL_S2_Template/src/assets/sass/stylesheet.scss */
 .btn-success {
   background-color: #72ccb7;
   border-color: #72ccb7;
-  color: #ffffff; }
+  color: #ffffff;
+}
 
+/* line 128, C:/Nimmi/IDL_S2_Template/src/assets/sass/stylesheet.scss */
 .btn-dark {
   background-color: #00d1b2;
   border-color: #00d1b2;
-  color: #ffffff; }
+  color: #ffffff;
+}
 
+/* line 134, C:/Nimmi/IDL_S2_Template/src/assets/sass/stylesheet.scss */
 .btn-darkGray {
   background-color: #333333;
   border-color: #333333;
-  color: #ffffff; }
+  color: #ffffff;
+}
 
+/* line 140, C:/Nimmi/IDL_S2_Template/src/assets/sass/stylesheet.scss */
 .btn-light {
   background-color: transparent;
   border-color: #575757;
-  color: #575757; }
+  color: #575757;
+}
 
+/* line 146, C:/Nimmi/IDL_S2_Template/src/assets/sass/stylesheet.scss */
 .btn-light_2 {
   background-color: transparent;
   border-color: #cccccc;
-  color: #575757; }
+  color: #575757;
+}
 
+/* line 152, C:/Nimmi/IDL_S2_Template/src/assets/sass/stylesheet.scss */
 .formGroupbtn {
   margin-bottom: 0.25rem;
   background: transparent;
@@ -123,21 +174,29 @@ a.clean {
   color: #cccccc;
   padding-bottom: 2px;
   padding-left: 0;
-  border-radius: 0; }
+  border-radius: 0;
+}
 
+/* line 163, C:/Nimmi/IDL_S2_Template/src/assets/sass/stylesheet.scss */
 .btn-primary.disabled,
 .btn-primary:disabled {
-  background-color: #1da6fc; }
+  background-color: #1da6fc;
+}
 
+/* line 168, C:/Nimmi/IDL_S2_Template/src/assets/sass/stylesheet.scss */
 .btn.disabled,
 .btn:disabled {
   opacity: .75;
-  cursor: not-allowed !important; }
+  cursor: not-allowed !important;
+}
 
+/* line 174, C:/Nimmi/IDL_S2_Template/src/assets/sass/stylesheet.scss */
 .btn.w-btn {
   padding-left: 2rem;
-  padding-right: 2rem; }
+  padding-right: 2rem;
+}
 
+/* line 179, C:/Nimmi/IDL_S2_Template/src/assets/sass/stylesheet.scss */
 .btn.roundBtn {
   border-radius: 100%;
   font-size: 1.5rem;
@@ -145,53 +204,73 @@ a.clean {
   height: 40px;
   margin: 0 auto;
   text-align: center;
-  padding-top: 3px; }
+  padding-top: 3px;
+}
 
+/* line 190, C:/Nimmi/IDL_S2_Template/src/assets/sass/stylesheet.scss */
 .btn.roundBtn.dropdown-toggle::after {
   border: 0;
   content: "";
   margin: 0 auto;
-  vertical-align: middle; }
+  vertical-align: middle;
+}
 
+/* line 197, C:/Nimmi/IDL_S2_Template/src/assets/sass/stylesheet.scss */
 .btn.wideBtn {
   position: relative;
-  text-align: left; }
+  text-align: left;
+}
 
+/* line 202, C:/Nimmi/IDL_S2_Template/src/assets/sass/stylesheet.scss */
 .btn.wideBtn.dropdown-toggle::after {
   right: 10px;
   position: absolute;
-  top: 15px; }
+  top: 15px;
+}
 
+/* line 208, C:/Nimmi/IDL_S2_Template/src/assets/sass/stylesheet.scss */
 .noBorderDL,
 .noBorderDL:active,
 .noBorderDL:focus,
 .noBorderDL:hover {
   border: 0 !important;
   background: transparent !important;
-  box-shadow: none !important; }
+  box-shadow: none !important;
+}
 
+/* line 217, C:/Nimmi/IDL_S2_Template/src/assets/sass/stylesheet.scss */
 .noBorderDL.hoverTransparant:hover {
   border: 0 !important;
   background: transparent !important;
-  box-shadow: none !important; }
+  box-shadow: none !important;
+}
 
+/* line 225, C:/Nimmi/IDL_S2_Template/src/assets/sass/stylesheet.scss */
 .sfIconTrans {
   opacity: 0.75;
-  filter: alpha(opacity=75); }
+  filter: alpha(opacity=75);
+}
 
+/* line 230, C:/Nimmi/IDL_S2_Template/src/assets/sass/stylesheet.scss */
 .tmplDrag {
-  cursor: move; }
+  cursor: move;
+}
 
+/* line 239, C:/Nimmi/IDL_S2_Template/src/assets/sass/stylesheet.scss */
 .importStepper .mat-step-header-ripple.mat-ripple {
   display: none !important;
-  visibility: hidden !important; }
+  visibility: hidden !important;
+}
 
+/* line 244, C:/Nimmi/IDL_S2_Template/src/assets/sass/stylesheet.scss */
 .visibleflow {
   overflow: visible !important;
-  visibility: visible !important; }
+  visibility: visible !important;
+}
 
 /***** end: color buttons definations *****/
 /***** start: Skip to link *****/
+/* line 253, C:/Nimmi/IDL_S2_Template/src/assets/sass/stylesheet.scss */
 .sr-only-focusable:active,
 .sr-only-focusable:focus,
 .skiptoLink {
@@ -204,226 +283,359 @@ a.clean {
   text-align: center;
   font-size: 1.385rem;
   font-weight: bold;
-  text-decoration: none; }
+  text-decoration: none;
+}
 
 /***** end: Skip to link *****/
 /***** start: Application specific css *****/
+/* line 272, C:/Nimmi/IDL_S2_Template/src/assets/sass/stylesheet.scss */
 .pt-20 {
-  padding-top: 20px; }
+  padding-top: 20px;
+}
 
+/* line 276, C:/Nimmi/IDL_S2_Template/src/assets/sass/stylesheet.scss */
 .pt3 {
-  padding-top: 1em; }
+  padding-top: 1em;
+}
 
+/* line 280, C:/Nimmi/IDL_S2_Template/src/assets/sass/stylesheet.scss */
 .ml-25 {
-  margin-left: 25px; }
+  margin-left: 25px;
+}
 
+/* line 284, C:/Nimmi/IDL_S2_Template/src/assets/sass/stylesheet.scss */
 .sp_logo {
   width: 44.9px;
   height: 24.1px;
   object-fit: contain;
-  background-color: #ffffff; }
+  background-color: #ffffff;
+}
 
+/* line 291, C:/Nimmi/IDL_S2_Template/src/assets/sass/stylesheet.scss */
 .text-normal {
   font-size: 1rem;
   line-height: 1.43;
-  color: #4a4a4a; }
+  color: #4a4a4a;
+}
 
+/* line 297, C:/Nimmi/IDL_S2_Template/src/assets/sass/stylesheet.scss */
 .text-small {
   font-size: 0.9231rem;
-  color: #999999; }
+  color: #999999;
+}
 
+/* line 302, C:/Nimmi/IDL_S2_Template/src/assets/sass/stylesheet.scss */
 .text-large {
   font-size: 1.077rem;
-  color: #575757; }
+  color: #575757;
+}
 
+/* line 307, C:/Nimmi/IDL_S2_Template/src/assets/sass/stylesheet.scss */
 .text-xlarge {
   font-size: 1.154rem;
-  color: #575757; }
+  color: #575757;
+}
 
+/* line 312, C:/Nimmi/IDL_S2_Template/src/assets/sass/stylesheet.scss */
 .text-80 {
-  font-size: 80px; }
+  font-size: 80px;
+}
 
+/* line 316, C:/Nimmi/IDL_S2_Template/src/assets/sass/stylesheet.scss */
 .text-large-bold {
   font-size: 1.2rem;
   font-weight: bold;
-  color: #575757; }
+  color: #575757;
+}
 
+/* line 323, C:/Nimmi/IDL_S2_Template/src/assets/sass/stylesheet.scss */
 .text-large-bold-white {
   font-size: 1.077rem;
   font-weight: bold;
-  color: #ffffff; }
+  color: #ffffff;
+}
 
+/* line 329, C:/Nimmi/IDL_S2_Template/src/assets/sass/stylesheet.scss */
 .bg-purple {
-  background-color: purple; }
+  background-color: purple;
+}
 
+/* line 333, C:/Nimmi/IDL_S2_Template/src/assets/sass/stylesheet.scss */
 .btn-text {
   font-family: "roboto", sans-serif;
   font-size: 1.077rem;
-  color: #ffffff; }
+  color: #ffffff;
+}
 
+/* line 339, C:/Nimmi/IDL_S2_Template/src/assets/sass/stylesheet.scss */
 .btnDefault {
   background-color: #ff514e;
-  color: #ffffff; }
+  color: #ffffff;
+}
 
+/* line 344, C:/Nimmi/IDL_S2_Template/src/assets/sass/stylesheet.scss */
 .viewAll {
-  font-size: 1.077rem; }
+  font-size: 1.077rem;
+}
 
+/* line 348, C:/Nimmi/IDL_S2_Template/src/assets/sass/stylesheet.scss */
 .lineH_1 {
-  line-height: 1rem; }
+  line-height: 1rem;
+}
 
+/* line 352, C:/Nimmi/IDL_S2_Template/src/assets/sass/stylesheet.scss */
 .lineH_2 {
-  line-height: 2rem; }
+  line-height: 2rem;
+}
 
+/* line 356, C:/Nimmi/IDL_S2_Template/src/assets/sass/stylesheet.scss */
 .catTitle {
   font-weight: 600;
   color: #3f454c !important;
-  font-size: 1.154rem; }
+  font-size: 1.154rem;
+}
 
+/* line 362, C:/Nimmi/IDL_S2_Template/src/assets/sass/stylesheet.scss */
 .subCategory {
   font-weight: 600;
   color: #3f454c !important;
-  font-size: 0.9231rem; }
+  font-size: 0.9231rem;
+}
 
+/* line 368, C:/Nimmi/IDL_S2_Template/src/assets/sass/stylesheet.scss */
 .InfotypeLight {
-  color: #999999; }
+  color: #999999;
+}
 
+/* line 372, C:/Nimmi/IDL_S2_Template/src/assets/sass/stylesheet.scss */
 .pl-15 {
-  padding-left: 15px; }
+  padding-left: 15px;
+}
 
+/* line 376, C:/Nimmi/IDL_S2_Template/src/assets/sass/stylesheet.scss */
 .pl-2-5 {
-  padding-left: 0.75rem; }
+  padding-left: 0.75rem;
+}
 
+/* line 381, C:/Nimmi/IDL_S2_Template/src/assets/sass/stylesheet.scss */
 .sidebar-column ul {
   margin: 0;
   padding: 0;
-  list-style: none; }
-  .sidebar-column ul li {
-    width: 132px;
-    padding-left: 10px; }
-    .sidebar-column ul li a {
-      display: block;
-      color: #ffffff;
-      text-decoration: none; }
-      .sidebar-column ul li a:hover {
-        text-decoration: none; }
-    .sidebar-column ul li:first-child {
-      padding-left: 0; }
-  .sidebar-column ul li.active {
-    background-color: #333333; }
+  list-style: none;
+}
+
+/* line 385, C:/Nimmi/IDL_S2_Template/src/assets/sass/stylesheet.scss */
+.sidebar-column ul li {
+  width: 132px;
+  padding-left: 10px;
+}
+
+/* line 388, C:/Nimmi/IDL_S2_Template/src/assets/sass/stylesheet.scss */
+.sidebar-column ul li a {
+  display: block;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+/* line 392, C:/Nimmi/IDL_S2_Template/src/assets/sass/stylesheet.scss */
+.sidebar-column ul li a:hover {
+  text-decoration: none;
+}
+
+/* line 396, C:/Nimmi/IDL_S2_Template/src/assets/sass/stylesheet.scss */
+.sidebar-column ul li:first-child {
+  padding-left: 0;
+}
+
+/* line 400, C:/Nimmi/IDL_S2_Template/src/assets/sass/stylesheet.scss */
+.sidebar-column ul li.active {
+  background-color: #333333;
+}
+
+/* line 405, C:/Nimmi/IDL_S2_Template/src/assets/sass/stylesheet.scss */
 .sidebar-column ul.top li {
   height: 70px;
-  line-height: 70px; }
-  .sidebar-column ul.top li:first-child {
-    background-color: #ffffff;
-    line-height: normal; }
+  line-height: 70px;
+}
+
+/* line 408, C:/Nimmi/IDL_S2_Template/src/assets/sass/stylesheet.scss */
+.sidebar-column ul.top li:first-child {
+  background-color: #ffffff;
+  line-height: normal;
+}
+
+/* line 415, C:/Nimmi/IDL_S2_Template/src/assets/sass/stylesheet.scss */
 .sidebar-column ul.avatarIcon li {
-  margin-bottom: 15px; }
+  margin-bottom: 15px;
+}
 
+/* line 421, C:/Nimmi/IDL_S2_Template/src/assets/sass/stylesheet.scss */
 .w-40 {
-  width: 40% !important; }
+  width: 40% !important;
+}
 
+/* line 425, C:/Nimmi/IDL_S2_Template/src/assets/sass/stylesheet.scss */
 .brandLogo {
   height: 50px;
-  width: 100%; }
+  width: 100%;
+}
 
+/* line 431, C:/Nimmi/IDL_S2_Template/src/assets/sass/stylesheet.scss */
 .logo-round {
   max-height: 110px;
-  padding: 0.5rem; }
+  padding: 0.5rem;
+}
 
+/* line 436, C:/Nimmi/IDL_S2_Template/src/assets/sass/stylesheet.scss */
 .logo {
   background-color: #ff514e;
   height: 100%;
   width: 100%;
-  max-height: 80px; }
+  max-height: 80px;
+}
 
+/* line 443, C:/Nimmi/IDL_S2_Template/src/assets/sass/stylesheet.scss */
 .idLink-logo {
   height: 70px;
   width: auto;
-  padding: 15px; }
+  padding: 15px;
+}
 
+/* line 449, C:/Nimmi/IDL_S2_Template/src/assets/sass/stylesheet.scss */
 .topHeader {
   background-color: #ffffff;
   height: 70px;
   -webkit-box-shadow: 3px 0 5px -2px #999999;
   box-shadow: 3px 0 5px -2px #999999;
   margin: 0px -15px 0 100px;
-  padding-left: 45px; }
+  padding-left: 45px;
+}
 
+/* line 458, C:/Nimmi/IDL_S2_Template/src/assets/sass/stylesheet.scss */
 .company-logo {
   width: auto;
   max-width: 140px;
   max-height: 70px;
   margin: 1rem;
-  overflow: hidden; }
+  overflow: hidden;
+}
 
+/* line 469, C:/Nimmi/IDL_S2_Template/src/assets/sass/stylesheet.scss */
 .avatarIcon img {
   width: 42px;
   height: 42px;
-  margin: 0px; }
-  .avatarIcon img.circle-image {
-    border-radius: 50%; }
+  margin: 0px;
+}
 
+/* line 473, C:/Nimmi/IDL_S2_Template/src/assets/sass/stylesheet.scss */
+.avatarIcon img.circle-image {
+  border-radius: 50%;
+}
+
+/* line 479, C:/Nimmi/IDL_S2_Template/src/assets/sass/stylesheet.scss */
 .minStage {
-  min-height: 576px; }
+  min-height: 576px;
+}
 
+/* line 483, C:/Nimmi/IDL_S2_Template/src/assets/sass/stylesheet.scss */
 .wrapText {
   word-wrap: break-word;
-  word-break: break-all; }
+  word-break: break-all;
+}
 
+/* line 488, C:/Nimmi/IDL_S2_Template/src/assets/sass/stylesheet.scss */
 .ellisisText {
   overflow: hidden;
   white-space: nowrap;
-  text-overflow: ellipsis; }
+  text-overflow: ellipsis;
+}
 
+/* line 495, C:/Nimmi/IDL_S2_Template/src/assets/sass/stylesheet.scss */
 .searchComponent input {
   background: #ffffff url(../images/search.svg) no-repeat scroll 7px 7px;
   padding-left: 40px;
-  font-size: 100%; }
+  font-size: 100%;
+}
+
+/* line 500, C:/Nimmi/IDL_S2_Template/src/assets/sass/stylesheet.scss */
 .searchComponent .badge {
   background-color: #ff514e;
   position: absolute;
   margin-top: 0px;
   margin-left: -12px;
   border-radius: 100%;
-  padding: 3px 6px; }
+  padding: 3px 6px;
+}
+
+/* line 508, C:/Nimmi/IDL_S2_Template/src/assets/sass/stylesheet.scss */
 .searchComponent .searchBar {
   padding-right: 15px;
-  padding-left: 15px; }
+  padding-left: 15px;
+}
 
+/* line 517, C:/Nimmi/IDL_S2_Template/src/assets/sass/stylesheet.scss */
 .topHeader span.appTitle {
   color: #575757;
   font-weight: bold;
   line-height: 38px;
-  margin-right: 3px; }
-.topHeader a {
-  color: inherit; }
-  .topHeader a.safeOnlinedropdown:after {
-    content: none; }
-.topHeader a.btn-primary {
-  color: #ffffff; }
+  margin-right: 3px;
+}
 
+/* line 523, C:/Nimmi/IDL_S2_Template/src/assets/sass/stylesheet.scss */
+.topHeader a {
+  color: inherit;
+}
+
+/* line 525, C:/Nimmi/IDL_S2_Template/src/assets/sass/stylesheet.scss */
+.topHeader a.safeOnlinedropdown:after {
+  content: none;
+}
+
+/* line 529, C:/Nimmi/IDL_S2_Template/src/assets/sass/stylesheet.scss */
+.topHeader a.btn-primary {
+  color: #ffffff;
+}
+
+/* line 534, C:/Nimmi/IDL_S2_Template/src/assets/sass/stylesheet.scss */
 .alert-notification {
   color: #000000;
   font-family: "roboto", sans-serif;
   background-color: #e3f5f5;
-  border: 2px solid #00ddbb; }
-  .alert-notification ul li {
-    list-style: none; }
-  .alert-notification span.notification {
-    display: block;
-    font-size: 1.308rem; }
-  .alert-notification > div {
-    display: inline-block; }
-  .alert-notification button.close {
-    font-size: 1.154rem;
-    text-shadow: none;
-    font-weight: normal; }
-  .alert-notification svg.notificationIco {
-    width: 35px;
-    height: 32px;
-    fill: #00ddbb;
-    vertical-align: top; }
+  border: 2px solid #00ddbb;
+}
 
+/* line 539, C:/Nimmi/IDL_S2_Template/src/assets/sass/stylesheet.scss */
+.alert-notification ul li {
+  list-style: none;
+}
+
+/* line 542, C:/Nimmi/IDL_S2_Template/src/assets/sass/stylesheet.scss */
+.alert-notification span.notification {
+  display: block;
+  font-size: 1.308rem;
+}
+
+/* line 546, C:/Nimmi/IDL_S2_Template/src/assets/sass/stylesheet.scss */
+.alert-notification > div {
+  display: inline-block;
+}
+
+/* line 549, C:/Nimmi/IDL_S2_Template/src/assets/sass/stylesheet.scss */
+.alert-notification button.close {
+  font-size: 1.154rem;
+  text-shadow: none;
+  font-weight: normal;
+}
+
+/* line 556, C:/Nimmi/IDL_S2_Template/src/assets/sass/stylesheet.scss */
+.alert-notification svg.notificationIco {
+  width: 35px;
+  height: 32px;
+  fill: #00ddbb;
+  vertical-align: top;
+}
+
+/* line 564, C:/Nimmi/IDL_S2_Template/src/assets/sass/stylesheet.scss */
 .spBadge {
   background-color: #ff514e;
   color: #ffffff;
@@ -438,16 +650,30 @@ a.clean {
   border-radius: 100%;
   position: relative;
   top: -2px;
-  left: 5px; }
+  left: 5px;
+}
 
+/* line 582, C:/Nimmi/IDL_S2_Template/src/assets/sass/stylesheet.scss */
 .dashboard.row {
-  margin-bottom: 15px; }
+  margin-bottom: 15px;
+}
+
+/* line 590, C:/Nimmi/IDL_S2_Template/src/assets/sass/stylesheet.scss */
 .dashboard .ml-15 {
-  margin-left: 15px; }
+  margin-left: 15px;
+}
+
+/* line 593, C:/Nimmi/IDL_S2_Template/src/assets/sass/stylesheet.scss */
 .dashboard .mr-15 {
-  margin-right: 15px; }
+  margin-right: 15px;
+}
+
+/* line 596, C:/Nimmi/IDL_S2_Template/src/assets/sass/stylesheet.scss */
 .dashboard .pl-20 {
-  padding-left: 20px; }
+  padding-left: 20px;
+}
+
+/* line 599, C:/Nimmi/IDL_S2_Template/src/assets/sass/stylesheet.scss */
 .dashboard .pendingItems,
 .dashboard .awaitingItems,
 .dashboard .inprocessItems,
@@ -455,72 +681,122 @@ a.clean {
   color: #4a4a4a;
   font-size: 0.9231rem;
   padding: 30px 0 0 0;
-  border-radius: 4px; }
+  border-radius: 4px;
+}
+
+/* line 608, C:/Nimmi/IDL_S2_Template/src/assets/sass/stylesheet.scss */
 .dashboard .tableheaderRow {
-  padding: 10px 15px; }
+  padding: 10px 15px;
+}
+
+/* line 611, C:/Nimmi/IDL_S2_Template/src/assets/sass/stylesheet.scss */
 .dashboard .tableRow {
-  padding: 10px 15px; }
-  .dashboard .tableRow:hover {
-    background-color: #f9f9f9; }
+  padding: 10px 15px;
+}
+
+/* line 616, C:/Nimmi/IDL_S2_Template/src/assets/sass/stylesheet.scss */
+.dashboard .tableRow:hover {
+  background-color: #f9f9f9;
+}
+
+/* line 620, C:/Nimmi/IDL_S2_Template/src/assets/sass/stylesheet.scss */
 .dashboard .table thead th {
-  padding: 20px 0 5px 20px; }
+  padding: 20px 0 5px 20px;
+}
+
+/* line 623, C:/Nimmi/IDL_S2_Template/src/assets/sass/stylesheet.scss */
 .dashboard .table td,
 .dashboard .table th,
 .dashboard table tr td {
-  padding-left: 20px; }
+  padding-left: 20px;
+}
 
+/* line 630, C:/Nimmi/IDL_S2_Template/src/assets/sass/stylesheet.scss */
 .whiteBg {
-  background-color: #ffffff; }
+  background-color: #ffffff;
+}
 
+/* line 634, C:/Nimmi/IDL_S2_Template/src/assets/sass/stylesheet.scss */
 .dataTitle {
   color: #999999;
   font-size: 0.9231rem;
   font-weight: bold;
-  letter-spacing: 0.1px; }
+  letter-spacing: 0.1px;
+}
 
+/* line 641, C:/Nimmi/IDL_S2_Template/src/assets/sass/stylesheet.scss */
 .exmapleItem1 {
-  color: #ff514e; }
+  color: #ff514e;
+}
 
+/* line 645, C:/Nimmi/IDL_S2_Template/src/assets/sass/stylesheet.scss */
 .exampleItem2 {
-  color: #cccccc; }
+  color: #cccccc;
+}
 
+/* line 649, C:/Nimmi/IDL_S2_Template/src/assets/sass/stylesheet.scss */
 .exampleItem3 {
-  color: #000000; }
+  color: #000000;
+}
 
+/* line 653, C:/Nimmi/IDL_S2_Template/src/assets/sass/stylesheet.scss */
 .exampleItem4 {
-  color: #333333; }
+  color: #333333;
+}
 
 /* SVG */
+/* line 659, C:/Nimmi/IDL_S2_Template/src/assets/sass/stylesheet.scss */
 .text-wrap {
-  white-space: normal !important; }
+  white-space: normal !important;
+}
 
+/* line 663, C:/Nimmi/IDL_S2_Template/src/assets/sass/stylesheet.scss */
 .userView {
   background-color: #ffffff;
   padding: 2rem;
-  border-radius: 3px; }
-  .userView .textLabel {
-    color: #b0afaf;
-    font-size: 1rem;
-    font-weight: bold;
-    text-transform: uppercase; }
-  .userView .userSeachbox {
-    border-radius: 0px;
-    background: #ffffff url(../images/search.svg) no-repeat scroll 7px 7px;
-    padding-left: 40px;
-    font-size: 1rem; }
-  .userView .filterPanel {
-    margin: 3rem auto; }
+  border-radius: 3px;
+}
 
+/* line 667, C:/Nimmi/IDL_S2_Template/src/assets/sass/stylesheet.scss */
+.userView .textLabel {
+  color: #b0afaf;
+  font-size: 1rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+/* line 675, C:/Nimmi/IDL_S2_Template/src/assets/sass/stylesheet.scss */
+.userView .userSeachbox {
+  border-radius: 0px;
+  background: #ffffff url(../images/search.svg) no-repeat scroll 7px 7px;
+  padding-left: 40px;
+  font-size: 1rem;
+}
+
+/* line 681, C:/Nimmi/IDL_S2_Template/src/assets/sass/stylesheet.scss */
+.userView .filterPanel {
+  margin: 3rem auto;
+}
+
+/* line 686, C:/Nimmi/IDL_S2_Template/src/assets/sass/stylesheet.scss */
 .panel {
-  margin-bottom: 21px; }
-  .panel .panel-heading {
-    padding: 10px 15px;
-    font-size: 1.077rem; }
-    .panel .panel-heading .panel-title {
-      margin-top: 0;
-      margin-bottom: 0;
-      font-size: 1.231rem; }
+  margin-bottom: 21px;
+}
 
+/* line 688, C:/Nimmi/IDL_S2_Template/src/assets/sass/stylesheet.scss */
+.panel .panel-heading {
+  padding: 10px 15px;
+  font-size: 1.077rem;
+}
+
+/* line 691, C:/Nimmi/IDL_S2_Template/src/assets/sass/stylesheet.scss */
+.panel .panel-heading .panel-title {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 1.231rem;
+}
+
+/* line 700, C:/Nimmi/IDL_S2_Template/src/assets/sass/stylesheet.scss */
 .userView .list-group {
   display: -webkit-box;
   display: -webkit-flex;
@@ -535,66 +811,104 @@ a.clean {
   margin-bottom: 0;
   line-height: 1.3;
   margin-bottom: 20px;
-  padding-left: 0; }
-  .userView .list-group .list-group-item {
-    position: relative;
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-flex-flow: row wrap;
-    -ms-flex-flow: row wrap;
-    flex-flow: row wrap;
-    -webkit-box-align: center;
-    -webkit-align-items: center;
-    -ms-flex-align: center;
-    align-items: center;
-    margin-bottom: -1px;
-    display: block;
-    padding: 10px;
-    padding: .75rem;
-    background: transparent;
-    border: 0px; }
+  padding-left: 0;
+}
 
+/* line 715, C:/Nimmi/IDL_S2_Template/src/assets/sass/stylesheet.scss */
+.userView .list-group .list-group-item {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-flow: row wrap;
+  -ms-flex-flow: row wrap;
+  flex-flow: row wrap;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-bottom: -1px;
+  display: block;
+  padding: 10px;
+  padding: .75rem;
+  background: transparent;
+  border: 0px;
+}
+
+/* line 739, C:/Nimmi/IDL_S2_Template/src/assets/sass/stylesheet.scss */
 .filterPanel .list-item {
-  padding: 0.55rem 0; }
-  .filterPanel .list-item .circle.circle-lg {
-    margin-right: 10px; }
+  padding: 0.55rem 0;
+}
 
+/* line 741, C:/Nimmi/IDL_S2_Template/src/assets/sass/stylesheet.scss */
+.filterPanel .list-item .circle.circle-lg {
+  margin-right: 10px;
+}
+
+/* line 747, C:/Nimmi/IDL_S2_Template/src/assets/sass/stylesheet.scss */
 .media-box {
   overflow: hidden;
-  zoom: 1; }
-  .media-box .media-box:first-child {
-    margin-top: 0; }
-  .media-box .media-box {
-    margin-top: 10px; }
-  .media-box .media-box-body {
-    margin-top: 10px;
-    overflow: hidden;
-    zoom: 1; }
-  .media-box .media-box-heading {
-    margin: 0 0 5px; }
-  .media-box > .float-left {
-    margin-right: 10px; }
+  zoom: 1;
+}
 
+/* line 750, C:/Nimmi/IDL_S2_Template/src/assets/sass/stylesheet.scss */
+.media-box .media-box:first-child {
+  margin-top: 0;
+}
+
+/* line 753, C:/Nimmi/IDL_S2_Template/src/assets/sass/stylesheet.scss */
+.media-box .media-box {
+  margin-top: 10px;
+}
+
+/* line 756, C:/Nimmi/IDL_S2_Template/src/assets/sass/stylesheet.scss */
+.media-box .media-box-body {
+  margin-top: 10px;
+  overflow: hidden;
+  zoom: 1;
+}
+
+/* line 761, C:/Nimmi/IDL_S2_Template/src/assets/sass/stylesheet.scss */
+.media-box .media-box-heading {
+  margin: 0 0 5px;
+}
+
+/* line 764, C:/Nimmi/IDL_S2_Template/src/assets/sass/stylesheet.scss */
+.media-box > .float-left {
+  margin-right: 10px;
+}
+
+/* line 769, C:/Nimmi/IDL_S2_Template/src/assets/sass/stylesheet.scss */
 .media-box-object {
-  display: block; }
-  .media-box-object.img-circle {
-    border-radius: 50%;
-    overflow: hidden; }
+  display: block;
+}
 
+/* line 771, C:/Nimmi/IDL_S2_Template/src/assets/sass/stylesheet.scss */
+.media-box-object.img-circle {
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+/* line 777, C:/Nimmi/IDL_S2_Template/src/assets/sass/stylesheet.scss */
 .thumb50 {
   width: 50px !important;
   height: 50px !important;
-  overflow: hidden; }
+  overflow: hidden;
+}
 
+/* line 783, C:/Nimmi/IDL_S2_Template/src/assets/sass/stylesheet.scss */
 .mb-sm,
 .mv-sm {
-  margin-bottom: 5px !important; }
+  margin-bottom: 5px !important;
+}
 
+/* line 788, C:/Nimmi/IDL_S2_Template/src/assets/sass/stylesheet.scss */
 .cyanTxt {
-  color: #00ddbb; }
+  color: #00ddbb;
+}
 
+/* line 792, C:/Nimmi/IDL_S2_Template/src/assets/sass/stylesheet.scss */
 .circle {
   display: inline-block;
   width: 7px;
@@ -603,118 +917,176 @@ a.clean {
   margin: 0;
   background-color: #ffffff;
   vertical-align: baseline;
-  border: 2px solid transparent; }
-  .circle.circle-lg {
-    width: 11px;
-    height: 11px; }
-  .circle.circle.bottomPos {
-    left: 47px;
-    position: absolute;
-    bottom: 20px;
-    border: 1px solid #ffffff; }
+  border: 2px solid transparent;
+}
 
+/* line 801, C:/Nimmi/IDL_S2_Template/src/assets/sass/stylesheet.scss */
+.circle.circle-lg {
+  width: 11px;
+  height: 11px;
+}
+
+/* line 805, C:/Nimmi/IDL_S2_Template/src/assets/sass/stylesheet.scss */
+.circle.circle.bottomPos {
+  left: 47px;
+  position: absolute;
+  bottom: 20px;
+  border: 1px solid #ffffff;
+}
+
+/* line 813, C:/Nimmi/IDL_S2_Template/src/assets/sass/stylesheet.scss */
 .circle-sent {
   background-color: #72ccb7 !important;
-  border: 1px solid #72ccb7 !important; }
+  border: 1px solid #72ccb7 !important;
+}
 
+/* line 819, C:/Nimmi/IDL_S2_Template/src/assets/sass/stylesheet.scss */
 .circle-received,
 .circle-receivedbyconsumer {
-  background-color: #72ccb7 !important; }
+  background-color: #72ccb7 !important;
+}
 
+/* line 824, C:/Nimmi/IDL_S2_Template/src/assets/sass/stylesheet.scss */
 .circle-pending,
 .circle-pendingapproval {
-  background-color: #ff8f00 !important; }
+  background-color: #ff8f00 !important;
+}
 
+/* line 829, C:/Nimmi/IDL_S2_Template/src/assets/sass/stylesheet.scss */
 .circle-cancelled,
 .circle-rejected {
-  background-color: #ff514e !important; }
+  background-color: #ff514e !important;
+}
 
+/* line 834, C:/Nimmi/IDL_S2_Template/src/assets/sass/stylesheet.scss */
 .circle-deadline,
 .circle-incomplete {
-  background-color: #ff514e !important; }
+  background-color: #ff514e !important;
+}
 
+/* line 839, C:/Nimmi/IDL_S2_Template/src/assets/sass/stylesheet.scss */
 .circle-showall {
-  background-color: #3f454c !important; }
+  background-color: #3f454c !important;
+}
 
+/* line 843, C:/Nimmi/IDL_S2_Template/src/assets/sass/stylesheet.scss */
 .circle-new,
 .circle-newrequest {
   background-color: transparent;
-  border: 1px solid #3f454c !important; }
+  border: 1px solid #3f454c !important;
+}
 
+/* line 849, C:/Nimmi/IDL_S2_Template/src/assets/sass/stylesheet.scss */
 .circle-inprogress {
-  background-color: #ff8f00 !important; }
+  background-color: #ff8f00 !important;
+}
 
+/* line 853, C:/Nimmi/IDL_S2_Template/src/assets/sass/stylesheet.scss */
 .circle-completed,
 .circle-approved,
 .circle-downloadedbyconsumer {
-  background-color: #72ccb7 !important; }
+  background-color: #72ccb7 !important;
+}
 
+/* line 859, C:/Nimmi/IDL_S2_Template/src/assets/sass/stylesheet.scss */
 .grayBg {
-  background-color: #cccccc !important; }
+  background-color: #cccccc !important;
+}
 
+/* line 863, C:/Nimmi/IDL_S2_Template/src/assets/sass/stylesheet.scss */
 .text-success,
 .text-sent,
 .text-completed,
 .text-approved,
 .text-downloadedbyconsumer {
   color: #72ccb7 !important;
-  font-size: 1rem; }
+  font-size: 1rem;
+}
 
+/* line 872, C:/Nimmi/IDL_S2_Template/src/assets/sass/stylesheet.scss */
 .text-received,
 .text-receivedbyconsumer {
   color: #72ccb7 !important;
-  font-size: 1rem; }
+  font-size: 1rem;
+}
 
+/* line 878, C:/Nimmi/IDL_S2_Template/src/assets/sass/stylesheet.scss */
 .text-pending,
 .text-pendingapproval {
   color: #ff8f00 !important;
-  font-size: 1rem; }
+  font-size: 1rem;
+}
 
+/* line 884, C:/Nimmi/IDL_S2_Template/src/assets/sass/stylesheet.scss */
 .text-cancelled,
 .text-rejected {
   color: #ff514e !important;
-  font-size: 1rem; }
+  font-size: 1rem;
+}
 
+/* line 890, C:/Nimmi/IDL_S2_Template/src/assets/sass/stylesheet.scss */
 .text-deadline,
 .text-incomplete {
   color: #ff514e !important;
-  font-size: 1rem; }
+  font-size: 1rem;
+}
 
+/* line 896, C:/Nimmi/IDL_S2_Template/src/assets/sass/stylesheet.scss */
 .circle-deadline-whiteTxt {
   background-color: #ff514e !important;
-  color: #ffffff; }
+  color: #ffffff;
+}
 
+/* line 901, C:/Nimmi/IDL_S2_Template/src/assets/sass/stylesheet.scss */
 .circle-deadline-whiteTxt:hover {
   background-color: #ff514e !important;
-  color: #ffffff; }
+  color: #ffffff;
+}
 
+/* line 908, C:/Nimmi/IDL_S2_Template/src/assets/sass/stylesheet.scss */
 .reqFilter .list-group .list-item {
   margin-top: 3px;
   margin-bottom: 3px;
   padding: 0;
-  position: relative; }
-  .reqFilter .list-group .list-item a {
-    display: block;
-    margin-right: 25px;
-    color: #3f454c; }
-  .reqFilter .list-group .list-item span.cancelFilter {
-    display: none;
-    position: absolute;
-    right: 15px;
-    top: 7px;
-    cursor: pointer; }
-  .reqFilter .list-group .list-item.activeFilter, .reqFilter .list-group .list-item.customFilter {
-    background-color: #f9f9f9;
-    padding: 0.5rem 0.5rem !important;
-    border-radius: 3px;
-    border: 1px solid #cccccc;
-    margin-left: -8px; }
-    .reqFilter .list-group .list-item.activeFilter span.cancelFilter, .reqFilter .list-group .list-item.customFilter span.cancelFilter {
-      display: block; }
+  position: relative;
+}
 
+/* line 913, C:/Nimmi/IDL_S2_Template/src/assets/sass/stylesheet.scss */
+.reqFilter .list-group .list-item a {
+  display: block;
+  margin-right: 25px;
+  color: #3f454c;
+}
+
+/* line 918, C:/Nimmi/IDL_S2_Template/src/assets/sass/stylesheet.scss */
+.reqFilter .list-group .list-item span.cancelFilter {
+  display: none;
+  position: absolute;
+  right: 15px;
+  top: 7px;
+  cursor: pointer;
+}
+
+/* line 925, C:/Nimmi/IDL_S2_Template/src/assets/sass/stylesheet.scss */
+.reqFilter .list-group .list-item.activeFilter, .reqFilter .list-group .list-item.customFilter {
+  background-color: #f9f9f9;
+  padding: 0.5rem 0.5rem !important;
+  border-radius: 3px;
+  border: 1px solid #cccccc;
+  margin-left: -8px;
+}
+
+/* line 932, C:/Nimmi/IDL_S2_Template/src/assets/sass/stylesheet.scss */
+.reqFilter .list-group .list-item.activeFilter span.cancelFilter, .reqFilter .list-group .list-item.customFilter span.cancelFilter {
+  display: block;
+}
+
+/* line 940, C:/Nimmi/IDL_S2_Template/src/assets/sass/stylesheet.scss */
 .mt-2-5 {
-  margin-top: 2.5rem; }
+  margin-top: 2.5rem;
+}
 
+/* line 944, C:/Nimmi/IDL_S2_Template/src/assets/sass/stylesheet.scss */
 .inputLabel {
   bottom: 0;
   left: 0;
@@ -729,8 +1101,10 @@ a.clean {
   color: #575757;
   font-size: 0.9231rem;
   visibility: visible;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+}
 
+/* line 961, C:/Nimmi/IDL_S2_Template/src/assets/sass/stylesheet.scss */
 .sf_inputLabel {
   display: block;
   width: 100%;
@@ -738,30 +1112,40 @@ a.clean {
   color: #575757;
   font-size: 0.9231rem;
   margin-top: 20px;
-  margin-bottom: 0; }
+  margin-bottom: 0;
+}
 
+/* line 974, C:/Nimmi/IDL_S2_Template/src/assets/sass/stylesheet.scss */
 .safePlaceHolder::-webkit-input-placeholder {
   font-size: 0.9231rem;
   font-weight: 500;
-  color: #999999; }
+  color: #999999;
+}
 
+/* line 980, C:/Nimmi/IDL_S2_Template/src/assets/sass/stylesheet.scss */
 .safePlaceHolder::-moz-placeholder {
   font-size: 0.9231rem;
   font-weight: 500;
-  color: #999999; }
+  color: #999999;
+}
 
+/* line 986, C:/Nimmi/IDL_S2_Template/src/assets/sass/stylesheet.scss */
 .safePlaceHolder:-ms-input-placeholder {
   /* IE 10+ */
   font-size: 0.9231rem;
   font-weight: 500;
-  color: #999999; }
+  color: #999999;
+}
 
+/* line 993, C:/Nimmi/IDL_S2_Template/src/assets/sass/stylesheet.scss */
 .safePlaceHolder:-moz-placeholder {
   /* Firefox 18- */
   font-size: 0.9231rem;
   font-weight: 500;
-  color: #999999; }
+  color: #999999;
+}
 
+/* line 1000, C:/Nimmi/IDL_S2_Template/src/assets/sass/stylesheet.scss */
 .form-control.noBorder,
 input.inputNoborder {
   padding-left: 2px;
@@ -769,247 +1153,356 @@ input.inputNoborder {
   padding-bottom: 2px;
   border-radius: 0;
   border: 0px;
-  border-bottom: 1px solid #cccccc; }
+  border-bottom: 1px solid #cccccc;
+}
 
+/* line 1010, C:/Nimmi/IDL_S2_Template/src/assets/sass/stylesheet.scss */
 .input-group-addon.noBorder {
   background: transparent;
   border: 0px;
   margin-left: -30px;
-  padding-right: 10px; }
+  padding-right: 10px;
+}
 
+/* line 1017, C:/Nimmi/IDL_S2_Template/src/assets/sass/stylesheet.scss */
 .userName {
   font-size: 1rem;
-  font-weight: bold; }
+  font-weight: bold;
+}
 
 /***** start: login page *****/
+/* line 1024, C:/Nimmi/IDL_S2_Template/src/assets/sass/stylesheet.scss */
 .backBtn {
   position: absolute;
   top: 2rem;
-  left: 1rem; }
+  left: 1rem;
+}
 
+/* line 1030, C:/Nimmi/IDL_S2_Template/src/assets/sass/stylesheet.scss */
 .backBtnColor {
-  fill: #575757; }
+  fill: #575757;
+}
 
+/* line 1034, C:/Nimmi/IDL_S2_Template/src/assets/sass/stylesheet.scss */
 .login-wrapper {
   display: table;
   width: 100%;
   height: 100%;
   /* For at least Firefox */
   min-height: 100%;
-  background: #ffffff; }
-  .login-wrapper .login {
-    max-width: 450px; }
-    .login-wrapper .login form {
-      padding-top: 2rem; }
-  .login-wrapper .login-wrapper-inner {
-    display: table-cell;
-    vertical-align: top; }
-    .login-wrapper .login-wrapper-inner .login-container {
-      margin-right: auto;
-      margin-left: auto; }
-    .login-wrapper .login-wrapper-inner .loginBtn {
-      margin: 3rem 0;
-      text-align: center;
-      padding: 0 15%; }
-    .login-wrapper .login-wrapper-inner .btnTitle {
-      font-weight: 500;
-      font-family: "roboto", sans-serif;
-      font-size: 1.385rem;
-      color: #575757; }
-    .login-wrapper .login-wrapper-inner .forgotPwd {
-      font-weight: 500;
-      font-family: "roboto", sans-serif;
-      font-size: 0.7692rem;
-      color: #575757; }
-    .login-wrapper .login-wrapper-inner .signupBtn {
-      margin-top: 0.50rem;
-      font-size: 1.077rem; }
-    .login-wrapper .login-wrapper-inner .register-title {
-      font-family: "roboto", sans-serif;
-      font-size: 1.385rem;
-      font-weight: 500;
-      color: #575757;
-      margin: 20px auto; }
-    .login-wrapper .login-wrapper-inner .sub-heading {
-      font-weight: bold;
-      font-family: "roboto", sans-serif;
-      font-size: 0.9231rem;
-      color: #333333;
-      margin: 3rem auto 1.75rem auto; }
-    .login-wrapper .login-wrapper-inner .bgWrapper {
-      display: block;
-      width: 100%;
-      margin-top: 20px; }
-      .login-wrapper .login-wrapper-inner .bgWrapper img {
-        width: 100%;
-        margin-bottom: 80px;
-        max-width: 100%;
-        vertical-align: middle;
-        display: inline-block;
-        border: 0; }
+  background: #ffffff;
+}
 
+/* line 1041, C:/Nimmi/IDL_S2_Template/src/assets/sass/stylesheet.scss */
+.login-wrapper .login {
+  max-width: 450px;
+}
+
+/* line 1043, C:/Nimmi/IDL_S2_Template/src/assets/sass/stylesheet.scss */
+.login-wrapper .login form {
+  padding-top: 2rem;
+}
+
+/* line 1047, C:/Nimmi/IDL_S2_Template/src/assets/sass/stylesheet.scss */
+.login-wrapper .login-wrapper-inner {
+  display: table-cell;
+  vertical-align: top;
+}
+
+/* line 1050, C:/Nimmi/IDL_S2_Template/src/assets/sass/stylesheet.scss */
+.login-wrapper .login-wrapper-inner .login-container {
+  margin-right: auto;
+  margin-left: auto;
+}
+
+/* line 1054, C:/Nimmi/IDL_S2_Template/src/assets/sass/stylesheet.scss */
+.login-wrapper .login-wrapper-inner .loginBtn {
+  margin: 3rem 0;
+  text-align: center;
+  padding: 0 15%;
+}
+
+/* line 1059, C:/Nimmi/IDL_S2_Template/src/assets/sass/stylesheet.scss */
+.login-wrapper .login-wrapper-inner .btnTitle {
+  font-weight: 500;
+  font-family: "roboto", sans-serif;
+  font-size: 1.385rem;
+  color: #575757;
+}
+
+/* line 1065, C:/Nimmi/IDL_S2_Template/src/assets/sass/stylesheet.scss */
+.login-wrapper .login-wrapper-inner .forgotPwd {
+  font-weight: 500;
+  font-family: "roboto", sans-serif;
+  font-size: 0.7692rem;
+  color: #575757;
+}
+
+/* line 1071, C:/Nimmi/IDL_S2_Template/src/assets/sass/stylesheet.scss */
+.login-wrapper .login-wrapper-inner .signupBtn {
+  margin-top: 0.50rem;
+  font-size: 1.077rem;
+}
+
+/* line 1075, C:/Nimmi/IDL_S2_Template/src/assets/sass/stylesheet.scss */
+.login-wrapper .login-wrapper-inner .register-title {
+  font-family: "roboto", sans-serif;
+  font-size: 1.385rem;
+  font-weight: 500;
+  color: #575757;
+  margin: 20px auto;
+}
+
+/* line 1082, C:/Nimmi/IDL_S2_Template/src/assets/sass/stylesheet.scss */
+.login-wrapper .login-wrapper-inner .sub-heading {
+  font-weight: bold;
+  font-family: "roboto", sans-serif;
+  font-size: 0.9231rem;
+  color: #333333;
+  margin: 3rem auto 1.75rem auto;
+}
+
+/* line 1089, C:/Nimmi/IDL_S2_Template/src/assets/sass/stylesheet.scss */
+.login-wrapper .login-wrapper-inner .bgWrapper {
+  display: block;
+  width: 100%;
+  margin-top: 20px;
+}
+
+/* line 1099, C:/Nimmi/IDL_S2_Template/src/assets/sass/stylesheet.scss */
+.login-wrapper .login-wrapper-inner .bgWrapper img {
+  width: 100%;
+  margin-bottom: 80px;
+  max-width: 100%;
+  vertical-align: middle;
+  display: inline-block;
+  border: 0;
+}
+
+/* line 1113, C:/Nimmi/IDL_S2_Template/src/assets/sass/stylesheet.scss */
 .loginForm .form-group + .form-group,
 .joinForm .form-group + .form-group {
-  margin-top: 2rem; }
+  margin-top: 2rem;
+}
 
+/* line 1118, C:/Nimmi/IDL_S2_Template/src/assets/sass/stylesheet.scss */
 .forgotBtn {
   font-size: 0.7692rem;
-  margin-top: .55rem; }
+  margin-top: .55rem;
+}
 
+/* line 1123, C:/Nimmi/IDL_S2_Template/src/assets/sass/stylesheet.scss */
 .heightWrapper {
   min-height: 100%;
   height: 100%;
-  overflow-x: hidden; }
+  overflow-x: hidden;
+}
 
+/* line 1129, C:/Nimmi/IDL_S2_Template/src/assets/sass/stylesheet.scss */
 .errorMessages {
   color: #ff514e;
   font-size: 1rem;
   display: block;
   padding: 1rem 0;
   -bottom: 0.5rem;
-  display: block; }
-  .errorMessages.ml-30 {
-    padding: 1rem;
-    margin-left: 30px; }
+  display: block;
+}
+
+/* line 1136, C:/Nimmi/IDL_S2_Template/src/assets/sass/stylesheet.scss */
+.errorMessages.ml-30 {
+  padding: 1rem;
+  margin-left: 30px;
+}
 
 /***** end: Application specific css *****/
 /***** start: Icons *****/
+/* line 1146, C:/Nimmi/IDL_S2_Template/src/assets/sass/stylesheet.scss */
 .safeApS-icon {
   display: inline-block;
   width: 1em;
   height: 1em;
   stroke-width: 0;
   stroke: currentColor;
-  fill: currentColor; }
+  fill: currentColor;
+}
 
+/* line 1155, C:/Nimmi/IDL_S2_Template/src/assets/sass/stylesheet.scss */
 .icon-angle-left {
-  width: 0.375em; }
+  width: 0.375em;
+}
 
+/* line 1159, C:/Nimmi/IDL_S2_Template/src/assets/sass/stylesheet.scss */
 .addIcon {
-  fill: #ffffff; }
+  fill: #ffffff;
+}
 
+/* line 1163, C:/Nimmi/IDL_S2_Template/src/assets/sass/stylesheet.scss */
 .grayIcon {
-  fill: #999999; }
+  fill: #999999;
+}
 
+/* line 1167, C:/Nimmi/IDL_S2_Template/src/assets/sass/stylesheet.scss */
 .lightgrayIcon {
-  fill: #b0afaf; }
+  fill: #b0afaf;
+}
 
+/* line 1171, C:/Nimmi/IDL_S2_Template/src/assets/sass/stylesheet.scss */
 .primaryIcon {
-  fill: #1da6fc; }
+  fill: #1da6fc;
+}
 
+/* line 1175, C:/Nimmi/IDL_S2_Template/src/assets/sass/stylesheet.scss */
 .successIcon {
-  fill: #00ddbb; }
+  fill: #00ddbb;
+}
 
+/* line 1179, C:/Nimmi/IDL_S2_Template/src/assets/sass/stylesheet.scss */
 .successIcon-line {
-  stroke: #00ddbb; }
+  stroke: #00ddbb;
+}
 
+/* line 1183, C:/Nimmi/IDL_S2_Template/src/assets/sass/stylesheet.scss */
 .svgIcon {
   display: inline-block;
   width: 1em;
-  height: 1em; }
+  height: 1em;
+}
 
+/* line 1189, C:/Nimmi/IDL_S2_Template/src/assets/sass/stylesheet.scss */
 .icon-shape-primary {
-  stroke: #72ccb7; }
+  stroke: #72ccb7;
+}
 
+/* line 1193, C:/Nimmi/IDL_S2_Template/src/assets/sass/stylesheet.scss */
 .mdl-radio__inner-circle,
 .mdl-radio__ripple-container .mdl-ripple {
-  background: #333333; }
+  background: #333333;
+}
 
+/* line 1198, C:/Nimmi/IDL_S2_Template/src/assets/sass/stylesheet.scss */
 .mdl-radio.is-checked .mdl-radio__outer-circle {
-  border: 1px solid #000000; }
+  border: 1px solid #000000;
+}
 
+/* line 1202, C:/Nimmi/IDL_S2_Template/src/assets/sass/stylesheet.scss */
 .searchIcon {
   background: transparent url("/assets/images/icon-search.svg") no-repeat 5px center;
-  padding-left: 32px; }
+  padding-left: 32px;
+}
 
 /***** end: Icons *****/
 /***** start: Tabs *****/
+/* line 1211, C:/Nimmi/IDL_S2_Template/src/assets/sass/stylesheet.scss */
 .nav.nav-tabs {
-  background-color: #ffffff;  
+  background-color: #ffffff;
+  padding: 2rem 0px 0px 2rem;
   border-top-left-radius: 0.5em;
-  border-top-right-radius: 0.5em; }
-
-.nav .nav-item {
-  margin-bottom: -2px; 
-  margin-right: 10px;
+  border-top-right-radius: 0.5em;
 }
-  .nav .nav-item .nav-link {
-    color: #595959;
-    text-transform: uppercase;
-    padding-bottom: 10px; 
-    font-weight: bold;
-    background: #efefef;
-    border-radius:0px;
-    padding: .5rem 3rem;  
-    }
-    .nav .nav-item .nav-link.active, .nav .nav-item .nav-link:focus, .nav .nav-item .nav-link:hover {
-      border: 0;
-      color: #595959;      
-      background-color: transparent;
-      border-bottom: 2px solid #fff; 
-      border-top: solid 2px #50e3c2;
-      border-left:solid 2px #efefef;
-      border-right:solid 2px #efefef;
-    }
+
+/* line 1219, C:/Nimmi/IDL_S2_Template/src/assets/sass/stylesheet.scss */
+.nav .nav-item {
+  margin-bottom: -2px;
+}
+
+/* line 1221, C:/Nimmi/IDL_S2_Template/src/assets/sass/stylesheet.scss */
+.nav .nav-item .nav-link {
+  color: #000000;
+  text-transform: uppercase;
+  padding-bottom: 10px;
+}
+
+/* line 1225, C:/Nimmi/IDL_S2_Template/src/assets/sass/stylesheet.scss */
+.nav .nav-item .nav-link.active, .nav .nav-item .nav-link:focus, .nav .nav-item .nav-link:hover {
+  border: 0;
+  color: #ff514e;
+  background-color: transparent;
+  border-bottom: 2px solid #ff514e;
+}
+
+/* line 1235, C:/Nimmi/IDL_S2_Template/src/assets/sass/stylesheet.scss */
 .nav .nav-item.show .nav-link {
   border: 0;
   color: #ff514e;
   background-color: transparent;
-  border-bottom: 1px solid #ff514e; }
+  border-bottom: 1px solid #ff514e;
+}
 
+/* line 1243, C:/Nimmi/IDL_S2_Template/src/assets/sass/stylesheet.scss */
 .tab-content {
   min-height: 576px;
   background-color: #ffffff;
   border-bottom-left-radius: 0.5em;
   border-bottom-right-radius: 0.5em;
-  padding: 2rem; }
-  .tab-content .tab-pane {
-    background-color: #ffffff; }
+  padding: 2rem;
+}
 
+/* line 1249, C:/Nimmi/IDL_S2_Template/src/assets/sass/stylesheet.scss */
+.tab-content .tab-pane {
+  background-color: #ffffff;
+}
+
+/* line 1255, C:/Nimmi/IDL_S2_Template/src/assets/sass/stylesheet.scss */
 .tempTabs .tab-content .tab-pane {
   padding: 0;
-  position: relative; }
-  .tempTabs .tab-content .tab-pane button.close.templClosebtn {
-    position: absolute;
-    top: -72px;
-    right: -8px;
-    background-color: #575757;
-    padding: 3px 8px;
-    border-radius: 100%;
-    opacity: 1; }
-    .tempTabs .tab-content .tab-pane button.close.templClosebtn span {
-      color: #ffffff; }
+  position: relative;
+}
 
+/* line 1258, C:/Nimmi/IDL_S2_Template/src/assets/sass/stylesheet.scss */
+.tempTabs .tab-content .tab-pane button.close.templClosebtn {
+  position: absolute;
+  top: -72px;
+  right: -8px;
+  background-color: #575757;
+  padding: 3px 8px;
+  border-radius: 100%;
+  opacity: 1;
+}
+
+/* line 1266, C:/Nimmi/IDL_S2_Template/src/assets/sass/stylesheet.scss */
+.tempTabs .tab-content .tab-pane button.close.templClosebtn span {
+  color: #ffffff;
+}
+
+/* line 1273, C:/Nimmi/IDL_S2_Template/src/assets/sass/stylesheet.scss */
 .tmplMinheight {
   min-height: 576px;
-  padding: 1rem; }
+  padding: 1rem;
+}
 
-.importFile {  
-  line-height: 50px; }
+/* line 1278, C:/Nimmi/IDL_S2_Template/src/assets/sass/stylesheet.scss */
+.importFile {
+  height: 100px;
+  line-height: 50px;
+}
 
+/* line 1283, C:/Nimmi/IDL_S2_Template/src/assets/sass/stylesheet.scss */
 .importstage {
-  min-height: 440px; }
+  min-height: 440px;
+}
 
+/* line 1288, C:/Nimmi/IDL_S2_Template/src/assets/sass/stylesheet.scss */
 .importStepper .stageEmpty.isSmall {
   position: relative;
   display: block;
-  max-height: 100px; }
-  .importStepper .stageEmpty.isSmall span{
-    top: 10px;
-    position: relative;
-  }  
+  max-height: 100px;
+}
+
+/* line 1293, C:/Nimmi/IDL_S2_Template/src/assets/sass/stylesheet.scss */
 .importStepper .stageEmpty.isSmall span.ui-button-icon-left.fa-plus,
 .importStepper .stageEmpty.isSmall span.ui-button-text.ui-clickable {
-  display: none; }
+  display: none;
+}
+
+/* line 1297, C:/Nimmi/IDL_S2_Template/src/assets/sass/stylesheet.scss */
 .importStepper .ui-fileupload-buttonbar.ui-widget-header.ui-corner-top,
 .importStepper .ui-fileupload-choose:not(.ui-state-disabled):hover,
 .importStepper .ui-fileupload-choose.ui-state-focus {
   background: transparent;
-  border: 0; }
-  .ui-fileupload-choose:not(.ui-state-disabled):hover{
-    background: transparent!important;
-    border:none!important;
-  }
+  border: 0;
+}
+
+/* line 1303, C:/Nimmi/IDL_S2_Template/src/assets/sass/stylesheet.scss */
 .importStepper .ui-fileupload-choose.ui-button {
   position: absolute;
   left: 0;
@@ -1019,7 +1512,10 @@ input.inputNoborder {
   border: 0;
   max-width: 582px;
   top: 0;
-  z-index: 9999; }
+  z-index: 9999;
+}
+
+/* line 1314, C:/Nimmi/IDL_S2_Template/src/assets/sass/stylesheet.scss */
 .importStepper .ui-fileupload-content.ui-widget-content {
   position: absolute;
   left: 0;
@@ -1029,89 +1525,151 @@ input.inputNoborder {
   border: 0;
   max-width: 582px;
   top: 0;
-  z-index: 999; }
+  z-index: 999;
+}
+
+/* line 1325, C:/Nimmi/IDL_S2_Template/src/assets/sass/stylesheet.scss */
 .importStepper .ui-messages {
   display: block;
-  margin-top: -5px; }
+  margin-top: -5px;
+}
+
+/* line 1329, C:/Nimmi/IDL_S2_Template/src/assets/sass/stylesheet.scss */
 .importStepper .ui-messages-icon.fa {
-  display: none; }
+  display: none;
+}
+
+/* line 1332, C:/Nimmi/IDL_S2_Template/src/assets/sass/stylesheet.scss */
 .importStepper .ui-messages ul {
-  width: 80%; }
+  width: 80%;
+}
+
+/* line 1335, C:/Nimmi/IDL_S2_Template/src/assets/sass/stylesheet.scss */
 .importStepper .ui-fileupload-files {
-  display: none; }
+  display: none;
+}
 
+/* line 1340, C:/Nimmi/IDL_S2_Template/src/assets/sass/stylesheet.scss */
 .list-area {
-  margin-bottom: 2rem !important; }
+  margin-bottom: 2rem !important;
+}
 
+/* line 1344, C:/Nimmi/IDL_S2_Template/src/assets/sass/stylesheet.scss */
 .mat-horizontal-stepper-content,
 .mat-horizontal-content-container {
-  overflow: visible !important; }
+  overflow: visible !important;
+}
 
+/* line 1349, C:/Nimmi/IDL_S2_Template/src/assets/sass/stylesheet.scss */
 .mat-stepper-horizontal {
   position: relative;
   overflow: visible;
-  height: 100%; }
+  height: 100%;
+}
 
+/* line 1355, C:/Nimmi/IDL_S2_Template/src/assets/sass/stylesheet.scss */
 .dashboardMinheight {
   min-height: 350px;
-  overflow: hidden; }
+  overflow: hidden;
+}
 
 /* custom width */
+/* line 1362, C:/Nimmi/IDL_S2_Template/src/assets/sass/stylesheet.scss */
 .w-5 {
-  width: 5%; }
+  width: 5%;
+}
 
+/* line 1366, C:/Nimmi/IDL_S2_Template/src/assets/sass/stylesheet.scss */
 .w-10 {
-  width: 10%; }
+  width: 10%;
+}
 
+/* line 1370, C:/Nimmi/IDL_S2_Template/src/assets/sass/stylesheet.scss */
 .w-15 {
-  width: 15%; }
+  width: 15%;
+}
 
+/* line 1374, C:/Nimmi/IDL_S2_Template/src/assets/sass/stylesheet.scss */
 .w-20 {
-  width: 20%; }
+  width: 20%;
+}
 
+/* line 1378, C:/Nimmi/IDL_S2_Template/src/assets/sass/stylesheet.scss */
 .w-30 {
-  width: 30%; }
+  width: 30%;
+}
 
+/* line 1382, C:/Nimmi/IDL_S2_Template/src/assets/sass/stylesheet.scss */
 .w-35 {
-  width: 35%; }
+  width: 35%;
+}
 
+/* line 1386, C:/Nimmi/IDL_S2_Template/src/assets/sass/stylesheet.scss */
 .w-40 {
-  width: 40%; }
+  width: 40%;
+}
 
+/* line 1390, C:/Nimmi/IDL_S2_Template/src/assets/sass/stylesheet.scss */
 .w-45 {
-  width: 45%; }
+  width: 45%;
+}
 
+/* line 1394, C:/Nimmi/IDL_S2_Template/src/assets/sass/stylesheet.scss */
 .ml-5px {
-  margin-left: 5px; }
+  margin-left: 5px;
+}
 
+/* line 1398, C:/Nimmi/IDL_S2_Template/src/assets/sass/stylesheet.scss */
 .UserDashboardHieght {
-  height: calc(100% - 6.5em); }
+  height: calc(100% - 6.5em);
+}
 
+/* line 1402, C:/Nimmi/IDL_S2_Template/src/assets/sass/stylesheet.scss */
 .rightResult {
-  padding: 2rem 0.5rem 1rem 2rem; }
-  .rightResult .tmpllabel {
-    font-size: 0.9231rem;
-    color: #999999; }
-  .rightResult .tmplCategories {
-    box-shadow: none !important;
-    margin: 0;
-    padding: 0; }
-    .rightResult .tmplCategories input {
-      padding: 0 !important; }
-  .rightResult .tmplItemsDesign {
-    padding: 1rem;
-    border-radius: 3px; }
-  .rightResult .isSelected > div:nth-of-type(1) {
-    border: 1px solid #1da6fc;
-    padding: 1.5rem 1rem 0.75rem 1.5rem; }
-  .rightResult .tmplitemHeader {
-    font-size: 1.077rem;
-    color: #333333;
-    letter-spacing: -0.4px;
-    font-weight: 500;
-    display: block;
-    font-weight: bold; }
+  padding: 2rem 0.5rem 1rem 2rem;
+}
 
+/* line 1404, C:/Nimmi/IDL_S2_Template/src/assets/sass/stylesheet.scss */
+.rightResult .tmpllabel {
+  font-size: 0.9231rem;
+  color: #999999;
+}
+
+/* line 1408, C:/Nimmi/IDL_S2_Template/src/assets/sass/stylesheet.scss */
+.rightResult .tmplCategories {
+  box-shadow: none !important;
+  margin: 0;
+  padding: 0;
+}
+
+/* line 1412, C:/Nimmi/IDL_S2_Template/src/assets/sass/stylesheet.scss */
+.rightResult .tmplCategories input {
+  padding: 0 !important;
+}
+
+/* line 1416, C:/Nimmi/IDL_S2_Template/src/assets/sass/stylesheet.scss */
+.rightResult .tmplItemsDesign {
+  padding: 1rem;
+  border-radius: 3px;
+}
+
+/* line 1421, C:/Nimmi/IDL_S2_Template/src/assets/sass/stylesheet.scss */
+.rightResult .isSelected > div:nth-of-type(1) {
+  border: 1px solid #1da6fc;
+  padding: 1.5rem 1rem 0.75rem 1.5rem;
+}
+
+/* line 1426, C:/Nimmi/IDL_S2_Template/src/assets/sass/stylesheet.scss */
+.rightResult .tmplitemHeader {
+  font-size: 1.077rem;
+  color: #333333;
+  letter-spacing: -0.4px;
+  font-weight: 500;
+  display: block;
+  font-weight: bold;
+}
+
+/* line 1437, C:/Nimmi/IDL_S2_Template/src/assets/sass/stylesheet.scss */
 rl-tag-input-item {
   border-radius: 6px !important;
   padding: 6px 10px !important;
@@ -1122,8 +1680,10 @@ rl-tag-input-item {
   font-size: 1rem !important;
   margin: 0 10px 5px 0 !important;
   letter-spacing: 0.25px !important;
-  display: inline-block !important; }
+  display: inline-block !important;
+}
 
+/* line 1451, C:/Nimmi/IDL_S2_Template/src/assets/sass/stylesheet.scss */
 rl-tag-input-item span {
   background: #ffffff !important;
   color: #ff514e !important;
@@ -1134,126 +1694,194 @@ rl-tag-input-item span {
   width: 14px !important;
   height: 14px !important;
   line-height: 14px !important;
-  padding: 0px 1px 0px 0px !important; }
+  padding: 0px 1px 0px 0px !important;
+}
 
+/* line 1464, C:/Nimmi/IDL_S2_Template/src/assets/sass/stylesheet.scss */
 .list-group-item {
   border: 0px;
-  padding-left: 0; }
+  padding-left: 0;
+}
 
+/* line 1470, C:/Nimmi/IDL_S2_Template/src/assets/sass/stylesheet.scss */
 .tmplTableList .list-group-item:first-child {
   letter-spacing: 0.7px;
   border-bottom: 0.01rem solid #8b8b8b;
   color: #999999;
   font-size: 0.7692rem;
   font-weight: 600;
-  border-radius: 0; }
+  border-radius: 0;
+}
 
+/* line 1493, C:/Nimmi/IDL_S2_Template/src/assets/sass/stylesheet.scss */
 .tmplIcon {
-  margin-right: 18px; }
+  margin-right: 18px;
+}
 
+/* line 1497, C:/Nimmi/IDL_S2_Template/src/assets/sass/stylesheet.scss */
 .tmplIconProfile {
   margin-right: 18px;
   width: 20px;
-  opacity: 0.45; }
+  opacity: 0.45;
+}
 
+/* line 1503, C:/Nimmi/IDL_S2_Template/src/assets/sass/stylesheet.scss */
 .ui-grid-row {
-  background: #ffffff; }
+  background: #ffffff;
+}
 
+/* line 1507, C:/Nimmi/IDL_S2_Template/src/assets/sass/stylesheet.scss */
 .leftRail.ui-widget-content,
 .rightResult.ui-widget-content {
   border: 0px;
-  margin-top: -2px; }
+  margin-top: -2px;
+}
 
+/* line 1513, C:/Nimmi/IDL_S2_Template/src/assets/sass/stylesheet.scss */
 .nav-tabs {
-  border-bottom: 1px solid #cccccc !important; }
+  border-bottom: 1px solid #cccccc !important;
+}
 
+/* line 1517, C:/Nimmi/IDL_S2_Template/src/assets/sass/stylesheet.scss */
 .rightResult.ui-widget-content {
   border-left: 1px solid #cccccc;
-  padding-left: 1rem; }
+  padding-left: 1rem;
+}
 
+/* line 1522, C:/Nimmi/IDL_S2_Template/src/assets/sass/stylesheet.scss */
 .userType {
-  padding: 1rem 0; }
-  .userType .userName {
-    display: block;
-    width: 100%;
-    margin-bottom: -4px; }
-  .userType .userType {
-    font-size: 0.9231rem;
-    color: #999999; }
-  .userType button {
-    min-width: 100px; }
+  padding: 1rem 0;
+}
 
+/* line 1524, C:/Nimmi/IDL_S2_Template/src/assets/sass/stylesheet.scss */
+.userType .userName {
+  display: block;
+  width: 100%;
+  margin-bottom: -4px;
+}
+
+/* line 1529, C:/Nimmi/IDL_S2_Template/src/assets/sass/stylesheet.scss */
+.userType .userType {
+  font-size: 0.9231rem;
+  color: #999999;
+}
+
+/* line 1533, C:/Nimmi/IDL_S2_Template/src/assets/sass/stylesheet.scss */
+.userType button {
+  min-width: 100px;
+}
+
+/* line 1538, C:/Nimmi/IDL_S2_Template/src/assets/sass/stylesheet.scss */
 small.text-muted,
 .info-text {
   font-size: 1rem;
-  color: #999999 !important; }
+  color: #999999 !important;
+}
 
 /***** end: Tabs *****/
 /***** start: Google Material CSS *****/
+/* line 1550, C:/Nimmi/IDL_S2_Template/src/assets/sass/stylesheet.scss */
 .mdl-textfield--floating-label.is-focused .mdl-textfield__label,
 .mdl-textfield--floating-label.is-dirty .mdl-textfield__label,
 .mdl-textfield--floating-label.has-placeholder .mdl-textfield__label {
-  color: #575757; }
+  color: #575757;
+}
 
+/* line 1556, C:/Nimmi/IDL_S2_Template/src/assets/sass/stylesheet.scss */
 .mdl-textfield__label {
   font-size: 0.9231rem;
   font-weight: 500;
-  color: #999999; }
+  color: #999999;
+}
 
+/* line 1562, C:/Nimmi/IDL_S2_Template/src/assets/sass/stylesheet.scss */
 .mdl-textfield__input {
   color: #3f454c;
-  font-size: 1rem; }
+  font-size: 1rem;
+}
 
+/* line 1567, C:/Nimmi/IDL_S2_Template/src/assets/sass/stylesheet.scss */
 .mdl-textfield__label {
-  margin-bottom: 0px; }
+  margin-bottom: 0px;
+}
 
+/* line 1571, C:/Nimmi/IDL_S2_Template/src/assets/sass/stylesheet.scss */
 .mdl-textfield__label:after {
-  background-color: transparent !important; }
+  background-color: transparent !important;
+}
 
+/* line 1576, C:/Nimmi/IDL_S2_Template/src/assets/sass/stylesheet.scss */
 .mdl-badge::after,
 .mdl-badge::after:hover {
   background-color: #ff514e;
-  color: #ffffff; }
+  color: #ffffff;
+}
 
+/* line 1582, C:/Nimmi/IDL_S2_Template/src/assets/sass/stylesheet.scss */
 .mdl-textfield .textareaLabel {
-  margin-top: -1rem; }
+  margin-top: -1rem;
+}
 
 /***** start: Template builder *****/
+/* line 1588, C:/Nimmi/IDL_S2_Template/src/assets/sass/stylesheet.scss */
 .mat-slide-toggle.mat-checked:not(.mat-disabled) .mat-slide-toggle-thumb {
-  background-color: #72ccb7 !important; }
+  background-color: #72ccb7 !important;
+}
 
+/* line 1592, C:/Nimmi/IDL_S2_Template/src/assets/sass/stylesheet.scss */
 .mat-slide-toggle.mat-checked:not(.mat-disabled) .mat-slide-toggle-bar {
-  background-color: rgba(3, 208, 191, 0.7) !important; }
+  background-color: rgba(3, 208, 191, 0.7) !important;
+}
 
+/* line 1596, C:/Nimmi/IDL_S2_Template/src/assets/sass/stylesheet.scss */
 .ui-grid.ui-grid-pad > .ui-grid-row > div {
   margin: 0 !important;
-  padding: 0 !important; }
+  padding: 0 !important;
+}
 
+/* line 1601, C:/Nimmi/IDL_S2_Template/src/assets/sass/stylesheet.scss */
 .tmplList {
-  min-height: 576px; }
-  .tmplList .title {
-    text-transform: uppercase;
-    font-size: 1.231rem;
-    color: #8b8b8b;
-    padding: 2rem 0.5rem 1rem 2rem; }
-  .tmplList .list-group .list-group-item {
-    padding-left: 0;
-    border: 0;
-    border-radius: 0;
-    font-size: 1rem;
-    line-height: normal;
-    padding: 0.5rem 0.5rem 0.5rem 2rem; }
-    .tmplList .list-group .list-group-item img {
-      width: 16px;
-      overflow: hidden;
-      margin-bottom: 3px; }
-    .tmplList .list-group .list-group-item span {
-      color: #8b8b8b; }
-    .tmplList .list-group .list-group-item:hover, .tmplList .list-group .list-group-item:focus {
-      background-color: #1da6fc;
-      cursor: move;
-      color: #ffffff; }
+  min-height: 576px;
+}
 
+/* line 1603, C:/Nimmi/IDL_S2_Template/src/assets/sass/stylesheet.scss */
+.tmplList .title {
+  text-transform: uppercase;
+  font-size: 1.231rem;
+  color: #8b8b8b;
+  padding: 2rem 0.5rem 1rem 2rem;
+}
+
+/* line 1610, C:/Nimmi/IDL_S2_Template/src/assets/sass/stylesheet.scss */
+.tmplList .list-group .list-group-item {
+  padding-left: 0;
+  border: 0;
+  border-radius: 0;
+  font-size: 1rem;
+  line-height: normal;
+  padding: 0.5rem 0.5rem 0.5rem 2rem;
+}
+
+/* line 1617, C:/Nimmi/IDL_S2_Template/src/assets/sass/stylesheet.scss */
+.tmplList .list-group .list-group-item img {
+  width: 16px;
+  overflow: hidden;
+  margin-bottom: 3px;
+}
+
+/* line 1622, C:/Nimmi/IDL_S2_Template/src/assets/sass/stylesheet.scss */
+.tmplList .list-group .list-group-item span {
+  color: #8b8b8b;
+}
+
+/* line 1625, C:/Nimmi/IDL_S2_Template/src/assets/sass/stylesheet.scss */
+.tmplList .list-group .list-group-item:hover, .tmplList .list-group .list-group-item:focus {
+  background-color: #1da6fc;
+  cursor: move;
+  color: #ffffff;
+}
+
+/* line 1635, C:/Nimmi/IDL_S2_Template/src/assets/sass/stylesheet.scss */
 .safeDropdown {
   background: transparent;
   padding-left: 2px;
@@ -1264,18 +1892,25 @@ small.text-muted,
   border: 0px;
   border-bottom: 1px solid #cccccc;
   width: 100%;
-  text-align: left; }
-  .safeDropdown.dropdown-toggle:after {
-    float: right;
-    vertical-align: middle; }
+  text-align: left;
+}
 
+/* line 1646, C:/Nimmi/IDL_S2_Template/src/assets/sass/stylesheet.scss */
+.safeDropdown.dropdown-toggle:after {
+  float: right;
+  vertical-align: middle;
+}
+
+/* line 1653, C:/Nimmi/IDL_S2_Template/src/assets/sass/stylesheet.scss */
 .dropdownContainer .show > .dropdown-menu {
   width: 100%;
   margin-top: -15px;
-  border-radius: 0; }
+  border-radius: 0;
+}
 
+/* line 1659, C:/Nimmi/IDL_S2_Template/src/assets/sass/stylesheet.scss */
 .stageEmpty {
-  margin: 0 20px 20px 0;
+  margin: 20px 20px 20px 0;
   border: 2px dashed rgba(0, 0, 0, 0.15);
   padding: 60px 0;
   text-align: center;
@@ -1286,43 +1921,46 @@ small.text-muted,
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
-  user-select: none; }
+  user-select: none;
+}
 
+/* line 1674, C:/Nimmi/IDL_S2_Template/src/assets/sass/stylesheet.scss */
 .stageEmpty.isSmall {
-  padding: 17px 1rem 0;
+  padding: 1.5rem 1rem;
   line-height: 36px;
   color: rgba(0, 0, 0, 0.3);
   border-color: rgba(0, 0, 0, 0.15);
   background-color: rgba(0, 0, 0, 0.03);
-  border-radius: 3px; }
-
-  .stageEmpty.isSmall span {   
-    vertical-align: middle;
-    font-size: 16px;
-    background: transparent;
-    width: 100%;
-    line-height: 20px;
-    z-index: 999;
-    height: 70px;
-    margin-top: -93px;
-    border: none;    
-    color: #0a85ff; 
-    /* position: relative;
-    top:10px;  */
+  border-radius: 3px;
 }
 
+/* line 1683, C:/Nimmi/IDL_S2_Template/src/assets/sass/stylesheet.scss */
+.stageEmpty.isSmall span {
+  vertical-align: middle;
+  font-size: 16px;
+}
+
+/* line 1689, C:/Nimmi/IDL_S2_Template/src/assets/sass/stylesheet.scss */
 .width50 {
-  width: 50%; }
+  width: 50%;
+}
 
+/* line 1693, C:/Nimmi/IDL_S2_Template/src/assets/sass/stylesheet.scss */
 .tmpItel-col-left {
-  padding-bottom: 1rem; }
+  padding-bottom: 1rem;
+}
 
+/* line 1697, C:/Nimmi/IDL_S2_Template/src/assets/sass/stylesheet.scss */
 .mat-sidenav-container {
-  background: #ffffff !important; }
+  background: #ffffff !important;
+}
 
+/* line 1701, C:/Nimmi/IDL_S2_Template/src/assets/sass/stylesheet.scss */
 .tempContainer {
-  position: relative; }
+  position: relative;
+}
 
+/* line 1705, C:/Nimmi/IDL_S2_Template/src/assets/sass/stylesheet.scss */
 .safe-sivenav {
   position: fixed;
   right: -260px;
@@ -1334,136 +1972,197 @@ small.text-muted,
   z-index: 99999;
   padding: 0.5rem 1.15rem;
   overflow: hidden;
-  height: 400px; }
-  .safe-sivenav .textHeading {
-    font-size: 1.077rem;
-    font-weight: bold;
-    color: #ffffff;
-    padding: 1rem 0; }
+  height: 400px;
+}
 
+/* line 1724, C:/Nimmi/IDL_S2_Template/src/assets/sass/stylesheet.scss */
+.safe-sivenav .textHeading {
+  font-size: 1.077rem;
+  font-weight: bold;
+  color: #ffffff;
+  padding: 1rem 0;
+}
+
+/* line 1732, C:/Nimmi/IDL_S2_Template/src/assets/sass/stylesheet.scss */
 .safe-sivenav.active {
   transition: 1s;
-  right: 0; }
+  right: 0;
+}
 
+/* line 1737, C:/Nimmi/IDL_S2_Template/src/assets/sass/stylesheet.scss */
 .settingTitle {
   font-size: 1.385rem;
   color: #ffffff;
-  padding: 0.5rem 0; }
+  padding: 0.5rem 0;
+}
 
+/* line 1743, C:/Nimmi/IDL_S2_Template/src/assets/sass/stylesheet.scss */
 .tmplBtn {
   margin-right: 1rem;
   position: absolute;
   right: 0;
   top: 0;
-  z-index: 9999; }
+  z-index: 9999;
+}
 
+/* line 1751, C:/Nimmi/IDL_S2_Template/src/assets/sass/stylesheet.scss */
 .mat-drawer-container {
-  z-index: 999 !important; }
+  z-index: 999 !important;
+}
 
+/* line 1755, C:/Nimmi/IDL_S2_Template/src/assets/sass/stylesheet.scss */
 .mat-drawer-backdrop.mat-drawer-shown {
-  background-color: transparent !important; }
+  background-color: transparent !important;
+}
 
+/* line 1759, C:/Nimmi/IDL_S2_Template/src/assets/sass/stylesheet.scss */
 .mat-drawer {
   background-color: rgba(0, 0, 0, 0.6) !important;
-  padding: 1.5rem; }
-  .mat-drawer button.navClose {
-    padding: 3px 8px;
-    border-radius: 100%;
-    opacity: 1;
-    background: 0 0;
-    border: 0;
-    -webkit-appearance: none;
-    float: right;
-    font-size: 18px;
-    font-weight: 700;
-    line-height: 1;
-    color: #ffffff;
-    text-shadow: 0 1px 0 #ffffff;
-    background-color: #999999;
-    margin: -1rem -1rem 1rem 0;
-    cursor: pointer; }
+  padding: 1.5rem;
+}
 
+/* line 1762, C:/Nimmi/IDL_S2_Template/src/assets/sass/stylesheet.scss */
+.mat-drawer button.navClose {
+  padding: 3px 8px;
+  border-radius: 100%;
+  opacity: 1;
+  background: 0 0;
+  border: 0;
+  -webkit-appearance: none;
+  float: right;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1;
+  color: #ffffff;
+  text-shadow: 0 1px 0 #ffffff;
+  background-color: #999999;
+  margin: -1rem -1rem 1rem 0;
+  cursor: pointer;
+}
+
+/* line 1781, C:/Nimmi/IDL_S2_Template/src/assets/sass/stylesheet.scss */
 .form-control.readonly {
-  background-color: transparent; }
+  background-color: transparent;
+}
 
+/* line 1785, C:/Nimmi/IDL_S2_Template/src/assets/sass/stylesheet.scss */
 .form-control {
-  color: #3f454c; }
+  color: #3f454c;
+}
 
+/* line 1789, C:/Nimmi/IDL_S2_Template/src/assets/sass/stylesheet.scss */
 .tmplsubHeading_1 {
   font-weight: 600;
   color: #333333;
   font-size: 1.077rem;
-  border-bottom: 2px solid #999999 !important; }
+  border-bottom: 2px solid #999999 !important;
+}
 
+/* line 1796, C:/Nimmi/IDL_S2_Template/src/assets/sass/stylesheet.scss */
 .tmplnavHeading_1 {
   font-weight: 600;
   color: #ffffff;
   font-size: 1.846rem;
-  border-bottom: 2px solid #999999 !important; }
+  border-bottom: 2px solid #999999 !important;
+}
 
+/* line 1803, C:/Nimmi/IDL_S2_Template/src/assets/sass/stylesheet.scss */
 .tmplnavHeading_1_label {
   font-weight: 600;
   color: #ffffff;
   font-size: 1rem;
-  border-bottom: 2px solid #999999 !important; }
+  border-bottom: 2px solid #999999 !important;
+}
 
 /***** ends:  Template builder *****/
 /***** start: Plans *****/
+/* line 1830, C:/Nimmi/IDL_S2_Template/src/assets/sass/stylesheet.scss */
 .showPlans tr th:first-child,
 .showPlans tr td:first-child {
-  text-align: left !important; }
+  text-align: left !important;
+}
 
+/* line 1835, C:/Nimmi/IDL_S2_Template/src/assets/sass/stylesheet.scss */
 .showPlans tr th:nth-child(n+2),
 .showPlans tr td:nth-child(n+2) {
-  width: 16%; }
+  width: 16%;
+}
 
+/* line 1841, C:/Nimmi/IDL_S2_Template/src/assets/sass/stylesheet.scss */
 .showPlans .planName {
   font-size: 1.385rem;
   font-weight: bold;
-  color: #000000; }
+  color: #000000;
+}
+
+/* line 1846, C:/Nimmi/IDL_S2_Template/src/assets/sass/stylesheet.scss */
 .showPlans .planCurrency {
   font-size: 2.615rem;
   font-family: "Open Sans";
   color: #333333;
-  font-weight: normal; }
+  font-weight: normal;
+}
+
+/* line 1852, C:/Nimmi/IDL_S2_Template/src/assets/sass/stylesheet.scss */
 .showPlans .planDuration {
   font-size: 1rem;
   color: #575757;
   font-weight: normal;
   margin-top: -10px;
-  margin-bottom: 10px; }
+  margin-bottom: 10px;
+}
+
+/* line 1859, C:/Nimmi/IDL_S2_Template/src/assets/sass/stylesheet.scss */
 .showPlans button {
-  margin-bottom: 10px; }
+  margin-bottom: 10px;
+}
 
 /***** ends:  Plans *****/
 /* User profile */
+/* line 1868, C:/Nimmi/IDL_S2_Template/src/assets/sass/stylesheet.scss */
 .card {
   border: 0px;
-  border-radius: 0.5rem; }
-  .card .card-header:first-child {
-    border-radius: calc(.5rem - 1px) calc(.5rem - 1px) 0 0; }
-  .card .card-header {
-    background: #ffffff;
-    border-bottom: 2px solid rgba(153, 153, 153, 0.35); }
+  border-radius: 0.5rem;
+}
 
+/* line 1871, C:/Nimmi/IDL_S2_Template/src/assets/sass/stylesheet.scss */
+.card .card-header:first-child {
+  border-radius: calc(.5rem - 1px) calc(.5rem - 1px) 0 0;
+}
+
+/* line 1874, C:/Nimmi/IDL_S2_Template/src/assets/sass/stylesheet.scss */
+.card .card-header {
+  background: #ffffff;
+  border-bottom: 2px solid rgba(153, 153, 153, 0.35);
+}
+
+/* line 1880, C:/Nimmi/IDL_S2_Template/src/assets/sass/stylesheet.scss */
 .upUsername {
   font-size: 1.846rem;
   font-weight: normal;
-  color: #000000; }
+  color: #000000;
+}
 
+/* line 1886, C:/Nimmi/IDL_S2_Template/src/assets/sass/stylesheet.scss */
 .upHeaderImg {
   max-width: 80px;
-  float: left; }
+  float: left;
+}
 
+/* line 1891, C:/Nimmi/IDL_S2_Template/src/assets/sass/stylesheet.scss */
 .upHeader {
-  float: left; }
+  float: left;
+}
 
+/* line 1895, C:/Nimmi/IDL_S2_Template/src/assets/sass/stylesheet.scss */
 .importlistTitle {
   font-size: 1.385rem;
   font-weight: 500;
   color: #575757;
-  display: inline-block; }
+  display: inline-block;
+}
 
+/* line 1902, C:/Nimmi/IDL_S2_Template/src/assets/sass/stylesheet.scss */
 .closeBtnModal .btn.close {
   position: absolute;
   top: -8px;
@@ -1473,202 +2172,327 @@ small.text-muted,
   border-radius: 100%;
   opacity: 1;
   font-size: 1.35rem;
-  z-index: 999; }
-  .closeBtnModal .btn.close span {
-    color: #ffffff; }
+  z-index: 999;
+}
 
+/* line 1912, C:/Nimmi/IDL_S2_Template/src/assets/sass/stylesheet.scss */
+.closeBtnModal .btn.close span {
+  color: #ffffff;
+}
+
+/* line 1917, C:/Nimmi/IDL_S2_Template/src/assets/sass/stylesheet.scss */
 .nav-tabs .nav-link.disabled {
   color: #b0afaf;
   cursor: not-allowed;
   background-color: transparent;
-  border-color: transparent; }
-  .nav-tabs .nav-link.disabled:hover {
-    color: #b0afaf !important;
-    border-bottom: none; }
+  border-color: transparent;
+}
 
+/* line 1922, C:/Nimmi/IDL_S2_Template/src/assets/sass/stylesheet.scss */
+.nav-tabs .nav-link.disabled:hover {
+  color: #b0afaf !important;
+  border-bottom: none;
+}
+
+/* line 1929, C:/Nimmi/IDL_S2_Template/src/assets/sass/stylesheet.scss */
 .clientDetails .nav.nav-tabs.justify-content-start {
   padding-left: 1rem;
-  padding-top: 0.5rem; }
+  padding-top: 0.5rem;
+}
+
+/* line 1933, C:/Nimmi/IDL_S2_Template/src/assets/sass/stylesheet.scss */
 .clientDetails .tab-pane.active {
   padding-left: 0;
-  padding-top: 0; }
+  padding-top: 0;
+}
 
+/* line 1939, C:/Nimmi/IDL_S2_Template/src/assets/sass/stylesheet.scss */
 .cursorStyle {
-  cursor: pointer; }
+  cursor: pointer;
+}
 
 /* ends: User profile */
 /* Import files */
+/* line 1949, C:/Nimmi/IDL_S2_Template/src/assets/sass/stylesheet.scss */
 .sfRegistrationStepper h1,
 .sfTemplateStepper h1 {
   padding-left: 30px;
   padding-right: 30px;
-  padding-top: 20px; }
+  padding-top: 20px;
+}
+
+/* line 1954, C:/Nimmi/IDL_S2_Template/src/assets/sass/stylesheet.scss */
 .sfRegistrationStepper .mat-horizontal-stepper-header-container,
 .sfRegistrationStepper .mat-horizontal-content-container,
 .sfTemplateStepper .mat-horizontal-stepper-header-container,
 .sfTemplateStepper .mat-horizontal-content-container {
   padding-left: 30px;
-  padding-right: 30px; }
+  padding-right: 30px;
+}
+
+/* line 1959, C:/Nimmi/IDL_S2_Template/src/assets/sass/stylesheet.scss */
 .sfRegistrationStepper .mat-step-label,
 .sfTemplateStepper .mat-step-label {
   min-width: 100%;
-  width: 100%; }
+  width: 100%;
+}
+
+/* line 1963, C:/Nimmi/IDL_S2_Template/src/assets/sass/stylesheet.scss */
 .sfRegistrationStepper .mat-step-header:focus,
 .sfRegistrationStepper .mat-step-header:hover,
 .sfTemplateStepper .mat-step-header:focus,
 .sfTemplateStepper .mat-step-header:hover {
-  background: transparent !important; }
+  background: transparent !important;
+}
+
+/* line 1967, C:/Nimmi/IDL_S2_Template/src/assets/sass/stylesheet.scss */
 .sfRegistrationStepper .mat-step-header .mat-step-icon,
 .sfTemplateStepper .mat-step-header .mat-step-icon {
   background-color: #00d1b2 !important;
-  color: #ffffff; }
+  color: #ffffff;
+}
+
+/* line 1971, C:/Nimmi/IDL_S2_Template/src/assets/sass/stylesheet.scss */
 .sfRegistrationStepper .mat-stepper-horizontal-line.completed,
 .sfTemplateStepper .mat-stepper-horizontal-line.completed {
-  border-top-color: #00d1b2 !important; }
+  border-top-color: #00d1b2 !important;
+}
 
-.mat-stepper-horizontal-line {
-  border-top-color: #00d1b2 !important; }
-
+/* line 1980, C:/Nimmi/IDL_S2_Template/src/assets/sass/stylesheet.scss */
 .sfRegistrationStepper .mat-horizontal-stepper-header-container {
   margin-left: -24px;
-  max-width: 80%; }
+  max-width: 80%;
+}
+
+/* line 1984, C:/Nimmi/IDL_S2_Template/src/assets/sass/stylesheet.scss */
 .sfRegistrationStepper .mat-horizontal-content-container {
   background-color: #f9f9f9;
-  padding-top: 1.5rem; }
+  padding-top: 1.5rem;
+}
+
+/* line 1989, C:/Nimmi/IDL_S2_Template/src/assets/sass/stylesheet.scss */
 .sfRegistrationStepper .mat-stepper-horizontal-line {
   border-top-width: 3px;
-  margin: 0 -24px; }
+  margin: 0 -24px;
+}
+
+/* line 1993, C:/Nimmi/IDL_S2_Template/src/assets/sass/stylesheet.scss */
 .sfRegistrationStepper .mat-step-icon,
 .sfRegistrationStepper .mat-step-icon-not-touched {
   margin-right: 0 !important;
   background-color: rgba(0, 0, 0, 0.12);
   color: #3f454c;
   height: 30px;
-  width: 30px; }
+  width: 30px;
+}
 
+/* line 2004, C:/Nimmi/IDL_S2_Template/src/assets/sass/stylesheet.scss */
 .sfTemplateStepper .mat-horizontal-stepper-header-container {
   width: 50%;
-  margin: 0 auto; }
+  margin: 0 auto;
+}
+
+/* line 2008, C:/Nimmi/IDL_S2_Template/src/assets/sass/stylesheet.scss */
 .sfTemplateStepper .mat-horizontal-content-container {
   background-color: #ffffff;
-  padding-top: 1.5rem; }
+  padding-top: 1.5rem;
+}
+
+/* line 2012, C:/Nimmi/IDL_S2_Template/src/assets/sass/stylesheet.scss */
 .sfTemplateStepper .nextBtnTmpl {
   position: absolute;
   top: 13px;
-  right: 30px; }
+  right: 30px;
+}
 
+/* line 2020, C:/Nimmi/IDL_S2_Template/src/assets/sass/stylesheet.scss */
 .sfTemplateStepper .mat-horizontal-stepper-header-container {
   width: 50%;
-  margin: 0 auto; }
+  margin: 0 auto;
+}
+
+/* line 2024, C:/Nimmi/IDL_S2_Template/src/assets/sass/stylesheet.scss */
 .sfTemplateStepper .mat-horizontal-content-container {
   background-color: #ffffff;
-  padding-top: 1.5rem; }
+  padding-top: 1.5rem;
+}
+
+/* line 2028, C:/Nimmi/IDL_S2_Template/src/assets/sass/stylesheet.scss */
 .sfTemplateStepper .nextBtnTmpl {
   position: absolute;
   top: 13px;
-  right: 30px; }
+  right: 30px;
+}
+
+/* line 2033, C:/Nimmi/IDL_S2_Template/src/assets/sass/stylesheet.scss */
 .sfTemplateStepper .mat-stepper-horizontal-line {
   border-top-width: 3px;
-  margin: 0 -24px; }
+  margin: 0 -24px;
+}
+
+/* line 2037, C:/Nimmi/IDL_S2_Template/src/assets/sass/stylesheet.scss */
 .sfTemplateStepper .mat-step-icon,
 .sfTemplateStepper .mat-step-icon-not-touched {
   margin-right: 0 !important;
   background-color: #b0afaf;
   height: 30px;
-  width: 30px; }
+  width: 30px;
+}
 
+/* line 2047, C:/Nimmi/IDL_S2_Template/src/assets/sass/stylesheet.scss */
 .importStepper .mat-step-header:focus,
 .importStepper .mat-step-header:hover {
-  background: transparent !important; }
+  background: transparent !important;
+}
+
+/* line 2051, C:/Nimmi/IDL_S2_Template/src/assets/sass/stylesheet.scss */
 .importStepper .mat-step-header .mat-step-icon {
-  background-color: #ff514e !important; }
+  background-color: #ff514e !important;
+}
+
+/* line 2054, C:/Nimmi/IDL_S2_Template/src/assets/sass/stylesheet.scss */
 .importStepper .mat-stepper-horizontal-line {
-  border-top-color: #ff514e !important; }
+  border-top-color: #ff514e !important;
+}
+
+/* line 2057, C:/Nimmi/IDL_S2_Template/src/assets/sass/stylesheet.scss */
 .importStepper .mat-horizontal-stepper-header {
   flex-direction: column;
-  float: left; }
-  .importStepper .mat-horizontal-stepper-header .mat-step-icon,
-  .importStepper .mat-horizontal-stepper-header .mat-step-icon-not-touched {
-    padding: 1.5rem; }
-  .importStepper .mat-horizontal-stepper-header .mat-step-header .mat-step-label.mat-step-label-active {
-    display: block;
-    float: left;
-    clear: both; }
+  float: left;
+}
+
+/* line 2062, C:/Nimmi/IDL_S2_Template/src/assets/sass/stylesheet.scss */
+.importStepper .mat-horizontal-stepper-header .mat-step-icon,
+.importStepper .mat-horizontal-stepper-header .mat-step-icon-not-touched {
+  padding: 1.5rem;
+}
+
+/* line 2066, C:/Nimmi/IDL_S2_Template/src/assets/sass/stylesheet.scss */
+.importStepper .mat-horizontal-stepper-header .mat-step-header .mat-step-label.mat-step-label-active {
+  display: block;
+  float: left;
+  clear: both;
+}
+
+/* line 2072, C:/Nimmi/IDL_S2_Template/src/assets/sass/stylesheet.scss */
 .importStepper .mat-stepper-horizontal-line {
   padding: 1.20rem;
   border-top-width: 3px !important;
-  margin: 0 -16px 0 -26px !important; }
+  margin: 0 -16px 0 -26px !important;
+}
+
+/* line 2077, C:/Nimmi/IDL_S2_Template/src/assets/sass/stylesheet.scss */
 .importStepper .mat-horizontal-stepper-header-container {
   padding-left: 15rem;
-  padding-right: 15rem; }
+  padding-right: 15rem;
+}
 
+/* line 2083, C:/Nimmi/IDL_S2_Template/src/assets/sass/stylesheet.scss */
 .auditLog {
-  padding-left: 3rem; }
+  padding-left: 3rem;
+}
 
+/* line 2087, C:/Nimmi/IDL_S2_Template/src/assets/sass/stylesheet.scss */
 .alog_leftFitlerBar {
   margin-left: 50px;
   position: absolute;
-  left: 0; }
+  left: 0;
+}
 
+/* line 2093, C:/Nimmi/IDL_S2_Template/src/assets/sass/stylesheet.scss */
 .selectBtn {
   padding-left: 0;
   border: 0px;
   border-bottom: 1px solid #999999;
   width: 100%;
   display: block;
-  border-radius: 0; }
+  border-radius: 0;
+}
 
+/* line 2102, C:/Nimmi/IDL_S2_Template/src/assets/sass/stylesheet.scss */
 .headerRow {
   font-size: 0.8rem;
-  color: #999999; }
+  color: #999999;
+}
 
+/* line 2107, C:/Nimmi/IDL_S2_Template/src/assets/sass/stylesheet.scss */
 .headerRowFilter {
   font-size: 1.077rem;
-  color: #999999; }
+  color: #999999;
+}
 
+/* line 2112, C:/Nimmi/IDL_S2_Template/src/assets/sass/stylesheet.scss */
 .iconWidth {
   width: 22px;
   max-width: 22px;
   overflow: hidden;
-  margin-right: 0.75rem; }
+  margin-right: 0.75rem;
+}
 
+/* line 2120, C:/Nimmi/IDL_S2_Template/src/assets/sass/stylesheet.scss */
 .collapseItem .card {
   border-bottom: 1px solid #999999;
-  border-radius: 0; }
-  .collapseItem .card .card-header {
-    border: 0px; }
-    .collapseItem .card .card-header a.subTitle:hover {
-      color: #575757;
-      text-decoration: none; }
-  .collapseItem .card .list-group-item {
-    padding-top: 2rem;
-    padding-bottom: 2rem; }
-  .collapseItem .card .list-group-item-action:focus,
-  .collapseItem .card .list-group-item-action:hover {
-    background: transparent; }
-  .collapseItem .card .accordionItems {
-    font-size: 1.231rem;
-    color: #575757;
-    font-weight: 600; }
+  border-radius: 0;
+}
 
+/* line 2123, C:/Nimmi/IDL_S2_Template/src/assets/sass/stylesheet.scss */
+.collapseItem .card .card-header {
+  border: 0px;
+}
+
+/* line 2125, C:/Nimmi/IDL_S2_Template/src/assets/sass/stylesheet.scss */
+.collapseItem .card .card-header a.subTitle:hover {
+  color: #575757;
+  text-decoration: none;
+}
+
+/* line 2130, C:/Nimmi/IDL_S2_Template/src/assets/sass/stylesheet.scss */
+.collapseItem .card .list-group-item {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+/* line 2134, C:/Nimmi/IDL_S2_Template/src/assets/sass/stylesheet.scss */
+.collapseItem .card .list-group-item-action:focus,
+.collapseItem .card .list-group-item-action:hover {
+  background: transparent;
+}
+
+/* line 2138, C:/Nimmi/IDL_S2_Template/src/assets/sass/stylesheet.scss */
+.collapseItem .card .accordionItems {
+  font-size: 1.231rem;
+  color: #575757;
+  font-weight: 600;
+}
+
+/* line 2148, C:/Nimmi/IDL_S2_Template/src/assets/sass/stylesheet.scss */
 #accordion .d-block.subTitle.collapsed i.fa-plus:before {
-  content: "\F067"; }
-#accordion .d-block.subTitle i.fa-plus:before {
-  content: "\F068"; }
+  content: "\F067";
+}
 
+/* line 2153, C:/Nimmi/IDL_S2_Template/src/assets/sass/stylesheet.scss */
+#accordion .d-block.subTitle i.fa-plus:before {
+  content: "\F068";
+}
+
+/* line 2159, C:/Nimmi/IDL_S2_Template/src/assets/sass/stylesheet.scss */
 .floatRbtn {
   position: absolute;
   right: 0;
   top: -60px;
-  font-size: 1.231rem; }
+  font-size: 1.231rem;
+}
 
+/* line 2166, C:/Nimmi/IDL_S2_Template/src/assets/sass/stylesheet.scss */
 .avatarHeight {
   height: 48px;
-  overflow: hidden; }
+  overflow: hidden;
+}
 
+/* line 2171, C:/Nimmi/IDL_S2_Template/src/assets/sass/stylesheet.scss */
 .avatarLetter {
   border-radius: 50%;
-  display: inline-block;
+  display: block;
   margin: 0 auto;
   overflow: hidden;
   position: relative;
@@ -1682,217 +2506,247 @@ small.text-muted,
   background-color: #1da6fc;
   text-align: center;
   font-weight: bold;
-  letter-spacing: 1px; 
-  float:left;
-}
-.dropButt{
-  background: none;
-  border: none;
-  font-size: 18px;
-  margin: 7px 0 0 10px;
-  padding: 0 11px 5px;
-  color:#a7a7a7;
-}
-.blueDropButt{
-  background: none;
-  border: none;  
-  color:#0a85ff;
-}
-.nameTxt{
-  display: inline-block;
-  padding: 8px 0;
-  font-size: 18px;
-}
-.requestTxt{
-  color:#0a85ff;
-  padding: 11px 0px 8px 20px;
-}
-.timeTxt{
-  color: #ff0000;
-  padding: 8px 0 8px 20px;  
-}
-.timeTxt i{
-  font-size: 22px;
-}
-.uploadTime{
-  display: block;
-  font-size: 11px;
-  color: #a9a9a9;
+  letter-spacing: 1px;
 }
 
+/* line 2198, C:/Nimmi/IDL_S2_Template/src/assets/sass/stylesheet.scss */
 .border-default {
-  border-color: #b30300 !important; }
+  border-color: #b30300 !important;
+}
 
+/* line 2203, C:/Nimmi/IDL_S2_Template/src/assets/sass/stylesheet.scss */
 .import-data .ui-panelmenu .ui-panelmenu-header,
 .import-data .ui-widget-content {
-  border: 0; }
+  border: 0;
+}
+
+/* line 2207, C:/Nimmi/IDL_S2_Template/src/assets/sass/stylesheet.scss */
 .import-data .ui-panelmenu .ui-panelmenu-header a,
 .import-data .ui-panelmenu .ui-panelmenu-header.ui-state-active,
 .import-data .ui-panelmenu .ui-panelmenu-header.ui-state-active a,
 .import-data .importDataTitle {
   background: transparent !important;
   color: #575757;
-  font-weight: 600; }
+  font-weight: 600;
+}
+
+/* line 2215, C:/Nimmi/IDL_S2_Template/src/assets/sass/stylesheet.scss */
 .import-data .ui-panelmenu .ui-menu-list {
-  margin-left: 1.231rem; }
+  margin-left: 1.231rem;
+}
+
+/* line 2218, C:/Nimmi/IDL_S2_Template/src/assets/sass/stylesheet.scss */
 .import-data .fa-caret-right:before {
-  content: "\f067"; }
+  content: "\f067";
+}
+
+/* line 2221, C:/Nimmi/IDL_S2_Template/src/assets/sass/stylesheet.scss */
 .import-data .fa-caret-down:before {
-  content: "\f068"; }
+  content: "\f068";
+}
+
+/* line 2224, C:/Nimmi/IDL_S2_Template/src/assets/sass/stylesheet.scss */
 .import-data .mat-expansion-panel:not([class*=mat-elevation-z]) {
-  box-shadow: none; }
+  box-shadow: none;
+}
 
 /* import files */
+/* line 2231, C:/Nimmi/IDL_S2_Template/src/assets/sass/stylesheet.scss */
 .selected-list .c-btn {
   box-shadow: none !important;
   border: 0 !important;
   display: inline-block !important;
   width: auto !important;
-  position: relative !important; }
+  position: relative !important;
+}
 
+/* line 2239, C:/Nimmi/IDL_S2_Template/src/assets/sass/stylesheet.scss */
 .selected-list .c-list .c-token .fa-remove {
   margin-left: 10px !important;
-  margin-right: 2px; }
+  margin-right: 2px;
+}
 
+/* line 2244, C:/Nimmi/IDL_S2_Template/src/assets/sass/stylesheet.scss */
 .selected-list .fa-angle-down,
 .selected-list .fa-angle-up {
+  right: -10px !important;
+  border: 1px solid #b0afaf !important;
   padding: 2px 4px !important;
-    font-size: 13px !important;
-    border-radius: 50%!important;
-    background: #03d0bf;
-    color: #fff;
-    right:-10px!important;
+  font-size: 13px !important;
+  border-radius: 3px !important;
 }
 
+/* line 2253, C:/Nimmi/IDL_S2_Template/src/assets/sass/stylesheet.scss */
 .selected-list .c-list .c-token {
-  background: #575757 !important;
+  background: #ff514e !important;
   border-radius: 4px !important;
-  display: inline-block;
-  font-size: 12px;  
- }
- .c-label{
-  display: block;
-  float: left;
-  padding: 0px 3px 2px;
-}
-.fa-remove{
-    font-size: 12px;
-    z-index: 100000000;
-    background: #bbbbbb;
-    border-radius: 50%;    
-    padding: 1px 2px;
-    color: #575757;
 }
 
+/* line 2258, C:/Nimmi/IDL_S2_Template/src/assets/sass/stylesheet.scss */
 .selected-list .fa-angle-down:before {
-  content: "\f067"; }
+  content: "\f067";
+}
 
+/* line 2262, C:/Nimmi/IDL_S2_Template/src/assets/sass/stylesheet.scss */
 .pure-checkbox input[type="checkbox"]:checked + label:before {
-  background: #ff514e !important; }
+  background: #ff514e !important;
+}
 
+/* line 2266, C:/Nimmi/IDL_S2_Template/src/assets/sass/stylesheet.scss */
 .pure-checkbox input[type="checkbox"] + label:before {
   border: 2px solid #ff514e !important;
-  color: #ff514e !important; }
+  color: #ff514e !important;
+}
 
+/* line 2271, C:/Nimmi/IDL_S2_Template/src/assets/sass/stylesheet.scss */
 .pure-checkbox input[type="checkbox"] + label:after {
-  background-color: #ff514e !important; }
+  background-color: #ff514e !important;
+}
 
+/* line 2275, C:/Nimmi/IDL_S2_Template/src/assets/sass/stylesheet.scss */
 .selected-list .c-list {
   max-width: 370px !important;
-  width:auto!important;
- }
+}
 
+/* line 2282, C:/Nimmi/IDL_S2_Template/src/assets/sass/stylesheet.scss */
 .bd-callout {
   padding: 1.25rem;
   margin-top: 1.25rem;
   margin-bottom: 1.25rem;
   border: 1px solid #cccccc;
   border-left-width: .25rem;
-  border-radius: .25rem; }
+  border-radius: .25rem;
+}
 
+/* line 2291, C:/Nimmi/IDL_S2_Template/src/assets/sass/stylesheet.scss */
 .bd-callout h4 {
   margin-top: 0;
-  margin-bottom: .25rem; }
+  margin-bottom: .25rem;
+}
 
+/* line 2296, C:/Nimmi/IDL_S2_Template/src/assets/sass/stylesheet.scss */
 .bd-callout p:last-child {
-  margin-bottom: 0; }
+  margin-bottom: 0;
+}
 
+/* line 2300, C:/Nimmi/IDL_S2_Template/src/assets/sass/stylesheet.scss */
 .bd-callout code {
-  border-radius: .25rem; }
+  border-radius: .25rem;
+}
 
+/* line 2304, C:/Nimmi/IDL_S2_Template/src/assets/sass/stylesheet.scss */
 .bd-callout + .bd-callout {
-  margin-top: -.25rem; }
+  margin-top: -.25rem;
+}
 
+/* line 2309, C:/Nimmi/IDL_S2_Template/src/assets/sass/stylesheet.scss */
 .poweredBybrand {
   width: auto;
   height: 50px;
   overflow: hidden;
   padding: 0;
   margin: 0;
-  border: 0; }
+  border: 0;
+}
 
+/* line 2318, C:/Nimmi/IDL_S2_Template/src/assets/sass/stylesheet.scss */
 .poweredBytext {
   font-size: 1rem;
   color: #b0afaf;
   line-height: 1rem;
   padding-top: 12px;
   padding-left: 0;
-  letter-spacing: 0px; }
+  letter-spacing: 0px;
+}
 
+/* line 2327, C:/Nimmi/IDL_S2_Template/src/assets/sass/stylesheet.scss */
 .customInputSwith.ui-corner-all {
   background: #8b8b8b;
   border-radius: 10px;
-  color: #ffffff; }
+  color: #ffffff;
+}
 
+/* line 2333, C:/Nimmi/IDL_S2_Template/src/assets/sass/stylesheet.scss */
 .customInputSwith.ui-corner-all.ui-inputswitch-checked {
-  background: #00d1b2 !important; }
+  background: #00d1b2 !important;
+}
 
+/* line 2337, C:/Nimmi/IDL_S2_Template/src/assets/sass/stylesheet.scss */
 .customInputSwith .ui-state-default {
-  border-radius: 60%; }
+  border-radius: 60%;
+}
 
+/* line 2341, C:/Nimmi/IDL_S2_Template/src/assets/sass/stylesheet.scss */
 .customInputSwith.ui-inputswitch .ui-inputswitch-on {
-  background: #00d1b2 !important; }
+  background: #00d1b2 !important;
+}
 
+/* line 2345, C:/Nimmi/IDL_S2_Template/src/assets/sass/stylesheet.scss */
 .customInputSwith.ui-inputswitch .ui-inputswitch-on span.ui-inputswitch-onlabel {
-  content: "+"; }
+  content: "+";
+}
 
+/* line 2349, C:/Nimmi/IDL_S2_Template/src/assets/sass/stylesheet.scss */
 .verificationSuccess_icon {
   position: absolute;
   right: -5px;
-  top: 7px; }
+  top: 7px;
+}
 
+/* line 2363, C:/Nimmi/IDL_S2_Template/src/assets/sass/stylesheet.scss */
 .bd-callout-default {
-  border-left-color: #b30300; }
-  .bd-callout-default h4 {
-    color: #b30300; }
+  border-left-color: #b30300;
+}
 
+/* line 2358, C:/Nimmi/IDL_S2_Template/src/assets/sass/stylesheet.scss */
+.bd-callout-default h4 {
+  color: #b30300;
+}
+
+/* line 2367, C:/Nimmi/IDL_S2_Template/src/assets/sass/stylesheet.scss */
 .bd-callout-primary {
-  border-left-color: #1da6fc; }
-  .bd-callout-primary h4 {
-    color: #1da6fc; }
+  border-left-color: #1da6fc;
+}
 
+/* line 2358, C:/Nimmi/IDL_S2_Template/src/assets/sass/stylesheet.scss */
+.bd-callout-primary h4 {
+  color: #1da6fc;
+}
+
+/* line 2371, C:/Nimmi/IDL_S2_Template/src/assets/sass/stylesheet.scss */
 .bd-callout-secondary {
-  border-left-color: #ff8f00; }
-  .bd-callout-secondary h4 {
-    color: #ff8f00; }
+  border-left-color: #ff8f00;
+}
+
+/* line 2358, C:/Nimmi/IDL_S2_Template/src/assets/sass/stylesheet.scss */
+.bd-callout-secondary h4 {
+  color: #ff8f00;
+}
 
 /***** Media *****/
 @media (min-width: 992px) {
+  /* line 2378, C:/Nimmi/IDL_S2_Template/src/assets/sass/stylesheet.scss */
   .item {
     float: left;
     min-height: 25rem;
-    max-width: 56.99999%; }
-
+    max-width: 56.99999%;
+  }
+  /* line 2383, C:/Nimmi/IDL_S2_Template/src/assets/sass/stylesheet.scss */
   * .item2 {
     float: left;
     margin-bottom: 2rem;
     min-height: 25rem;
     margin-left: 1em;
-    max-width: 41.666666%; } }
-@media (min-width: 768px) {
-  .login-wrapper .login-wrapper-inner {
-    vertical-align: middle; }
+    max-width: 41.666666%;
+  }
+}
 
+@media (min-width: 768px) {
+  /* line 2393, C:/Nimmi/IDL_S2_Template/src/assets/sass/stylesheet.scss */
+  .login-wrapper .login-wrapper-inner {
+    vertical-align: middle;
+  }
+  /* line 2396, C:/Nimmi/IDL_S2_Template/src/assets/sass/stylesheet.scss */
   .sidebar-column {
     position: fixed;
     top: 0px;
@@ -1907,37 +2761,58 @@ small.text-muted,
     background-color: #3f454c;
     border-right: 1px solid #b0afaf;
     -webkit-box-shadow: 3px 0 5px -2px #999999;
-    box-shadow: 3px 0 5px -2px #999999; }
-    .sidebar-column .avatarIcon {
-      position: fixed;
-      bottom: 0;
-      left: 0; }
-
+    box-shadow: 3px 0 5px -2px #999999;
+  }
+  /* line 2411, C:/Nimmi/IDL_S2_Template/src/assets/sass/stylesheet.scss */
+  .sidebar-column .avatarIcon {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+  }
+  /* line 2418, C:/Nimmi/IDL_S2_Template/src/assets/sass/stylesheet.scss */
   .content-column {
     margin: 20px 0px 0 133px;
     margin-bottom: 15px;
     overflow-y: visible !important;
     height: 100%;
-    border-radius: 0.5rem; } }
+    border-radius: 0.5rem;
+  }
+}
+
+/* line 2431, C:/Nimmi/IDL_S2_Template/src/assets/sass/stylesheet.scss */
 .dropdown-menu.sfOverflow {
   overflow: auto;
-  max-height: 200px; }
+  max-height: 200px;
+}
 
+/* line 2436, C:/Nimmi/IDL_S2_Template/src/assets/sass/stylesheet.scss */
 .dropdown-toggle::after {
-  margin-top: 0.5rem; }
+  margin-top: 0.5rem;
+}
 
+/* line 2441, C:/Nimmi/IDL_S2_Template/src/assets/sass/stylesheet.scss */
 .tmplTableList .popover-body ul li span {
   display: block;
-  cursor: pointer; }
+  cursor: pointer;
+}
 
+/* line 2447, C:/Nimmi/IDL_S2_Template/src/assets/sass/stylesheet.scss */
 table {
-  table-layout: fixed; }
-  table th.idCol {
-    width: 20%;
-    color: #999999; }
-  table tr td {
-    word-wrap: break-word; }
+  table-layout: fixed;
+}
 
+/* line 2449, C:/Nimmi/IDL_S2_Template/src/assets/sass/stylesheet.scss */
+table th.idCol {
+  width: 20%;
+  color: #999999;
+}
+
+/* line 2453, C:/Nimmi/IDL_S2_Template/src/assets/sass/stylesheet.scss */
+table tr td {
+  word-wrap: break-word;
+}
+
+/* line 2459, C:/Nimmi/IDL_S2_Template/src/assets/sass/stylesheet.scss */
 .popover {
   position: absolute;
   top: 0;
@@ -1966,55 +2841,86 @@ table {
   border-radius: 6px;
   -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
-  line-break: auto; }
-  .popover.right {
-    margin-left: 10px; }
-  .popover > .arrow,
-  .popover > .arrow:after {
-    position: absolute;
-    display: block;
-    width: 0;
-    height: 0;
-    border-color: transparent;
-    border-style: solid; }
-  .popover > .arrow {
-    border-width: 11px; }
-  .popover.right > .arrow {
-    top: 50%;
-    left: -15px;
-    margin-top: -11px;
-    border-right-color: #999;
-    border-right-color: rgba(0, 0, 0, 0.25);
-    border-left-width: 0; }
-  .popover > .arrow:after {
-    content: "";
-    border-width: 10px; }
-  .popover.right > .arrow:after {
-    bottom: -10px;
-    left: 1px;
-    content: " ";
-    border-right-color: #fff;
-    border-left-width: 0; }
-  .popover .popover-title {
-    padding: 8px 14px;
-    margin: 0;
-    font-size: 14px;
-    background-color: #f7f7f7;
-    border-bottom: 1px solid #ebebeb;
-    border-radius: 5px 5px 0 0; }
-  .popover .popover-content ul li {
-    display: block;
-    margin: 2px 0;
-    cursor: pointer; }
+  line-break: auto;
+}
 
+/* line 2488, C:/Nimmi/IDL_S2_Template/src/assets/sass/stylesheet.scss */
+.popover.right {
+  margin-left: 10px;
+}
+
+/* line 2491, C:/Nimmi/IDL_S2_Template/src/assets/sass/stylesheet.scss */
+.popover > .arrow,
+.popover > .arrow:after {
+  position: absolute;
+  display: block;
+  width: 0;
+  height: 0;
+  border-color: transparent;
+  border-style: solid;
+}
+
+/* line 2500, C:/Nimmi/IDL_S2_Template/src/assets/sass/stylesheet.scss */
+.popover > .arrow {
+  border-width: 11px;
+}
+
+/* line 2503, C:/Nimmi/IDL_S2_Template/src/assets/sass/stylesheet.scss */
+.popover.right > .arrow {
+  top: 50%;
+  left: -15px;
+  margin-top: -11px;
+  border-right-color: #999;
+  border-right-color: rgba(0, 0, 0, 0.25);
+  border-left-width: 0;
+}
+
+/* line 2511, C:/Nimmi/IDL_S2_Template/src/assets/sass/stylesheet.scss */
+.popover > .arrow:after {
+  content: "";
+  border-width: 10px;
+}
+
+/* line 2515, C:/Nimmi/IDL_S2_Template/src/assets/sass/stylesheet.scss */
+.popover.right > .arrow:after {
+  bottom: -10px;
+  left: 1px;
+  content: " ";
+  border-right-color: #fff;
+  border-left-width: 0;
+}
+
+/* line 2522, C:/Nimmi/IDL_S2_Template/src/assets/sass/stylesheet.scss */
+.popover .popover-title {
+  padding: 8px 14px;
+  margin: 0;
+  font-size: 14px;
+  background-color: #f7f7f7;
+  border-bottom: 1px solid #ebebeb;
+  border-radius: 5px 5px 0 0;
+}
+
+/* line 2531, C:/Nimmi/IDL_S2_Template/src/assets/sass/stylesheet.scss */
+.popover .popover-content ul li {
+  display: block;
+  margin: 2px 0;
+  cursor: pointer;
+}
+
+/* line 2539, C:/Nimmi/IDL_S2_Template/src/assets/sass/stylesheet.scss */
 .termsModal {
   max-height: 420px !important;
   padding: 0 !important;
   margin: 0 0 15px 0 !important;
-  overflow: visible !important; }
-  .termsModal iframe {
-    padding: 1rem 0 1rem 1rem; }
+  overflow: visible !important;
+}
 
+/* line 2544, C:/Nimmi/IDL_S2_Template/src/assets/sass/stylesheet.scss */
+.termsModal iframe {
+  padding: 1rem 0 1rem 1rem;
+}
+
+/* line 2549, C:/Nimmi/IDL_S2_Template/src/assets/sass/stylesheet.scss */
 .countryDd {
   border: none;
   border-bottom: 1px solid rgba(0, 0, 0, 0.12);
@@ -2024,35 +2930,49 @@ table {
   padding: 4px 0;
   width: 100%;
   background: 0 0;
-  text-align: left; }
+  text-align: left;
+}
 
+/* line 2561, C:/Nimmi/IDL_S2_Template/src/assets/sass/stylesheet.scss */
 .ui-panelmenu .ui-submenu-list {
   margin: 0 0 0 1.5em !important;
   padding: 0;
-  list-style: none; }
+  list-style: none;
+}
 
+/* line 2590, C:/Nimmi/IDL_S2_Template/src/assets/sass/stylesheet.scss */
 .customBlock {
   position: relative;
-  display: block; }
+  display: block;
+}
 
+/* line 2595, C:/Nimmi/IDL_S2_Template/src/assets/sass/stylesheet.scss */
 .sfLoader {
   position: absolute;
   height: 100%;
   width: 100%;
   background: #FFF;
-  z-index: 999; }
-  .sfLoader .sfloding-svg {
-    margin: 0 0 2em;
-    height: 100px;
-    width: 20%;
-    text-align: center;
-    padding: 1em;
-    margin: 0 auto 1em;
-    display: inline-block;
-    vertical-align: top; }
-  .sfLoader svg path {
-    fill: #1da6fc; }
+  z-index: 999;
+}
 
+/* line 2601, C:/Nimmi/IDL_S2_Template/src/assets/sass/stylesheet.scss */
+.sfLoader .sfloding-svg {
+  margin: 0 0 2em;
+  height: 100px;
+  width: 20%;
+  text-align: center;
+  padding: 1em;
+  margin: 0 auto 1em;
+  display: inline-block;
+  vertical-align: top;
+}
+
+/* line 2611, C:/Nimmi/IDL_S2_Template/src/assets/sass/stylesheet.scss */
+.sfLoader svg path {
+  fill: #1da6fc;
+}
+
+/* line 2617, C:/Nimmi/IDL_S2_Template/src/assets/sass/stylesheet.scss */
 .ngSfLoader.loader {
   background: #FFF;
   height: 100%;
@@ -2061,23 +2981,40 @@ table {
   text-align: center;
   top: 0;
   width: 100%;
-  z-index: 10000000; }
-  .ngSfLoader.loader .circle {
-    width: auto;
-    height: auto; }
-    .ngSfLoader.loader .circle svg path {
-      fill: #1da6fc; }
+  z-index: 10000000;
+}
 
+/* line 2627, C:/Nimmi/IDL_S2_Template/src/assets/sass/stylesheet.scss */
+.ngSfLoader.loader .circle {
+  width: auto;
+  height: auto;
+}
+
+/* line 2630, C:/Nimmi/IDL_S2_Template/src/assets/sass/stylesheet.scss */
+.ngSfLoader.loader .circle svg path {
+  fill: #1da6fc;
+}
+
+/* line 2638, C:/Nimmi/IDL_S2_Template/src/assets/sass/stylesheet.scss */
 .paymentDialog .ui-widget-header {
   padding: 2rem 4rem 0.5rem 4rem !important;
-  background: #ffffff; }
+  background: #ffffff;
+}
+
+/* line 2642, C:/Nimmi/IDL_S2_Template/src/assets/sass/stylesheet.scss */
 .paymentDialog .ui-dialog.ui-widget .ui-dialog-content {
   padding: 1rem 4rem 2rem 4rem !important;
-  background: #f9f9f9; }
+  background: #f9f9f9;
+}
+
+/* line 2646, C:/Nimmi/IDL_S2_Template/src/assets/sass/stylesheet.scss */
 .paymentDialog .ui-widget-overlay.ui-dialog-mask {
   background: url(/assets/images/bgPricing.png) no-repeat center center;
   background-size: 100%;
-  overflow-x: hidden; }
+  overflow-x: hidden;
+}
+
+/* line 2651, C:/Nimmi/IDL_S2_Template/src/assets/sass/stylesheet.scss */
 .paymentDialog .ui-dialog .ui-dialog-titlebar-icon,
 .paymentDialog .ui-dialog .ui-dialog-titlebar-icon:hover {
   position: absolute;
@@ -2088,12 +3025,20 @@ table {
   border: 0px;
   background-color: #3f454c;
   color: #ffffff;
-  font-size: 18px; }
+  font-size: 18px;
+}
 
+/* line 2666, C:/Nimmi/IDL_S2_Template/src/assets/sass/stylesheet.scss */
 .confirmAssignee .ui-dialog .ui-dialog-titlebar {
-  background: transparent; }
+  background: transparent;
+}
+
+/* line 2669, C:/Nimmi/IDL_S2_Template/src/assets/sass/stylesheet.scss */
 .confirmAssignee .ui-dialog-footer {
-  border: 0; }
+  border: 0;
+}
+
+/* line 2672, C:/Nimmi/IDL_S2_Template/src/assets/sass/stylesheet.scss */
 .confirmAssignee .ui-dialog .ui-dialog-titlebar-icon,
 .confirmAssignee .ui-dialog .ui-dialog-titlebar-icon:hover {
   position: absolute;
@@ -2104,64 +3049,134 @@ table {
   border: 0px;
   background-color: #3f454c;
   color: #ffffff;
-  font-size: 18px; }
+  font-size: 18px;
+}
 
+/* line 2687, C:/Nimmi/IDL_S2_Template/src/assets/sass/stylesheet.scss */
 .SfGenericTemplates .card {
   -webkit-box-shadow: 0px 0px 10px 2px #cccccc;
   -moz-box-shadow: 0px 0px 10px 2px #cccccc;
   box-shadow: 0px 0px 10px 2px #cccccc;
   border-radius: 0;
   padding: 1rem;
-  max-width: 180px; }
+  max-width: 180px;
+}
+
+/* line 2695, C:/Nimmi/IDL_S2_Template/src/assets/sass/stylesheet.scss */
 .SfGenericTemplates .header {
   font-size: 1rem;
-  font-weight: bold; }
+  font-weight: bold;
+}
+
+/* line 2699, C:/Nimmi/IDL_S2_Template/src/assets/sass/stylesheet.scss */
 .SfGenericTemplates .body {
   font-size: 0.8462rem;
-  text-rendering: optimizeLegibility; }
+  text-rendering: optimizeLegibility;
+  max-height: 200px;
+  overflow: hidden;
+}
+
+/* line 2704, C:/Nimmi/IDL_S2_Template/src/assets/sass/stylesheet.scss */
+.SfGenericTemplates .body.fadeBottom {
+  background: -moz-linear-gradient(top, rgba(255, 255, 255, 0) 80%, rgba(255, 255, 255, 0.72) 96%, rgba(255, 255, 255, 0.9) 100%);
+  background: -webkit-linear-gradient(top, rgba(255, 255, 255, 0) 80%, rgba(255, 255, 255, 0.72) 96%, rgba(255, 255, 255, 0.9) 100%);
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 80%, rgba(255, 255, 255, 0.72) 96%, rgba(255, 255, 255, 0.9) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#e6ffffff', GradientType=0);
+}
+
+/* line 2711, C:/Nimmi/IDL_S2_Template/src/assets/sass/stylesheet.scss */
 .SfGenericTemplates .footer {
-  font-size: 1.077rem; }
-.SfGenericTemplates .selected {
+  font-size: 1.077rem;
+}
+
+/* line 2714, C:/Nimmi/IDL_S2_Template/src/assets/sass/stylesheet.scss */
+.SfGenericTemplates .highlightSector {
   position: absolute;
   right: -6px;
   bottom: -12px;
   font-size: 18px;
   border-radius: 100%;
-  padding: 2px 6px;
-  background-color: #00d1b2; }
-.SfGenericTemplates .progress {
-  height: 5px; }
-.SfGenericTemplates .inputForms {
-  height: 18px; }
+  padding: 0;
+  background-color: #ffffff;
+  border: 1px solid #b0afaf;
+  z-index: 99999999;
+}
 
+/* line 2724, C:/Nimmi/IDL_S2_Template/src/assets/sass/stylesheet.scss */
+.SfGenericTemplates .highlightSector i {
+  padding: 5px 5px;
+  border-radius: 100%;
+  border-color: transparent;
+}
+
+/* line 2729, C:/Nimmi/IDL_S2_Template/src/assets/sass/stylesheet.scss */
+.SfGenericTemplates .highlightSector .selected {
+  background-color: #00d1b2;
+}
+
+/* line 2733, C:/Nimmi/IDL_S2_Template/src/assets/sass/stylesheet.scss */
+.SfGenericTemplates .progress {
+  height: 5px;
+}
+
+/* line 2736, C:/Nimmi/IDL_S2_Template/src/assets/sass/stylesheet.scss */
+.SfGenericTemplates .inputForms {
+  height: 18px;
+}
+
+/* line 2745, C:/Nimmi/IDL_S2_Template/src/assets/sass/stylesheet.scss */
 .sfTmplInputForms .ui-corner-all {
-  border: 0; }
+  border: 0;
+}
+
+/* line 2748, C:/Nimmi/IDL_S2_Template/src/assets/sass/stylesheet.scss */
 .sfTmplInputForms .ui-carousel-item {
-  width: 180px; }
+  width: 180px;
+}
+
+/* line 2751, C:/Nimmi/IDL_S2_Template/src/assets/sass/stylesheet.scss */
 .sfTmplInputForms .ui-carousel-header.ui-widget-header {
   background: transparent;
   padding: 0;
-  border: 0; }
-.sfTmplInputForms .ui-carousel-header-title, .sfTmplInputForms .ui-carousel-page-links, .sfTmplInputForms .ui-carousel .ui-carousel-dropdown, .sfTmplInputForms .ui-carousel .ui-carousel-mobiledropdown {
-  display: none; }
+  border: 0;
+}
+
+/* line 2756, C:/Nimmi/IDL_S2_Template/src/assets/sass/stylesheet.scss */
+.sfTmplInputForms .ui-carousel-header-title,
+.sfTmplInputForms .ui-carousel-page-links,
+.sfTmplInputForms .ui-carousel .ui-carousel-dropdown,
+.sfTmplInputForms .ui-carousel .ui-carousel-mobiledropdown {
+  display: none;
+}
+
+/* line 2762, C:/Nimmi/IDL_S2_Template/src/assets/sass/stylesheet.scss */
 .sfTmplInputForms .ui-carousel-button.ui-carousel-next-button {
   position: absolute;
   right: -30px;
   top: 50%;
-  z-index: 99999; }
+  z-index: 99999;
+}
+
+/* line 2768, C:/Nimmi/IDL_S2_Template/src/assets/sass/stylesheet.scss */
 .sfTmplInputForms .ui-carousel-button.ui-carousel-prev-button {
   position: absolute;
   left: -30px;
   top: 50%;
-  z-index: 99999; }
+  z-index: 99999;
+}
+
+/* line 2774, C:/Nimmi/IDL_S2_Template/src/assets/sass/stylesheet.scss */
 .sfTmplInputForms .ui-carousel .ui-carousel-viewport {
   margin-top: -30px;
-  height: 290px; }
+  height: 290px;
+}
 
 @media (min-width: 576px) {
+  /* line 2782, C:/Nimmi/IDL_S2_Template/src/assets/sass/stylesheet.scss */
   .modal-dialog {
-    max-width: 500px; }
-
+    max-width: 500px;
+  }
+  /* line 2785, C:/Nimmi/IDL_S2_Template/src/assets/sass/stylesheet.scss */
   .countryDd {
     border: none;
     border-bottom: 1px solid rgba(0, 0, 0, 0.12);
@@ -2172,51 +3187,50 @@ table {
     width: 100%;
     background: 0 0;
     overflow: hidden;
-    text-align: left; } }
+    text-align: left;
+  }
+}
+
 @media (min-width: 767px) {
+  /* line 2800, C:/Nimmi/IDL_S2_Template/src/assets/sass/stylesheet.scss */
   .modal-dialog {
-    max-width: 700px; }
-
+    max-width: 700px;
+  }
+  /* line 2803, C:/Nimmi/IDL_S2_Template/src/assets/sass/stylesheet.scss */
   .countryDd {
-    width: 130px; }
-
+    width: 130px;
+  }
+  /* line 2806, C:/Nimmi/IDL_S2_Template/src/assets/sass/stylesheet.scss */
   .pl-lr-0 {
-    padding-left: 0px; }
-
+    padding-left: 0px;
+  }
+  /* line 2809, C:/Nimmi/IDL_S2_Template/src/assets/sass/stylesheet.scss */
   .pl-lr-10 {
-    padding-left: 10px; } }
+    padding-left: 10px;
+  }
+}
+
 @media (max-width: 760px) {
+  /* line 2815, C:/Nimmi/IDL_S2_Template/src/assets/sass/stylesheet.scss */
   .topHeader {
     margin: 0;
-    padding: 0; }
-
+    padding: 0;
+  }
+  /* line 2819, C:/Nimmi/IDL_S2_Template/src/assets/sass/stylesheet.scss */
   .sidebar-column {
-    display: none !important; }
-
+    display: none !important;
+  }
+  /* line 2822, C:/Nimmi/IDL_S2_Template/src/assets/sass/stylesheet.scss */
   main > .container-fluid.pl-0 {
-    padding-left: 15px !important; }
-
+    padding-left: 15px !important;
+  }
+  /* line 2825, C:/Nimmi/IDL_S2_Template/src/assets/sass/stylesheet.scss */
   h1,
   .h1,
   .mainTitle {
     padding: 1.5rem 0rem;
-    margin-left: -15px; } }
-
-/*# sourceMappingURL=stylesheet.css.map */
-
-.stageEmpty.isSmall{
-  background: none!important;
-  line-height: normal;
-}
-.ui-widget-header{
-  background: none!important;
-  border:none!important;
-}
-.ui-corner-bottom{
-  display: none!important;
+    margin-left: -15px;
+  }
 }
 
-.ui-widget-header{
-height:30px;
-}
-
+/*# sourceMappingURL=../css/stylesheet.map */
