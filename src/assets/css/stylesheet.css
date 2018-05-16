@@ -1289,7 +1289,7 @@ small.text-muted,
   user-select: none; }
 
 .stageEmpty.isSmall {
-  padding: 0 1rem;
+  padding: 17px 1rem 0;
   line-height: 36px;
   color: rgba(0, 0, 0, 0.3);
   border-color: rgba(0, 0, 0, 0.15);
@@ -1303,8 +1303,8 @@ small.text-muted,
     width: 100%;
     line-height: 20px;
     z-index: 999;
-    height: 40px;
-    margin-top: -65px;
+    height: 70px;
+    margin-top: -93px;
     border: none;    
     color: #0a85ff; 
     /* position: relative;
