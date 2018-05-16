@@ -6,7 +6,7 @@ import { GlobalVariable, GlobalStorage } from '../../global';
 @Component({
   selector: 'app-crc',
   templateUrl: './crc.component.html',
-  styleUrls: ['./crc.component.scss']
+  styleUrls:['./crc.component.scss']
 })
 export class CrcComponent implements OnInit {
 
