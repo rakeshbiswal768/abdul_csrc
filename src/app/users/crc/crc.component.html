@@ -6,10 +6,10 @@
                     <div class="col-lg-9 col-md-9 col-sm-9 col-xs-12 userDetails">
                         <span class="avatarLetter">U2</span>
                         <div class="btn-group ">
+                            <span class="usernameTxt">Tom Clarke</span>
                             <button type="button" class="dropButt" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">                                
                                 <i class="fa fa-ellipsis-h" aria-hidden="true"></i>                                
-                            </button>
-                            <span class="nameTxt">Tom Clarke</span>
+                            </button>                            
                             <span class="requestTxt">Request #314944</span>
                             <button type="button" class="blueDropButt" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">                                
                                 <i class="fa fa-angle-down" aria-hidden="true"></i>                                
@@ -48,8 +48,7 @@
                 </ul>
             </div>
             <div class="col-lg-9 col-md-9 col-sm-9 col-xs-12 rightCont">
-                <div class="dragFileArea">
-                    
+                <div class="dragFileArea">                    
                     <ng-template matStepLabel>Chose Files</ng-template>
                     <div class="stageEmpty isSmall">
                         <span>Drag files here or click to upload</span>
@@ -114,10 +113,6 @@
                                 <!--Files Content-->
                                 <div class="recordCont" *ngIf="media.length !== 0">
                                     <h4>media information</h4>
-
-
-
-
                                     <ul class="addBox">
                                         <li class="attached" *ngFor="let item of media">
                                             <div class="attachedCont">
@@ -213,9 +208,6 @@
                         <ngb-tab title="Files">
                             <ng-template ngbTabContent>
                                 <div class="recordCont">
-
-
-
                                     <div class="importstage" *ngIf="uploadedFiles.length">
                                         <!-- <div class="row">
                                             <div class="col-md-6">
@@ -226,15 +218,20 @@
                                             </div>
                                         </div> -->
                                         <div *ngFor="let file of uploadedFiles" class="row align-items-center">
-                                            <div class="col-md-6">
+                                            <div class="col-md-12 uploadedImg">
+                                                <div class="imgName">
                                                 {{file.name}}
                                                 <span class="uploadTime">Uploaded just now</span>
-                                            </div>
-                                            <div class="col-md-6">
+                                                </div>
+                                                <div class="imgTags">
                                                 <angular2-multiselect [data]="dropdownList" [(ngModel)]="file.autocompleteTags" [settings]="dropdownSettings" (onSelect)="onItemSelect($event)"
                                                     (onDeSelect)="OnItemDeSelect($event)" (onSelectAll)="onSelectAll($event)"
                                                     (onDeSelectAll)="onDeSelectAll($event)">
                                                 </angular2-multiselect>
+                                                </div>
+                                                <div class="uploadImgDrop">
+                                                <i class="fa fa-ellipsis-h" aria-hidden="true"></i>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>

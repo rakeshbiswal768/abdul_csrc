@@ -45,14 +45,17 @@
       margin-right: 10px;
     }
     .crcMain .nav .nav-item .nav-link {
-        color: #595959;
-        text-transform: uppercase;
-        padding-bottom: 10px; 
-        font-weight: bold;
-        background: #efefef;
-        border-radius:0px;
-        padding: .5rem 3rem;  
-        }
+      color: #595959;
+      text-transform: uppercase;
+      padding-bottom: 10px;
+      font-weight: bold;
+      background: #efefef;
+      border-radius: 0px;
+      padding: .5rem 0;
+      border-top: solid 2px #efefef;
+      width: 150px;
+      text-align: center;
+    }
       .crcMain .nav .nav-item .nav-link.active, .nav .nav-item .nav-link:focus, .nav .nav-item .nav-link:hover {
           border: 0;
           color: #595959;      
@@ -76,7 +79,9 @@
       border: 0 !important;
       display: inline-block !important;
       width: auto !important;
-      position: relative !important; }
+      position: relative !important; 
+      padding:0!important;
+    }
     
     .crcMain .selected-list .c-list .c-token .fa-remove {
       margin-left: 10px !important;
@@ -84,12 +89,15 @@
     
     .crcMain .selected-list .fa-angle-down,
     .crcMain .selected-list .fa-angle-up {
-      padding: 2px 4px !important;
+      padding: 3px 0 !important;
         font-size: 13px !important;
         border-radius: 50%!important;
         background: #03d0bf;
         color: #fff;
-        right:-10px!important;
+        right:-22px!important;
+        border:none!important;
+        width:19px;
+        text-align: center;
     }
     
     .crcMain .selected-list .c-list .c-token {
@@ -163,5 +171,33 @@
         height: inherit;
       }
 
+      .crcMain .tab-content{
+        padding:2rem 1rem!important;
+      }
+      .crcMain .uploadedImg{
+        border-bottom: solid 1px #e3e3e3;
+        display: block;
+        padding: 10px 0;
+      }
+      .crcMain .imgName{
+        width:18%;
+        float:left;
+      }
+      .crcMain .imgTags{
+        width:80%;
+        float:left;
+      }
+      .crcMain .usernameTxt{
+        display: inline-block;
+        padding: 8px 0 8px 20px;
+        font-size: 18px;
+      }
+      .crcMain .uploadImgDrop{
+        float:right;
+        padding-top:8px;
+      }
+      .crcMain .uploadImgDrop i{
+        color:#b5b5b5;
+      }
 
  
