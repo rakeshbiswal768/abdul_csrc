@@ -28,7 +28,9 @@
         // break;
       }
     } */
-
+    button:focus{
+      outline: none;
+    }
     .crcMain{
       background: #fff;
     }
@@ -184,7 +186,7 @@
         float:left;
       }
       .crcMain .imgTags{
-        width:80%;
+        width:77%;
         float:left;
       }
       .crcMain .usernameTxt{
@@ -198,6 +200,12 @@
       }
       .crcMain .uploadImgDrop i{
         color:#b5b5b5;
+      }
+      .uploadImgDrop{
+        background: none;
+        border: none;
+        font-size: 18px;        
+        color: #a7a7a7;
       }
 
  
