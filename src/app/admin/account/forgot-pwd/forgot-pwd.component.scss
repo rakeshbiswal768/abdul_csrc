@@ -1,0 +1,105 @@
+$roboto: "roboto",sans-serif;
+$lato: 'Lato',sans-serif;
+$sans: 'Open Sans';
+/* Colors */
+$pink: #ff514e;
+$green: #00d1b2;
+$btngreen: #28a745;
+$grey:#575757;
+
+.loginNew{    
+    .idLink-logo{
+      padding: 14px;
+      background: $pink;
+      border-radius: 50%;
+    }
+    p{
+        font-size: 12px;
+        color:$grey;
+        font-family: $roboto;
+        line-height: 14px;
+    }
+    .form-group{
+      margin-bottom: 1.3rem;
+    }
+    .logoTxt{
+      display: block;
+      text-align: center;
+      font-size: 18px;
+      font-weight: bold;
+      padding: 60px 0 30px;
+      font-family: $roboto;
+      color: $grey;
+    }
+    .input-group-addon.noBorder{
+      margin-left: 0;
+    }
+    .loginInBox{
+        display: block;
+        border: solid 1px #e0e0e0;
+        padding: 0 10px;;
+      i{
+        display:inline-block;
+        width:20px;
+        color: #a7a7a7;
+      }
+      input{
+        display:inline-block;
+        width:80%;
+        border:none;
+        padding: 5px 0 3px;
+        font-size: 14px;
+        padding: 7px 0 5px;
+        font-size: 12px;
+      }
+    }
+    .forgotPwd{
+        font-size: 11px;
+        color: #787878;
+    }
+    .loginButt{
+        background: #ff6463;
+        border: none;
+        padding: 7px 0;
+    }
+    .sendLinkButt{
+        background: #ff6463;
+        border: none;
+        padding: 7px 0;
+        width: 200px;
+        text-align: center;
+        margin: 32px auto 0;
+    }
+    .createtxt{
+        display: block;
+        text-align: center;
+        font-size: 18px;
+        font-weight: bold;
+        padding: 60px 0 10px;
+        font-family: $roboto;
+        color: $grey;
+      }
+      .signupBtn{
+        font-size: 16px;
+        color: #919191;
+        border:solid 2px #cdcdcd;
+        border-radius:4px;
+        padding: 6px 4px;
+        background: #fff;
+        width:auto;  
+        margin: 0 auto;              
+      }
+      .bgWrapper{
+        display: block;
+        width: 100%;
+        margin-top: 20px;
+        img{
+            width: 100%;
+            margin-bottom: 80px;
+            max-width: 100%;
+            vertical-align: middle;
+            display: inline-block;
+            border: 0;
+        }
+      }
+}

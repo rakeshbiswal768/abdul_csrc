@@ -19,7 +19,7 @@ export const router: Routes = [
             { path: 'register/:plan/:planId', component: RegisterComponent },
             // { path: 'register/:plan', component: RegisterComponent },
             // { path: 'join-org', component: JoinOrgComponent },
-            // { path: 'new-account', component: NewAccountComponent },
+            { path: 'newaccount', component: NewAccountComponent },
             { path: 'new-account/:isNewAccount', component: CreatePasswordComponent }, //Create a password for new company
             { path: 'forgot-pwd', component: ForgotPwdComponent },
             { path: 'forgot-pwd/:isLinkValid', component: ForgotPwdComponent },

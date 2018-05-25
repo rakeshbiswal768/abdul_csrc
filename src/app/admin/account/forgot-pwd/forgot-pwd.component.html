@@ -1,4 +1,4 @@
-<div class="login-wrapper">
+<div class="login-wrapper loginNew">
   <div class="backBtn">
     <a href="/login">
       <svg height="36" viewBox="0 0 24 24" width="36" xmlns="http://www.w3.org/2000/svg">
@@ -13,16 +13,14 @@
 
       <div class="row justify-content-center">
         <!-- <div class="col-md-offset-4 col-md-4 login"> -->
-        <div class="col-md-4 text-center mt-5">
-          <a href="/login">
-            <img class="idLink-logo" src="/assets/images/idlink_logo_h.svg" alt="IDLink">
-          </a>
-        </div>
+          <div class="col-md-4 text-center mt-5">
+            <img class="idLink-logo" src="/assets/images/logo.jpg" alt="SafeProfile">
+            <span class="logoTxt">Forgot Password</span>
+          </div>
       </div>
 
       <div class="row justify-content-center">
-        <div class="col-md-4 login">
-          <div *ngIf="!isLinkValid;else link" class="register-title text-center" for="login-email">Forgot password?</div>
+        <div class="col-md-2 login">          
           <ng-template #link>
             <div class="register-title text-center" for="login-email">Sorry, that link is no longer valid.</div>
           </ng-template>
@@ -36,12 +34,10 @@
                 Sorry, we don’t recognize that email address.
               </div>
               <div class="input-group mdl-textfield mdl-js-textfield mdl-textfield--floating-label pb-0">
-                <div class="input-group-addon noBorder">
-                  <img src="/assets/images/icon-email.svg" alt="" />
+                <div class="input-group loginInBox">
+                  <i class="fa fa-envelope-o" aria-hidden="true"></i>
+                  <input formControlName="username" class="mdl-textfield__input noBorder safePlaceHolder" placeholder="Enter your email address" id="login-username" type="email" email aria-required="true"/>                
                 </div>
-                <input formControlName="email" class="mdl-textfield__input noBorder safePlaceHolder" id="login-email" type="email" email
-                  aria-required="true">
-                <label class="inputLabel" for="login-email">EMAIL</label>
               </div>
 
               <!-- <label class="sr-only" for="login-email">EMAIL</label>
@@ -52,7 +48,7 @@
                               </div> -->
             </div>
             <div class="form-group loginBtn">
-              <button type="submit" class="btn btn-primary btn-block" id="signupBtn" [disabled]="!joinForm.valid">SEND LINK</button>
+              <button type="submit" class="btn btn-primary btn-block sendLinkButt" id="signupBtn" [disabled]="!joinForm.valid">SEND LINK</button>
             </div>
             <div *ngIf="forgotMsg" class="col-md-12">
               <div class="alert alert-success" role="alert">Reset password link has been sent to your mail</div>

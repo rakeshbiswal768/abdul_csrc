@@ -7,7 +7,7 @@ import { GlobalVariable } from '../../../../app/global'
 @Component({
   selector: 'app-forgot-pwd',
   templateUrl: './forgot-pwd.component.html',
-  styleUrls: ['./forgot-pwd.component.css']
+  styleUrls: ['./forgot-pwd.component.scss']
 })
 export class ForgotPwdComponent implements OnInit, OnDestroy {
 
