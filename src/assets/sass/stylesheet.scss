@@ -54,7 +54,8 @@ h3.childTitle {
   font-size: $text-14;
   font-weight: bold;
   color: $darkGray;
-  padding: 1em 0 0.75rem 0;
+  padding: 5rem 0 0 0;
+  text-align: center;
 }
 
 //.childTitle-2 { //removed for registon UI formatting
@@ -163,6 +164,7 @@ a.clean {
 .btn-primary.disabled,
 .btn-primary:disabled {
   background-color: $primary;
+  border:none;
 }
 
 .btn.disabled,
@@ -444,6 +446,8 @@ a.clean {
   height: 70px;
   width: auto;
   padding: 15px;
+  background: $grapefruit;
+  border-radius:50%;
 }
 
 .topHeader {
@@ -1039,9 +1043,9 @@ input.inputNoborder {
   min-height: 100%;
   background: $white;
   .login {
-    max-width: 450px;
+    max-width: 320px;
     form {
-      padding-top: 2rem;
+      padding-top:0;
     }
   }
   .login-wrapper-inner {
@@ -1054,7 +1058,7 @@ input.inputNoborder {
     .loginBtn {
       margin: 3rem 0;
       text-align: center;
-      padding: 0 15%;
+      padding: 0;
     }
     .btnTitle {
       font-weight: 500;
@@ -1071,6 +1075,8 @@ input.inputNoborder {
     .signupBtn {
       margin-top: 0.50rem;
       font-size: $text-14;
+      width: 61%;
+      margin: 0 auto;
     }
     .register-title {
       font-family: $roboto;
@@ -1965,7 +1971,7 @@ small.text-muted,
     background: transparent !important;
   }
   .mat-step-header .mat-step-icon {
-    background-color: $green !important;
+    background-color: $azure !important;
     color: $white;
   }
   .mat-stepper-horizontal-line.completed {
@@ -2867,4 +2873,11 @@ table {
     padding: 1.5rem 0rem;
     margin-left: -15px;
   }
+}
+
+.btn-primary:hover{
+  background: #333;
+}
+input:focus{
+  border:none;
 }

@@ -3,9 +3,10 @@
     <div class="login-container">
       <div class="row justify-content-center">
         <div class="col-md-4 text-center mt-5">
-          <img class="idLink-logo" src="/assets/images/idlink_logo_h.svg" alt="IDLink">
+          <img class="idLink-logo" src="/assets/images/logo.jpg" alt="IDLink">
         </div>
       </div>
+      <h2 class="childTitle-2">Login to SafeProfile</h2>
       <div class="row justify-content-center">
         <div class="col-md-4 login">
           <form (ngSubmit)="loginApp(loginForm.controls.username.value,loginForm.controls.password.value)" [formGroup]="loginForm"
@@ -20,7 +21,7 @@
                 </span>
               </div>
             </div>
-
+            
             <div class="form-group text-left">
               <div *ngIf="loginForm.controls.username.hasError('required') && loginForm.controls.username.touched" class="errorMessages p-0 m-0">
                 Company Name is required.
