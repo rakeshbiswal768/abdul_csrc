@@ -13,7 +13,7 @@ import { SearchComponent } from './shared/search/search.component';
 import { DropdownComponent } from './shared/dropdown/dropdown.component';
 import { PendingRequestComponent } from './shared/pending-request/pending-request.component';
 import { RecentActivityComponent } from './shared/recent-activity/recent-activity.component';
-// import { UsersComponent } from './users/users/users.component';
+import { UsersComponent } from './users/users/users.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { GlobalStorage } from './global';
 import { AuthenticationService } from './service/authentication.service';

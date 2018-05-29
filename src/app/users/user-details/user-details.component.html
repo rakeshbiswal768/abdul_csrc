@@ -1,0 +1,53 @@
+<div class="row align-items-center">
+  <div class="col-md-auto noPadding ml-3">
+    <!-- <img src="/assets/images/default-avatar.jpg" alt="Username" class="thumb50 rounded-circle" /> -->
+    <span class="avatarLetter">{{unm[0]?.slice(0, 1)?.toUpperCase()}}{{unm[1]?.slice(0, 1)?.toUpperCase()}}</span>
+  </div>
+  <p-dialog [(visible)]="display" modal="modal" [responsive]="true" minWidth="400">
+    <p-header>
+      Cancel Request
+    </p-header>
+    <textarea [rows]="5" class="w-100" pInputTextarea autoResize="false"></textarea>
+    <p-footer>
+      <button type="button" pButton icon="fa-check" (click)="cancelDelivery()" label="Yes"></button>
+      <button type="button" pButton icon="fa-close" (click)="display=false" label="No"></button>
+    </p-footer>
+
+  </p-dialog>
+  <!-- <p-confirmDialog header="Confirmation" icon="fa fa-question-circle" width="425">
+        <ng-template>
+            <textarea [rows]="5" [cols]="30" pInputTextarea autoResize="true"></textarea>
+        </ng-template>
+    </p-confirmDialog> -->
+  <div class="col">
+    <div class="upHeader justify-content-between">
+      <div class="upUsername d-block">
+        <span *ngIf="!name" class="upUsername">New Request</span>
+        <a *ngIf="name" class="btn upUsername dropdown-toggle pl-0" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          {{name}}
+        </a>
+        <div class="dropdown-menu">
+          <a (click)="selectTab('Client profile')" class="dropdown-item" href="javascript:void(0);">Client profile</a>
+          <a (click)="selectTab('History')" class="dropdown-item" href="javascript:void(0);">History</a>
+          <a (click)="selectTab('Assignees')" class="dropdown-item" href="javascript:void(0);">Assignees</a>
+          <a (click)="cancelRequest()" class="dropdown-item" href="javascript:void(0);">Cancel Request</a>
+          <!-- <a (click)="selectTab('Conversations')" class="dropdown-item" href="javascript:void(0);">Conversations</a> -->
+        </div>
+      </div>
+      <!-- <span class="text-deadline d-block" *ngIf="reqStatus">
+        <strong>{{reqStatus}}</strong>
+      </span> -->
+      <span class="text-sent d-block" *ngIf="reqStatus?.toLowerCase()=='sent'||reqStatus?.toLowerCase()=='received';else rStatus">
+        <strong>Data Delivered</strong>
+        <i class="fa fa-check cyanTxt ng-star-inserted"></i>
+      </span>
+
+      <ng-template #rStatus>
+        <span class="text-deadline d-block" *ngIf="dueDate">
+          <strong>{{reqStatus=='N'?'NEW DATA REQUEST':reqStatus}}:</strong> Due in {{dueInDays?dueInDays:dueDate}} days
+          <span class="ml-1 circle circle-deadline"></span>
+        </span>
+      </ng-template>
+    </div>
+  </div>
+</div>

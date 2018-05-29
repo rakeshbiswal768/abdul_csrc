@@ -5,7 +5,7 @@
     </div>
     <div class="col-4 d-flex justify-content-end align-items-center">
         <!-- <button type="button" class="btn btn-primary w-btn mr-3" [ngStyle]="{'background-color': app.localStoragebtn(),'border-color': app.localStoragebtn()}">Upgrade</button> -->
-        <a (click)="editPlan()" class="btn btn-primary w-btn mr-3" [ngStyle]="{'background-color': app.localStoragebtn(),'border-color': app.localStoragebtn()}">Upgrade</a>
+        <a *ngIf="showUpgrade" (click)="editPlan()" class="btn btn-primary w-btn mr-3" [ngStyle]="{'background-color': app.localStoragebtn(),'border-color': app.localStoragebtn()}">Upgrade</a>
         <app-dropdown></app-dropdown>
         <div class="companyLogoHeader ml-3">
             <img id="companyLogoNav" class='company-logo' src="{{imageData}}" alt="IDLink Customer logo" />

@@ -1,0 +1,88 @@
+<div class="row">
+  <div class="col-lg-6 mr-auto">
+    <h2 class="subTitle">{{pageTitle}}</h2>
+    <div *ngIf="successMessage" class="alert alert-success alert-dismissible fade show" role="alert">
+      <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+      </button>
+      <strong>{{successMessage}}</strong>
+    </div>
+    <div *ngIf="errorMessage" class="alert alert-danger alert-dismissible fade show" role="alert">
+      <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+      </button>
+      <strong>{{errorMessage}}</strong>
+    </div>
+    <form [formGroup]="createForm" class="createForm">
+      <div class="form-group">
+        <div *ngIf="createForm.controls.firstName.hasError('required') && createForm.controls.firstName.touched" class="errorMessages pb-0">
+          First Name is required.
+        </div>
+        <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label pb-0 w-100 is-focused">
+          <input formControlName="firstName" class="form-control safePlaceHolder noBorder" id="login-firstName" type="text" aria-required="true">
+          <label class="mdl-textfield__label text-uppercase" for="login-firstName">First Name</label>
+        </div>
+      </div>
+      <div class="form-group">
+        <div *ngIf="createForm.controls.lastName.hasError('required') && createForm.controls.lastName.touched" class="errorMessages pb-0">
+          Last Name is required.
+        </div>
+        <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label pb-0 w-100 is-focused">
+          <input formControlName="lastName" class="form-control safePlaceHolder noBorder" id="login-lastName" type="text" aria-required="true">
+          <label class="mdl-textfield__label text-uppercase" for="login-lastName">Last Name</label>
+        </div>
+      </div>
+      <div class="form-group">
+        <div *ngIf="createForm.controls.jobTitle.hasError('required') && createForm.controls.jobTitle.touched" class="errorMessages pb-0">
+          Job Title is required
+        </div>
+        <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label pb-0 w-100 is-focused">
+          <input formControlName="jobTitle" class="form-control safePlaceHolder noBorder" id="login-jobTitle" type="text" aria-required="true">
+          <label class="mdl-textfield__label text-uppercase" for="login-jobTitle">Job Title</label>
+        </div>
+      </div>
+      <div class="form-group">
+        <div *ngIf="createForm.controls.email.hasError('required') && createForm.controls.email.touched" class="errorMessages pb-0">
+          email is required.
+        </div>
+        <div *ngIf="createForm.controls.email.hasError('email') && createForm.controls.email.touched" class="errorMessages pb-0">
+          email is invalid.
+        </div>
+        <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label pb-0 w-100 is-focused">
+          <input formControlName="email" class="form-control safePlaceHolder noBorder" id="login-email" type="email" aria-required="true">
+          <label class="mdl-textfield__label text-uppercase" for="login-email">email</label>
+        </div>
+      </div>
+      <div class="form-group">
+        <div *ngIf="createForm.controls.companyPhone.hasError('required') && createForm.controls.companyPhone.touched" class="errorMessages pb-0">
+          Phone is required.
+        </div>
+        <label for="login-companyPhone" class="sf_inputLabel">Phone</label>
+        <div class="row">
+          <div class="col-4">
+            <div ngbDropdown class="" aria-labelledby="countryDropdown">
+              <button class="btn safeDropdown" id="dropdownMenu1" ngbDropdownToggle>
+                {{phoneDisplayMessage}}
+              </button>
+              <div ngbDropdownMenu class="dropdown-menu sfOverflow" id="countryDropdown">
+                <div *ngFor="let country of countries">
+                  <button class="dropdown-item" id="country" (click)="changephoneCountry(country.name,country.dial_Code)">{{country.name}} ({{country.dial_Code}})</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-8">
+            <input type="text" id="login-companyPhone" formControlName="companyPhone" class="form-control safePlaceHolder noBorder" maxlength="10"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="pt-3 pb-3">
+        <span>Role: {{userRole}}</span>
+      </div>
+    </form>
+  </div>
+  <div class="col-auto">
+    <button type="button" class="btn btn-primary" id="saveBtn" (click)="saveChanges()" [disabled]="!createForm.valid" [ngStyle]="{'background-color': app.localStoragebtn(),'border-color': app.localStoragebtn()}">Save Changes</button>
+  </div>
+</div>

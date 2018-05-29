@@ -1,0 +1,125 @@
+<div class="row" *ngIf="showForms;else editInfoTypeT">
+  <div class="col-lg-8">
+    <p-growl [(value)]="msgs"></p-growl>
+    <h2 class="subTitle pb-0 mb-0" aria-labelledby="TemplatesHelpBlock">Templates</h2>
+    <small id="TemplatesHelpBlock" class="form-text text-muted">
+      Templates are collections of preset information types, categories, and input forms specific to different sectors. Each of
+      these elements can be customized for your organization.
+    </small>
+    <div class="row pt-2 pb-5">
+      <div class="col-12">
+        <div class="dropdown">
+          <button class="btn btn-light_2 dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true"
+            aria-expanded="false">
+            Generic Template
+          </button>
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <a class="dropdown-item" href="javascript:void(0);">Generic Template</a>
+          </div>
+          <div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <h2 class="subTitle pb-0 mb-0" aria-labelledby="InformationtypesandcategoriesHelpBlock">Information types and categories</h2>
+    <small id="InformationtypesandcategoriesHelpBlock" class="form-text text-muted">
+      Specify the types of information you will be collecting. Every record you add, or every file you import will fall under one
+      of these information types.
+    </small>
+    <div class="row pt-2 pb-5">
+      <div class="col-lg-12 pt-20">
+        <button type="button" class="btn btn-primary w-btn" id="signupBtn" (click)="editInfotype()" [ngStyle]="{'background-color': app.localStoragebtn(),'border-color': app.localStoragebtn()}">
+          Edit
+        </button>
+      </div>
+      <p-confirmDialog header="Confirmation" icon="fa fa-question-circle" width="425"></p-confirmDialog>
+    </div>
+
+    <h2 class="subTitle pb-0 mb-0">Input forms</h2>
+    <small id="loginEmailHelpBlock" class="form-text text-muted">
+      Create data input forms for various information types.
+    </small>
+    <div class="row pt-2 pb-3">
+      <div class="col-lg-12">
+        <ul class="list-group tmplTableList">
+          <li class="list-group-item pb-0">
+            <div class="row">
+              <div class="col-md-2 text-uppercase">
+                Active
+              </div>
+              <div class="col-md-4 text-uppercase">
+                Form name
+              </div>
+              <div (click)="getSortColumn()" class="col pl-4 text-uppercase">
+                Information Type
+              </div>
+              <div class="col-md-2">
+              </div>
+            </div>
+          </li>
+          <!-- <li class="list-group-item" *ngFor="let item of templateColn| orderBy:sortCol;let i = index"> -->
+          <li class="list-group-item" *ngFor="let item of templateColn;let i = index">
+            <div class="row">
+              <div class="col-md-2">
+                <mat-card class="result noShadow">
+                  <mat-card-content>
+                    <section>
+                      <mat-slide-toggle [id]="item?.id" [name]="item?.name" (change)="changeToggle(i)" [checked]="item?.isActive" [disabled]="disabled">
+                        <!-- <div> -->
+                        <!-- {{item?.isActive==true?'ON':'OFF'}} -->
+                        <!-- </div> -->
+                      </mat-slide-toggle>
+                    </section>
+                  </mat-card-content>
+                </mat-card>
+              </div>
+              <div class="col-md-4">
+                {{item.name}}
+              </div>
+              <div class="col pl-4">
+                <div class="dropdown" id="selectRole">
+                  <button class="btn btn-light_2 dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true"
+                    aria-expanded="false">{{templateColn[i].informationType.name}}</button>
+                  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                    <div *ngFor="let infotype of infoTypes">
+                      <a class="dropdown-item" href="javascript:void(0);" id="infotype.id" (click)="changeInfoType(templateColn[i],infotype.id,infotype.name)">{{infotype.name}} </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-2">
+                <div class="d-flex justify-content-between">
+                  <popover-content #popContent title="Action" placement="right" [animation]="true" [closeOnClickOutside]="true" [closeOnMouseOutside]="true">
+                    <ul class="list-unstyled">
+                      <li class="pl-3 pt-2 pb-1">
+                        <span (click)="editTemplate(item?.id)">Edit</span>
+                      </li>
+                      <li>
+                        <hr class="m-0 p-0" />
+                      </li>
+                      <li class="pl-3 pt-2 pb-1">
+                        <span (click)="deleteTemplate(item?.id)">Delete</span>
+                      </li>
+                    </ul>
+                  </popover-content>
+                  <button type="button" class="btn btn-outline-secondary noBorderDL hoverTransparant" [popover]="popContent">
+                    <img src="/assets/images/icon-modify.svg" class="border-0" alt="Modify this Template" />
+                  </button>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="list-group-item">
+            <button class="btn btnDefault roundBtn" (click)="newTemplate()" type="button" id="addNewTmplButton">+</button>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+<ng-template #editInfoTypeT>
+  <app-information-types (showForms)="setShowForm($event)">
+
+  </app-information-types>
+</ng-template>

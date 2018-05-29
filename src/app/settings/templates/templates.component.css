@@ -1,0 +1,8 @@
+.mat-card {
+    transition: unset;
+    display: unset;
+    position: unset;
+    padding: unset;
+    border-radius: inherit;
+    padding: 0px;
+}

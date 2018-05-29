@@ -17,6 +17,7 @@ export class HeaderComponent implements OnInit {
   aFormat = '';
   imageData: any;
   planDetails = '';
+  showUpgrade = false;
   constructor(public app: GlobalStorage, private commonApiService: CommonApiService, private router: Router, private route: ActivatedRoute) { }
 
   getCompanyLogo() {
@@ -35,6 +36,7 @@ export class HeaderComponent implements OnInit {
     // this.dateFormat = sessionStorage.getItem('dateFormat');
     // this.btnFormat = sessionStorage.getItem('buttonColor');
     // this.aFormat = sessionStorage.getItem('accentColor');
+    this.getPlanDetails();
   }
 
   getPlanDetails() {
@@ -46,7 +48,7 @@ export class HeaderComponent implements OnInit {
           // this.cardDetails = data.item3.stripeCreditCardLastFourDigits;
           // this.cardExpiryMonth = data.item3.stripeCreditCardExpirationMonth;
           // this.cardExpiryYear = data.item3.stripeCreditCardExpirationYear.slice(-2);
-          this.planDetails = data.item3.stripeSubscriptionPlanName;
+          this.planDetails = data.item3 != null ? data.item3.stripeSubscriptionPlanName : 'Trial';
           // this.planCurrency = data.item3.stripeSubscriptionCurrency;
           // this.planCharges = data.item3.stripeSubscriptionAmount;
           // this.planInterval = data.item3.stripeSubscriptionInterval;
@@ -61,19 +63,13 @@ export class HeaderComponent implements OnInit {
         },
         err => console.log(err),
         () => {
-          if (this.planDetails === 'trial' || this.planDetails === '') {
-            //[routerLink]="['/settings/change-plan/upgrade']"
-            this.router.navigate(['/settings/change-plan/upgrade']);
-
-          } else {
-            this.router.navigate(['/settings/change-plan', this.planDetails === 'Level II' ? 'level2' : 'level1']);
-
-          }
+          this.showUpgrade = !(this.planDetails === 'Level I' || this.planDetails === 'Level II');
         }
       );
   }
+
   editPlan() {
-    this.getPlanDetails();
+    this.router.navigate(['/settings/change-plan/upgrade']);
   }
 
 }

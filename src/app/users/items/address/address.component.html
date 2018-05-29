@@ -1,0 +1,76 @@
+<div class="tmpItel-row" id="address" [attr.data-guid]="guid" *ngIf="showItem">
+  <div class="row">
+    <div class="col">
+      <div class="row">
+      </div>
+      <div class="row align-items-center" [ngClass]="{'tmpItel-col-left': true,'isSelected':!inputFocusClass}">
+        <div class="col-sm-10">
+            <span class="tmplitemHeader pl-0 mb-3">{{data.value}}</span>
+          <form [formGroup]="createForm" class="createForm">
+            <div class="form-group row">
+              <label class="col-sm-4 col-form-label tmpllabel disabled" for="addressLine1">Address Line 1</label>
+              <div class="col-sm-8">
+                <input formControlName="addressLine1" (focus)="focusFunction()" (focusout)="focusOutFunction()" class="form-control safePlaceHolder"
+                  id="addressLine1" type="text" placeholder="Address line 1" aria-required="true">
+              </div>
+            </div>
+            <div class="form-group row">
+              <label class="col-sm-4 col-form-label tmpllabel disabled" for="addressLine2">Address Line 2</label>
+              <div class="col-sm-8">
+                <input formControlName="addressLine2" (focus)="focusFunction()" (focusout)="focusOutFunction()" class="form-control safePlaceHolder"
+                  id="addressLine2" type="text" placeholder="Address line 1" aria-required="false">
+              </div>
+            </div>
+            <div class="form-group row">
+              <label class="col-sm-4 col-form-label tmpllabel disabled" for="city">City</label>
+              <div class="col-sm-8">
+                <input formControlName="city" (focus)="focusFunction()" (focusout)="focusOutFunction()" class="form-control safePlaceHolder"
+                  id="city" type="text" placeholder="City" aria-required="true">
+              </div>
+            </div>
+            <div class="form-group row">
+              <label class="col-sm-4 col-form-label tmpllabel disabled" for="postalCode">Postal Code</label>
+              <div class="col-sm-8">
+                <input formControlName="postalCode" (focus)="focusFunction()" (focusout)="focusOutFunction()" class="form-control safePlaceHolder"
+                  id="postalCode" type="text" placeholder="Postal Code" aria-required="true">
+              </div>
+            </div>
+          </form>
+        </div>
+        <div class="col-sm-2">
+          <img src="/assets/images/icon-tb-settings.svg" (click)="openSettings(data)" class="tmplIcon mr-1 pr-0" alt="Modify this field"
+          />
+          <img src="/assets/images/icon-tb-trash.svg" (click)="deleteItem(data?.guid)" class="tmplIcon" alt="Delete this field" />
+        </div>
+      </div>
+    </div>
+    <!-- <form [formGroup]="createForm" class="createForm"> -->
+    <!-- <div class="form-group">
+        <label class="sr-only sr-only-focusable" for="login-companyName">Address Line 1</label>
+        <input formControlName="addressLine1" (focus)="focusFunction()" (focusout)="focusOutFunction()" class="form-control safePlaceHolder noBorder"
+          id="addressLine1" type="text" placeholder="Address line 1" aria-required="true">
+      </div> -->
+    <!-- <div class="form-group">
+        <label class="sr-only sr-only-focusable" for="login-companyName">Address Line 1</label>
+        <input formControlName="addressLine2" (focus)="focusFunction()" (focusout)="focusOutFunction()" class="form-control safePlaceHolder noBorder"
+          id="addressLine2" type="text" placeholder="Address line 2" aria-required="true">
+      </div> -->
+    <!-- <div class="row">
+        <div class="col-lg-7">
+          <div class="form-group">
+            <label class="sr-only sr-only-focusable" for="login-city">City</label>
+            <input formControlName="city" (focus)="focusFunction()" (focusout)="focusOutFunction()" class="form-control safePlaceHolder noBorder"
+              id="login-city" type="text" placeholder="City" aria-required="true">
+          </div>
+        </div>
+        <div class="col-lg-5">
+          <div class="form-group">
+            <label class="sr-only sr-only-focusable" for="login-postalCode">Postal Code</label>
+            <input formControlName="postalCode" (focus)="focusFunction()" (focusout)="focusOutFunction()" class="form-control safePlaceHolder noBorder"
+              id="login-postalCode" type="text" placeholder="Postal Code" aria-required="true">
+          </div>
+        </div>
+      </div> -->
+    <!-- </form> -->
+  </div>
+</div>

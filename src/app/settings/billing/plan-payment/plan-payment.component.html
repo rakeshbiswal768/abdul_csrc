@@ -1,0 +1,139 @@
+<p-dialog [(visible)]="display" modal="modal" [responsive]="true" width="520" class="paymentDialog" (onHide)="onHide()">
+    <p-header>
+        <div class="row-fluid">
+            <div class="col-12">
+                <div *ngIf="isUpgrade; else planPay_1">
+                    <h1 class="pb-0">
+                        You are about to upgrade
+                        <br/> to the {{selectedPlan}}</h1>
+                    <small class="form-text">
+            <b>{{selectedPlan}}:€{{(planId=="level2"?level2Amount/12:level1Amount/12)}} monthly + consumption</b>
+          </small>
+                    <small class="form-text text-muted">Your payments toward your previous plan are credited toward your new plan. You will be billed today only for the
+            price difference for the months remaining in your billing cycle.</small>
+                    <h2 class="childTitle-2">Today's payment: €{{level2Amount-level1Amount}}</h2>
+                </div>
+                <ng-template #planPay_1>
+                    <h1 class="pb-0">
+                        You are about to purchase
+                        <br/> the {{selectedPlan}}</h1>
+                    <h2 class="childTitle-2 pb-0">Today's payment: €{{(planId=="level2"?level2Amount:level1Amount)||"0"}}(1 year)</h2>
+                    <small class="form-text text-muted pb-2">Consumption fees will be billed monthly.</small>
+                </ng-template>
+            </div>
+        </div>
+        <!-- {{planId=="level2"?'Level II Plan':'Level I Plan'}} -->
+    </p-header>
+    <div class="row-fluid">
+        <!-- <div class="col-12" *ngIf="isUpgrade; else planPay">
+    </div>
+    <ng-template #planPay>
+      <div class="col-12">
+      </div>
+    </ng-template> -->
+        <div class="col-12" *ngIf="serverError">
+            <span class="errorMessages" *ngFor="let error of serverError">
+        {{error.value}}
+      </span>
+        </div>
+        <div class="col-12">
+            <p class="text-left">
+                <img src="/assets/images/icons/visa.svg" alt="" />
+                <img src="/assets/images/icons/mastercard.svg" alt="" />
+                <img src="/assets/images/icons/americanexpress.svg" alt="" />
+            </p>
+        </div>
+        <div class="col-12">
+            <form role="form" [formGroup]="createForm">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="form-group">
+                            <div *ngIf="createForm.controls.cardNumber.hasError('required') && createForm.controls.cardNumber.touched" class="errorMessages pb-0 mb-0">
+                                Credit Card Number is required.
+                            </div>
+                            <label class="sr-only sr-only-focusable" for="cardNumber">Card number</label>
+                            <div class="input-group">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text bg-white">
+                    <img src="/assets/images/icons/credit_card.svg" class="sfIconTrans" alt="" />
+                  </span>
+                                </div>
+
+                                <input type="text" formControlName="cardNumber" maxlength="16" class="form-control border-left-0" name="cardNumber" placeholder="Card number">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-7">
+                        <div class="form-group">
+                            <div *ngIf="createForm.controls.expiration.hasError('required') && createForm.controls.expiration.touched" class="errorMessages p-0 m-0">
+                                Card expiration date required.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-5">
+                        <div class="form-group">
+                            <div *ngIf="createForm.controls.cvv.hasError('required') && createForm.controls.cvv.touched" class="errorMessages p-0 m-0">
+                                CVC is required.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <div class="form-group text-left">
+                            <label class="sr-only sr-only-focusable" for="Expiration">Card Expiration month and year</label>
+                            <div class="input-group pInputgroup">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text bg-white">
+                    <img src="/assets/images/icons/calendar.svg" class="sfIconTrans" alt="" />
+                  </span>
+                                </div>
+                                <p-inputMask formControlName="expiration" mask="99/9999" placeholder="MM/YYYY" characterPattern="[0-9]" styleClass="form-control input-text ipa"></p-inputMask>
+                                <!-- <input type="text" formControlName="expiration" class="form-control border-left-0" name="Expiration" placeholder="mm/yyyy"> -->
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="col-6">
+                        <div class="form-group text-left">
+                            <label class="sr-only sr-only-focusable" for="cvv">CVC</label>
+                            <div class="input-group">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text bg-white">
+                    <img src="/assets/images/icon-lock.svg" class="sfIconTrans" alt="" />
+                  </span>
+                                </div>
+                                <input type="text" formControlName="cvv" maxlength="3" class="form-control border-left-0" name="cvv" placeholder="CVC">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button [disabled]="!createForm.valid" class="subscribe btn btn-primary btn-block" (click)="sendCreditCardInfo()" type="button" [ngStyle]="{'background-color': app.localStoragebtn(),'border-color': app.localStoragebtn()}">
+          Confirm </button>
+            </form>
+        </div>
+    </div>
+</p-dialog>
+
+<p-dialog [(visible)]="displayConfirmation" modal="modal" [responsive]="true" minWidth="400" class="paymentDialog" (onHide)="onHideConf()">
+    <p-header>
+        <div class="text-center">
+            <img alt="IDLink" class="idLink-logo" src="/assets/images/idlink_logo_h.svg">
+        </div>
+    </p-header>
+
+
+    <div class="register-title text-center">
+        <span class="childTitle">Thank you. Your payment <br>has been processed</span><br>
+        <img class="w-20" src="/assets/images/icons/check.svg"><br>
+        <span class="childTitle">you are now subscribed to the <br>{{selectedPlan}}</span>
+    </div>
+
+    <p-footer>
+        <div class="text-center">
+            <button type="button" class="btn btn-success w-btn w-50 border-0" [ngStyle]="{'background-color': '#03d0bf','outline': 'none'}" (click)="onHideConf()">Finish</button>
+        </div>
+    </p-footer>
+</p-dialog>

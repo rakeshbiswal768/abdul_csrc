@@ -1,0 +1,195 @@
+<div class="row">
+  <div class="col-lg-8 mr-auto">
+    <div id="accordion" role="tablist" class="collapseItem">
+      <div class="card">
+        <div class="card-header pl-0 pb-0 pt-0 mt-0" role="tab" id="headingOne">
+          <h2 class="pb-0">
+            <a data-toggle="collapse" (click)="setAccordion()" href="javascript:void(0);" [attr.aria-expanded]="isExpandedG" aria-controls="collapseOne"
+              class="d-block subTitle {{classG}}">
+              <i class="more-less fa fa-plus pull-right"></i> Global interface settings
+            </a>
+            <small class="d-block mb-0 info-text">
+              These settings will be applied to all system users, and may affect appearance of communications sent through the system.
+            </small>
+          </h2>
+        </div>
+        <p-growl [(value)]="msgs"></p-growl>
+        <div id="collapseOne" #collapse1 class="collapse {{showG}}" role="tabpanel" aria-labelledby="headingOne" data-parent="#accordion">
+          <div class="card-body pl-0 pt-1">
+            <div class="list-group">
+              <!-- <div class="list-group-item list-group-item-action flex-column align-items-start">
+                <div class="d-flex w-100 justify-content-between">
+                  <label for="lang" class="accordionItems mb-1">Select interface language</label>
+                </div>
+                <select class="form-control w-50 noBorder" name="lang" required [(ngModel)]="myLang.lang">
+                  <option *ngFor="let lang of [defaultLang].concat(langList)" [value]="lang">{{lang}}</option>
+                </select>
+              </div> -->
+              <div class="list-group-item list-group-item-action flex-column align-items-start">
+                <div class="d-flex w-100 justify-content-between">
+                  <label class="accordionItems mb-1">Select date format</label>
+                </div>
+                <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="option-1">
+                  <input type="radio" id="option-1" class="mdl-radio__button mr-2" name="options" value="1" [checked]="dateFormatSel" (change)="onSelectionChange('1')">
+                  <span class="mdl-radio__label">mm/dd/yyyy</span>
+                </label>
+                <div class="clearfix"></div>
+                <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="option-2">
+                  <input type="radio" id="option-2" class="mdl-radio__button mr-2" name="options" value="2" [checked]="!dateFormatSel" (change)="onSelectionChange('2')">
+                  <span class="mdl-radio__label">dd/mm/yyyy</span>
+                </label>
+              </div>
+              <div class="list-group-item list-group-item-action flex-column align-items-start">
+                <div class="d-flex w-100 justify-content-between">
+                  <label for="lang" class="accordionItems mb-1">Upload a new logo</label>
+                </div>
+                <div class="row">
+                  <div class="col-2">
+                    <img class="logoPreview logo" src="{{imageData}}" alt="Your current logo" />
+                  </div>
+                  <div class="col-10">
+                    <small class="info-text" id="helperText">This logo will be applied to all users. Square images work best, and should be no bigger that 160px in
+                      width or height. Format can be .svg, .jpg, .png, or .gif</small>
+                    <br/>
+                    <input #logo type="file" class="pt-2" (change)="onChangeFile($event)" aria-describedby="helperText" />
+                  </div>
+                </div>
+              </div>
+              <div class="list-group-item list-group-item-action flex-column align-items-start">
+                <div class="d-flex w-100 justify-content-between">
+                  <label for="lang" class="accordionItems mb-1">Accent color</label>
+                </div>
+                <small class="info-text" id="helperText d-block">This color will be used for things like highlighting the chosen menu item. Use the color picker to pick a
+                  color from your logo, or any element on the screen.</small>
+                <div class="clearfix"></div>
+                <!-- <input type="color" /> -->
+                <p-colorPicker [(ngModel)]="accentColor"></p-colorPicker>
+              </div>
+              <div class="list-group-item list-group-item-action flex-column align-items-start">
+                <div class="d-flex w-100 justify-content-between">
+                  <label for="lang" class="accordionItems mb-1">Button colors</label>
+                </div>
+                <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect mt-3" for="button-1">
+                  <input type="radio" id="button-1" class="mdl-radio__button mr-2" name="buttonColorsG" value="1" [checked]="buttonColor === '#1da6fc'"
+                    (change)="buttonColor='#1da6fc'">
+                  <span class="mdl-radio__label">
+                    <button class="btn btn-light w-btn"> Cancel </button>
+                    <button class="btn btn-primary w-btn" [ngStyle]="{'background-color': '#1da6fc','border-color': '#1da6fc'}"> Save </button>
+                  </span>
+                </label>
+                <div class="clearfix"></div>
+                <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect mt-3" for="button-2">
+                  <input type="radio" id="button-2" class="mdl-radio__button mr-2" name="buttonColorsG" value="2" [checked]="buttonColor === '#28a745'"
+                    (change)="buttonColor='#28a745'">
+                  <span class="mdl-radio__label">
+                    <button class="btn btn-light w-btn"> Cancel </button>
+                    <button class="btn btn-dark w-btn" [ngStyle]="{'background-color': '#28a745','border-color': '#28a745'}"> Save </button>
+                  </span>
+                </label>
+                <div class="clearfix"></div>
+                <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect mt-3" for="button-3">
+                  <input type="radio" id="button-3" class="mdl-radio__button mr-2" name="buttonColorsG" value="3" [checked]="buttonColor === '#72ccb7'"
+                    (change)="buttonColor='#72ccb7'">
+                  <span class="mdl-radio__label">
+                    <button class="btn btn-light w-btn"> Cancel </button>
+                    <button class="btn btn-success w-btn" [ngStyle]="{'background-color': '#72ccb7','border-color': '#72ccb7'}"> Save </button>
+                  </span>
+                </label>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header pl-0 pb-0 pt-0 mt-0" role="tab" id="headingTwo">
+          <h2 class="pb-0">
+            <a class="collapsed" data-toggle="collapse" (click)="setAccordion()" href="javascript:void(0);" [attr.aria-expanded]="isExpandedP"
+              aria-controls="collapseTwo" class="d-block subTitle {{classP}}">
+              <i class="more-less fa fa-plus pull-right"></i> Personal preferences
+            </a>
+            <small class="d-block mb-0 info-text">
+              These settings only affect you.
+            </small>
+          </h2>
+        </div>
+        <div id="collapseTwo" #collapse2 class="collapse {{showP}}" role="tabpanel" aria-labelledby="headingTwo" data-parent="#accordion">
+          <div class="card-body pl-0 pt-1">
+            <div class="list-group">
+              <!-- <div class="list-group-item list-group-item-action flex-column align-items-start">
+                <div class="d-flex w-100 justify-content-between">
+                  <label for="lang" class="accordionItems mb-1">Select interface language</label>
+                </div>
+                <select class="form-control w-50 noBorder" name="langP" required [(ngModel)]="myLangP.langP">
+                  <option *ngFor="let langP of [defaultLang].concat(langListP)" [value]="langP">{{langP}}</option>
+                </select>
+              </div> -->
+              <div class="list-group-item list-group-item-action flex-column align-items-start">
+                <div class="d-flex w-100 justify-content-between">
+                  <label class="accordionItems mb-1">High contrast setting</label>
+                </div>
+                <div class="row">
+                  <div class="col-3">
+                    <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="Regular">
+                      <input type="radio" id="Regular" class="mdl-radio__button mr-2" name="contrastsettingoptions" value="Regular" [checked]="!useHighContrast"
+                        (change)="onSelectionChangeContrast('1')">
+                      <span class="mdl-radio__label">Regular</span>
+                    </label>
+                  </div>
+                  <div class="col-3">
+                    <span class="exmapleItem1">MENU ITEM</span>
+                  </div>
+                  <div class="col-3">
+                    <span class="exampleItem2">Descriptive text</span>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-3">
+                    <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="Highcontrast">
+                      <input type="radio" id="Highcontrast" class="mdl-radio__button mr-2" name="contrastsettingoptions" value="High contrast"
+                        [checked]="useHighContrast" (change)="onSelectionChangeContrast('2')">
+                      <span class="mdl-radio__label">High contrast</span>
+                    </label>
+                  </div>
+                  <div class="col-3">
+                    <span class="exampleItem3">MENU ITEM</span>
+                  </div>
+                  <div class="col-3">
+                    <span class="exampleItem4">Descriptive text</span>
+                  </div>
+                </div>
+              </div>
+              <div class="list-group-item list-group-item-action flex-column align-items-start">
+                <div class="d-flex w-100 justify-content-between">
+                  <label for="lang" class="accordionItems mb-1">Font size</label>
+                </div>
+                <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="SmallFont">
+                  <input type="radio" id="SmallFont" class="mdl-radio__button mr-2" name="buttonColors" value="Small" [checked]="fontSize === 'Small'"
+                    (change)="fontSize='Small'">
+                  <span class="mdl-radio__label">Small (default)</span>
+                </label>
+                <div class="clearfix"></div>
+                <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="MediumFont">
+                  <input type="radio" id="MediumFont" class="mdl-radio__button mr-2" name="buttonColors" value="Medium" [checked]="fontSize === 'Medium'"
+                    (change)="fontSize='Medium'">
+                  <span class="mdl-radio__label">Medium</span>
+                </label>
+                <div class="clearfix"></div>
+                <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="LargeFont">
+                  <input type="radio" id="LargeFont" class="mdl-radio__button mr-2" name="buttonColors" value="Large" [checked]="fontSize === 'Large'"
+                    (change)="fontSize='Large'">
+                  <span class="mdl-radio__label">Large</span>
+                </label>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="col-auto">
+    <button type="button" class="btn btn-primary" (click)="postGeneralSettingsInfo()" [ngStyle]="{'background-color': app.localStoragebtn(),'border-color': app.localStoragebtn()}"
+      *ngIf="isExpandedG" [ngClass]="(collapse1.show)?'show':'hide'">Save Changes</button>
+    <button type="button" class="btn btn-primary" (click)="postPersonalSettingsInfo()" [ngStyle]="{'background-color': app.localStoragebtn(),'border-color': app.localStoragebtn()}"
+      *ngIf="isExpandedP" [ngClass]="(collapse2.show)?'show':'hide'">Save Changes</button>
+  </div>
+</div>

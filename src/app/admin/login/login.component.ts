@@ -9,7 +9,7 @@ import { NgxSmartLoaderService } from 'ngx-smart-loader';
 @Component({
     selector: 'app-login',
     templateUrl: './login.component.html',
-    styleUrls: ['./login.component.scss']
+    styleUrls: ['./login.component.css']
 })
 export class LoginComponent implements OnInit {
     loginForm: FormGroup;
@@ -32,7 +32,7 @@ export class LoginComponent implements OnInit {
     }
 
     registerUser() {
-        this.router.navigate(['trial/pricing']);
+        this.router.navigate(['/register']);
     }
 
     loginApp(username, password) {

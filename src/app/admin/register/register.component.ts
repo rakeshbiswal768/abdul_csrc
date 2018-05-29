@@ -39,7 +39,7 @@ export class RegisterComponent implements OnInit, OnDestroy, OnChanges {
     level1Amount: Number;
     level2Amount: Number;
     companyId: string;
-
+    isLinear: boolean = false;
     isStep1: boolean;
     isStep2: boolean;
     isStep3: boolean;
@@ -49,7 +49,7 @@ export class RegisterComponent implements OnInit, OnDestroy, OnChanges {
         private commonApiService: CommonApiService) {
         this.createForm = this.formBuilder.group({
             companyName: ['', Validators.required],
-            websiteUrl: ['', Validators.required],
+            websiteUrl: [''],
             phoneCountryCode: ['+45', Validators.required],
             companyPhone: ['', Validators.required]
         });
@@ -111,9 +111,9 @@ export class RegisterComponent implements OnInit, OnDestroy, OnChanges {
 
     }
 
-    createAccount(stepper: MatStepper){
+    createAccount(stepper: MatStepper) {
         if (this.plan == "trial") {
-            
+
             this.registerUser();
 
         } else {
@@ -139,16 +139,16 @@ export class RegisterComponent implements OnInit, OnDestroy, OnChanges {
         };
         this.commonApiService.postData(GlobalVariable.REGISTER_COMPANY_INFO, body)
             .subscribe(
-                data => {                    
+                data => {
 
                     if (this.plan == "trial") {
                         this.router.navigate(['trial/inst-sent/welcomeUser']);
-                    }else{
+                    } else {
 
                         this.companyId = data.id;
-                        
+
                         this.sendCreditCardInfo();
-                    } 
+                    }
 
                 },
                 err => {
