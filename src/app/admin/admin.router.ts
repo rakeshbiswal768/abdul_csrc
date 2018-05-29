@@ -21,6 +21,7 @@ export const router: Routes = [
             // { path: 'join-org', component: JoinOrgComponent },
             { path: 'newaccount', component: NewAccountComponent },
             { path: 'new-account/:isNewAccount', component: CreatePasswordComponent }, //Create a password for new company
+            { path: 'register', component: RegisterComponent },
             { path: 'forgot-pwd', component: ForgotPwdComponent },
             { path: 'forgot-pwd/:isLinkValid', component: ForgotPwdComponent },
             { path: 'inst-sent', component: InstructionSentComponent },

@@ -1,0 +1,61 @@
+<div class="login-wrapper loginNew">
+    <div class="login-wrapper-inner">
+        <div class="login-container">
+            <div class="row justify-content-center">
+                <div class="col-md-4 text-center mt-5">
+                    <img class="idLink-logo" src="/assets/images/logo.jpg" alt="SafeProfile">
+                    <span class="logoTxt">Login to SafeProfile</span>
+                </div>
+            </div>
+            <div class="row justify-content-center" style="margin: 0;">
+                <div class="col-md-2 login">
+                    <form (ngSubmit)="loginApp(loginForm.controls.username.value,loginForm.controls.password.value)" [formGroup]="loginForm"
+                        class="loginForm">
+                        <div class="form-group mb-0">
+                            <div class="errorMessages" *ngIf="error">
+                                {{error}}
+                            </div>
+                            <div *ngIf="serverError" class="errorMessages">
+                                <span *ngFor="let errors of serverError">
+                                    {{errors}}
+                                </span>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div *ngIf="(loginForm.controls.username.hasError('required') && loginForm.controls.username.touched)||(loginForm.controls.username.hasError('username') && loginForm.controls.username.touched)"
+                                class="errorMessages pb-0 mb-0 alert alert-danger">
+                                eMail field is empty or not a valid email address.
+                            </div>
+                            <div class="input-group loginInBox">
+                                <i class="fa fa-envelope-o" aria-hidden="true"></i>
+                                <input formControlName="username" class="mdl-textfield__input noBorder safePlaceHolder" placeholder="Email" id="login-username"
+                                    type="email" email aria-required="true" />
+                            </div>
+                        </div>
+                        <div class="form-group mb-5">
+                            <div *ngIf="loginForm.controls.password.hasError('required') && loginForm.controls.password.touched" class="errorMessages pb-0 mb-0 alert alert-danger">
+                                Password field is empty or not a valid password.
+                            </div>
+                            <div class="input-group loginInBox">
+                                <i class="fa fa-lock" aria-hidden="true"></i>
+                                <input autocomplete="off" type="password" formControlName="password" placeholder="Password" class="mdl-textfield__input noBorder safePlaceHolder"
+                                    id="login-password" aria-required="true" />
+                            </div>
+                            <a [routerLink]="['/trial/forgot-pwd']" class="pull-right text-normal forgotPwd pt-1">FORGOT?</a>
+                        </div>
+                        <div class="form-group loginBtn">
+                            <button type="submit" class="btn btn-primary btn-block loginButt" id="signupBtn">LOGIN</button>
+                        </div>
+                        <div class="form-group loginBtn">
+                            <span class="btnTitle createtxt">New to SafeProfile</span>
+                            <button type="button" class="btn btn-light signupBtn btn-block" id="signinBtn" (click)="registerUser()">CREATE ACCOUNT</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="bgWrapper" aria-hidden="true">
+                <img src="/assets/images/group.svg" alt="" />
+            </div>
+        </div>
+    </div>
+</div>
