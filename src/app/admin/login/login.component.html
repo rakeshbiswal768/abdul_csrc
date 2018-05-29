@@ -20,41 +20,47 @@
                 </span>
               </div>
             </div>
-            <div class="form-group">
-              <div *ngIf="(loginForm.controls.username.hasError('required') && loginForm.controls.username.touched)||(loginForm.controls.username.hasError('username') && loginForm.controls.username.touched)"
-                class="errorMessages pb-0 mb-0">
-                eMail field is empty or not a valid email address.
+
+            <div class="form-group text-left">
+              <div *ngIf="loginForm.controls.username.hasError('required') && loginForm.controls.username.touched" class="errorMessages p-0 m-0">
+                Company Name is required.
               </div>
-              <div class="input-group mdl-textfield mdl-js-textfield mdl-textfield--floating-label pb-0">
-                <div class="input-group-addon noBorder">
-                  <img src="/assets/images/icon-email.svg" alt="" />
+              <label class="sr-only" for="login-username">Company Name</label>
+              <div class="input-group mb-2 mr-sm-2">
+                <div class="input-group-prepend">
+                  <div class="input-group-text bg-white">
+                    <img src="/assets/images/icons/company.svg" class="sfIconTrans" alt="" />
+                  </div>
                 </div>
-                <input formControlName="username" class="mdl-textfield__input noBorder safePlaceHolder" id="login-username" type="email"
-                  email aria-required="true" />
-                <label class="inputLabel" for="login-username">EMAIL</label>
+                <input formControlName="username" type="text" class="form-control border-left-0" id="login-username" placeholder="Company Name"
+                  required>
               </div>
             </div>
-            <div class="form-group mb-5">
-              <div *ngIf="loginForm.controls.password.hasError('required') && loginForm.controls.password.touched" class="errorMessages pb-0 mb-0">
-                Password field is empty or not a valid password.
+
+            <div class="form-group text-left">
+              <div *ngIf="loginForm.controls.password.hasError('required') && loginForm.controls.password.touched" class="errorMessages p-0 m-0">
+                Company Name is required.
               </div>
-              <div class="input-group mdl-textfield mdl-js-textfield mdl-textfield--floating-label pb-0">
-                <div class="input-group-addon noBorder">
-                  <img src="/assets/images/icon-lock.svg" alt="" />
+              <label class="sr-only" for="login-password">Company Name</label>
+              <div class="input-group mb-2 mr-sm-2">
+                <div class="input-group-prepend">
+                  <div class="input-group-text bg-white">
+                    <img src="/assets/images/icons/company.svg" class="sfIconTrans" alt="" />
+                  </div>
                 </div>
-                <input autocomplete="off" type="password" formControlName="password" class="mdl-textfield__input noBorder safePlaceHolder"
-                  id="login-password" aria-required="true" />
-                <label class="inputLabel" for="login-password">PASSWORD</label>
+                <input formControlName="password" type="text" class="form-control border-left-0" id="login-password" placeholder="Company Name"
+                  required>
               </div>
               <a [routerLink]="['/trial/forgot-pwd']" class="pull-right text-normal forgotPwd pt-1">FORGOT?</a>
             </div>
+
             <div class="form-group loginBtn">
               <button type="submit" class="btn btn-primary btn-block" id="signupBtn">LOGIN</button>
             </div>
+
             <div class="form-group loginBtn">
               <span class="btnTitle">New to IDLink?</span>
-              <a [routerLink]="['/trial/register']" class="pull-right text-normal forgotPwd pt-1">CREATE AN ACCOUNT</a>
-              <button type="button" class="btn btn-light signupBtn btn-block" id="signinBtn" (click)="registerUser()">CREATE AN ACCOUNT</button>
+              <button type="button" class="btn btn-light signupBtn btn-block" [routerLink]="['/trial/register']" id="signinBtn">CREATE AN ACCOUNT</button>
             </div>
           </form>
         </div>
