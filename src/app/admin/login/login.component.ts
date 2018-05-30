@@ -32,7 +32,7 @@ export class LoginComponent implements OnInit {
     }
 
     registerUser() {
-        this.router.navigate(['/register']);
+        this.router.navigate(['/new-account']);
     }
 
     loginApp(username, password) {

@@ -1,5 +1,3 @@
-<!-- <svg class="safeApS-icon icon-angle-left"><use xlink:href="#icon-angle-left"></use></svg>
-<svg viewBox="0 0 250 250"></svg> -->
 <div class="login-wrapper">
   <div class="backBtn">
     <a href="/login">
@@ -9,66 +7,146 @@
         <path d="M0 0h24v24H0z" fill="none" />
       </svg>
     </a>
-    <!-- <span class="sr-only sr-only-focusable">Back to login</span> -->
   </div>
   <div class="login-wrapper-inner">
+    <div class="row justify-content-center">
+      <div class="col-md-4 text-center mt-5">
+        <a href="/login">
+          <img class="idLink-logo" src="/assets/images/logo.jpg" alt="IDLink">
+        </a>
+      </div>
+    </div>
     <div class="login-container row justify-content-center">
-      <div class="col-md-offset-4 col-md-4 login">
-        <div class="text-center mb-5">
-          <a href="/login">
-            <img class="idLink-logo" src="/assets/images/idlink_logo_h.svg" alt="IDLink">
-          </a>
+      <div class="col-md-2 mt-5">
+        <div class="">
+          <div class="sfRegistrationStepper">
+            <h1>{{pageTitle}}</h1>
+            <div *ngIf="serverError" class="row">
+              <div class="col">
+                <span class="errorMessages pl-4" *ngFor="let error of serverError">
+                  {{error.value}}
+                </span>
+              </div>
+            </div>
+            <!-- <div [ngClass]="{'container-fluid p-0 m-0': isUserLoggedIn, 'heightWrapper': !isUserLoggedIn}"></div>  *ngIf="plan != 'trial'" > -->
+            <div [ngClass]="{'trialUser': plan == 'trial', 'registered': plan != 'trial'}">
+
+
+
+              <form class="text-center" enctype="multipart/form-data" [formGroup]="userDataFormGroup">
+                <div class="row" *ngIf="userDataFormGroup.controls.firstName.hasError('required') && userDataFormGroup.controls.firstName.touched">
+                  <div class="col-sm-12 text-left errorMessages pl-3 p-0 m-0">
+                    <div class="form-group text-left">
+                      <div class="form-group text-left">
+                        First Name is required.
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="row" *ngIf="userDataFormGroup.controls.lastName.hasError('required') && userDataFormGroup.controls.lastName.touched">
+                  <div class="col-sm-12 text-left errorMessages pl-3 p-0 m-0">
+                    <div class="form-group text-left">
+                      <div class="form-group text-left">
+                        Last Name is required.
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-sm-6">
+                    <div class="form-group text-left">
+                      <div class="input-group">
+                        <label class="sr-only" for="login-firstName">First Name</label>
+                        <input formControlName="firstName" type="text" class="form-control" id="login-firstName" placeholder="First Name">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-6 pl-lr-0">
+                    <div class="form-group text-left">
+                      <div class="input-group">
+                        <label class="sr-only" for="login-lastName">Last Name</label>
+                        <input formControlName="lastName" type="text" class="form-control" id="login-lastName" placeholder="Last Name">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+
+                <!-- <div class="form-group text-left">
+                      <div *ngIf="userDataFormGroup.controls.jobTitle.hasError('required') && userDataFormGroup.controls.jobTitle.touched" class="errorMessages p-0 m-0">
+                        Job Title is required
+                      </div>
+                      <label class="sr-only" for="login-jobTitle">Job Title</label>
+                      <div class="input-group mb-2 mr-sm-2">
+                        <div class="input-group-prepend">
+                          <div class="input-group-text bg-white">
+                            <img src="/assets/images/icons/person.svg" class="sfIconTrans" alt="" />
+                          </div>
+                        </div>
+                        <input formControlName="jobTitle" type="text" class="form-control border-left-0" id="login-jobTitle" placeholder="Job Title">
+                      </div>
+                    </div> -->
+
+                <div class="form-group text-left">
+                  <div *ngIf="(userDataFormGroup.controls.email.hasError('required') && userDataFormGroup.controls.email.touched) || (userDataFormGroup.controls.email.hasError('email') && userDataFormGroup.controls.email.touched)"
+                    class="errorMessages p-0 m-0">
+                    Invalid email address
+                  </div>
+                  <label class="sr-only" for="login-email">Job Title</label>
+                  <div class="input-group mb-2 mr-sm-2">
+                    <div class="input-group-prepend">
+                      <div class="input-group-text bg-white">
+                        <img src="/assets/images/icons/email.svg" class="sfIconTrans" alt="" />
+                      </div>
+                    </div>
+                    <input formControlName="email" type="text" class="form-control border-left-0" id="login-email" placeholder="Email">
+                  </div>
+                </div>
+
+                <div class="form-check text-left">
+                  <div *ngIf="userDataFormGroup.controls.chkTerms.hasError('required') && userDataFormGroup.controls.chkTerms.touched" class="errorMessages p-0 m-0">
+                    Accept terms is required.
+                  </div>
+                  <label class="form-check-label">
+                    <input aria-required="true" class="form-check-input" type="checkbox" formControlName="chkTerms" (change)="showPolicy(content,$event)"
+                      required /> I accept the
+                    <a href="javascript:void(0);" class="btn-link" (click)="showTerms(content,$event)">Terms of Service.</a>
+                  </label>
+                </div>
+                <br/>
+                <div class="row">
+                  <!-- <div class="col text-left pl-1">
+                        <div class="col text-left pl-1">
+                          <button type="button" class="btn btn-link text-large" id="backBtn" (click)="onBackClick(stepper)">
+                            <svg class="icon icon-long-arrow-left">
+                              <use xlink:href="#icon-long-arrow-left"></use>
+                              <symbol id="icon-long-arrow-left" viewBox="0 0 29 28">
+                                <title>long-arrow-left</title>
+                                <path d="M28 12.5v3c0 0.281-0.219 0.5-0.5 0.5h-19.5v3.5c0 0.203-0.109 0.375-0.297 0.453s-0.391 0.047-0.547-0.078l-6-5.469c-0.094-0.094-0.156-0.219-0.156-0.359v0c0-0.141 0.063-0.281 0.156-0.375l6-5.531c0.156-0.141 0.359-0.172 0.547-0.094 0.172 0.078 0.297 0.25 0.297 0.453v3.5h19.5c0.281 0 0.5 0.219 0.5 0.5z"></path>
+                              </symbol>
+                            </svg>
+                            Back
+                          </button>
+                        </div>
+                      </div> -->
+                  <div class="col text-right">
+                    <button type="button" class="btn btn-primary btn-block" id="registerpBtn" (click)="createAccount(stepper)" [disabled]="!userDataFormGroup.valid">
+                      Create Account
+                      <svg *ngIf="plan != 'trial'" aria-hidden="true" class="icon icon-long-arrow-right">
+                        <use xlink:href="#icon-long-arrow-right2"></use>
+                        <symbol id="icon-long-arrow-right2" viewBox="0 0 27 28">
+                          <title>long-arrow-right</title>
+                          <path d="M27 13.953c0 0.141-0.063 0.281-0.156 0.375l-6 5.531c-0.156 0.141-0.359 0.172-0.547 0.094-0.172-0.078-0.297-0.25-0.297-0.453v-3.5h-19.5c-0.281 0-0.5-0.219-0.5-0.5v-3c0-0.281 0.219-0.5 0.5-0.5h19.5v-3.5c0-0.203 0.109-0.375 0.297-0.453s0.391-0.047 0.547 0.078l6 5.469c0.094 0.094 0.156 0.219 0.156 0.359v0z"></path>
+                        </symbol>
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+              </form>
+
+            </div>
+          </div>
         </div>
-        <label class="register-title" for="login-email">Create new account</label>
-        <p>Please enter your company email address and choose a password containing at least one uppercase letter, one lowercase
-          letter, and one number.</p>
-        <form (ngSubmit)="onSubmit()" [formGroup]="joinForm" class="joinForm">
-          <div class="form-group">
-            <div class="col-md-12">
-              <div *ngIf="joinForm.controls.email.hasError('required') && joinForm.controls.email.touched" class="errorMessages pb-0 mb-0">
-                email is required
-              </div>
-              <div *ngIf="joinForm.controls.email.hasError('email') && joinForm.controls.email.touched" class="errorMessages pb-0 mb-0">
-                email is invalid
-              </div>
-              <label for="login-email">EMAIL</label>
-              <div class="input-group">
-                <input formControlName="email" class="emailImg form-control" class="form-control" id="login-email" type="email" email aria-required="true">
-              </div>
-            </div>
-          </div>
-          <div class="form-group">
-            <div class="col-md-12">
-              <div *ngIf="joinForm.controls.password.hasError('required') && joinForm.controls.password.touched" class="errorMessages pb-0 mb-0">
-                Password is required
-              </div>
-              <label for="login-password">PASSWORD</label>
-              <div class="input-group">
-                <input type="password" formControlName="password" class="form-control passwordImg" id="login-password" aria-required="true">
-              </div>
-            </div>
-          </div>
-          <div class="form-group">
-            <div class="col-md-12">
-              <div *ngIf="joinForm.controls.confirmPassword.hasError('required') && joinForm.controls.confirmPassword.touched" class="errorMessages pb-0 mb-0">
-                Confirm Password is required
-              </div>
-              <label for="login-confirmPassword">CONFIRM PASSWORD</label>
-              <div class="input-group">
-                <input type="password" formControlName="confirmPassword" class="form-control passwordImg" id="login-confirmPassword" aria-required="true">
-              </div>
-            </div>
-          </div>
-          <div class="errorMessages pb-0 mb-0" *ngIf="joinForm.controls.confirmPassword.errors?.MatchPassword">Password not match</div>
-          <!-- <div *ngIf="error" class="errorMessages">{{error}}</div> -->
-          <div class="form-group loginBtn">
-            <button type="submit" class="btn btn-primary btn-block" id="signupBtn" [disabled]="!joinForm.valid">CREATE ACCOUNT</button>
-          </div>
-          <div *ngIf="newAccMsg" class="col-md-12">
-            <div class="alert alert-success" role="alert">You account has been created. Please click on the activation link in your mail to activate your account</div>
-            <a href="/login">Click here to go to the Login Page</a>
-          </div>
-        </form>
       </div>
       <div class="bgWrapper" aria-hidden="true">
         <img src="/assets/images/group.svg" alt="" />
@@ -76,3 +154,18 @@
     </div>
   </div>
 </div>
+<ng-template #content let-c="close" let-d="dismiss">
+  <div class="modal-header">
+    <div class="modal-title">IDLink terms of service</div>
+  </div>
+  <div class="modal-body termsModal">
+    <iframe src="https://www.idlink.eu/subscription-agreement" width="600" height="400" scrolling="auto"></iframe>
+  </div>
+  <div class="modal-footer">
+    <button type="button" class="btn btn-secondary" (click)="c('Dismiss')">Decline</button>
+    <button type="button" class="btn btn-primary" [ngStyle]="{'background-color': app.localStoragebtn(),'border-color': app.localStoragebtn()}"
+      (click)="c('Accept')">
+      Accept
+    </button>
+  </div>
+</ng-template>
