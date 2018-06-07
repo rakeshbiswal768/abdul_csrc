@@ -1235,6 +1235,7 @@ input.inputNoborder {
         color: $grapefruit;
         background-color: transparent;
         border-bottom: 2px solid $grapefruit;
+        border-top: solid 2px $grapefruit!important;
       }
     }
   }
@@ -3427,9 +3428,8 @@ input:focus{
     height: 70px;
     margin-top: -93px;
     border: none;
-    color: $azure;
-    /* position: relative;
-    top:10px;  */
+    color: $secondryColor;
+
   }
 }
 .paymentDialog .ui-widget-header {
