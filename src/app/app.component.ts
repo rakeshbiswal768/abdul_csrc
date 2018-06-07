@@ -8,7 +8,7 @@ import { AuthenticationService } from './service/authentication.service';
   providers: [AuthenticationService]
 })
 export class AppComponent implements OnInit {
-  title = 'IDLink app';
+  title = 'SafeProfile app';
   fontSize: string = "";
   isUserLoggedIn: boolean;
   constructor(private authenticationService: AuthenticationService) {

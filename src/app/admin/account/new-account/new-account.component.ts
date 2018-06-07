@@ -13,7 +13,8 @@ import { MatStepper } from '@angular/material';
   styleUrls: ['./new-account.component.css']
 })
 export class NewAccountComponent implements OnInit, OnDestroy, OnChanges {
-  pageTitle: string = "Create an account";
+  pageTitle: string = "Create a SafeProfile account";
+  // pageTitle: string = "Create an account";
   // pageTitle = 'Create a new account for your organization';
   pageInformation: string = "First create your company account, then enter payment details in the final step.";
   titleCompanyInfo: string = "Company Info";

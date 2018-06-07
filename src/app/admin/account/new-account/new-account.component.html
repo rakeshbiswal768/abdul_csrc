@@ -12,15 +12,16 @@
     <div class="row justify-content-center">
       <div class="col-md-4 text-center mt-5">
         <a href="/login">
-          <img class="idLink-logo" src="/assets/images/logo.jpg" alt="IDLink">
+          <img class="idLink-logo" src="/assets/images/logo.svg" alt="SafeProfile">
         </a>
       </div>
     </div>
     <div class="login-container row justify-content-center">
-      <div class="col-md-2 mt-5">
+      <div class="col-md-3 mt-5">
         <div class="">
-          <div class="sfRegistrationStepper">
+          <div class="">
             <h1>{{pageTitle}}</h1>
+            <br/>
             <div *ngIf="serverError" class="row">
               <div class="col">
                 <span class="errorMessages pl-4" *ngFor="let error of serverError">
@@ -132,13 +133,13 @@
                   <div class="col text-right">
                     <button type="button" class="btn btn-primary btn-block" id="registerpBtn" (click)="createAccount(stepper)" [disabled]="!userDataFormGroup.valid">
                       Create Account
-                      <svg *ngIf="plan != 'trial'" aria-hidden="true" class="icon icon-long-arrow-right">
+                      <!-- <svg *ngIf="plan != 'trial'" aria-hidden="true" class="icon icon-long-arrow-right">
                         <use xlink:href="#icon-long-arrow-right2"></use>
                         <symbol id="icon-long-arrow-right2" viewBox="0 0 27 28">
                           <title>long-arrow-right</title>
                           <path d="M27 13.953c0 0.141-0.063 0.281-0.156 0.375l-6 5.531c-0.156 0.141-0.359 0.172-0.547 0.094-0.172-0.078-0.297-0.25-0.297-0.453v-3.5h-19.5c-0.281 0-0.5-0.219-0.5-0.5v-3c0-0.281 0.219-0.5 0.5-0.5h19.5v-3.5c0-0.203 0.109-0.375 0.297-0.453s0.391-0.047 0.547 0.078l6 5.469c0.094 0.094 0.156 0.219 0.156 0.359v0z"></path>
                         </symbol>
-                      </svg>
+                      </svg> -->
                     </button>
                   </div>
                 </div>
@@ -156,7 +157,7 @@
 </div>
 <ng-template #content let-c="close" let-d="dismiss">
   <div class="modal-header">
-    <div class="modal-title">IDLink terms of service</div>
+    <div class="modal-title">SafeProfile terms of service</div>
   </div>
   <div class="modal-body termsModal">
     <iframe src="https://www.idlink.eu/subscription-agreement" width="600" height="400" scrolling="auto"></iframe>

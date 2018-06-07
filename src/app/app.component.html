@@ -1,56 +1,9 @@
-<div [ngClass]="{'container-fluid p-0 m-0': isUserLoggedIn, 'heightWrapper': !isUserLoggedIn}">
-  <a *ngIf="isUserLoggedIn" class="sr-only sr-only-focusable" href="#maincontent">Skip to main content</a>
-  <header *ngIf="isUserLoggedIn">
-    <div class="topHeader" *ngIf="isUserLoggedIn">
-      <app-header></app-header>
-    </div>
-  </header>
-  <nav *ngIf="isUserLoggedIn">
-    <div id="sidebar-column" class="sidebar-column">
-      <app-nav></app-nav>
-    </div>
-  </nav>
-  <main id="maincontent" [ngClass]="{'content-column': isUserLoggedIn, 'heightWrapper': !isUserLoggedIn}" role="main">
-    <div id="content-column" [ngClass]="{'container-fluid': isUserLoggedIn, 'heightWrapper': !isUserLoggedIn}">
-      <div [ngClass]="{'row': isUserLoggedIn, 'heightWrapper': !isUserLoggedIn}">
-        <div [ngClass]="{'col': isUserLoggedIn, 'heightWrapper': !isUserLoggedIn}">
-          <router-outlet></router-outlet>
-        </div>
+<main id="maincontent" [ngClass]="{'content-column': isUserLoggedIn, 'heightWrapper': !isUserLoggedIn}" role="main">
+  <div id="content-column" [ngClass]="{'container-fluid': isUserLoggedIn, 'heightWrapper': !isUserLoggedIn}">
+    <div [ngClass]="{'row': isUserLoggedIn, 'heightWrapper': !isUserLoggedIn}">
+      <div [ngClass]="{'col': isUserLoggedIn, 'heightWrapper': !isUserLoggedIn}">
+        <router-outlet></router-outlet>
       </div>
     </div>
-  </main>
-</div>
-
-<!-- SVG Definations -->
-<svg xmlns="http://www.w3.org/2000/svg" width="78" height="78" viewBox="0 0 78 78" style="display: none;">
-  <g id="roundLogo" fill="none" fill-rule="evenodd">
-    <circle cx="38.99" cy="38.99" r="38.99" fill="#FF514E" />
-    <path fill="#FFF" d="M54.298 36.696a2.316 2.316 0 0 0 1.658-.68 2.3 2.3 0 0 0 .498-.754c.12-.289.18-.598.18-.925a2.336 2.336 0 0 0-.678-1.663 2.315 2.315 0 0 0-1.658-.68H24.567a2.316 2.316 0 0 0-2.335 2.343c0 .327.06.636.18.925a2.3 2.3 0 0 0 2.155 1.434h4.686c.969 0 1.88.183 2.735.548.854.366 1.6.869 2.237 1.507a7.057 7.057 0 0 1 1.502 2.245c.365.857.547 1.771.547 2.743s-.182 1.884-.547 2.736a7.082 7.082 0 0 1-1.502 2.236 7.145 7.145 0 0 1-2.237 1.515 6.788 6.788 0 0 1-2.735.557H18.852v-4.701h10.4a2.316 2.316 0 0 0 2.336-2.343 2.336 2.336 0 0 0-.678-1.662 2.315 2.315 0 0 0-1.657-.68h-4.686a6.73 6.73 0 0 1-2.727-.557 7.172 7.172 0 0 1-2.229-1.515 7.17 7.17 0 0 1-1.51-2.244 6.848 6.848 0 0 1-.555-2.744c0-.972.185-1.884.555-2.736a7.197 7.197 0 0 1 1.51-2.236 7.172 7.172 0 0 1 2.229-1.515 6.73 6.73 0 0 1 2.727-.557h29.731a6.73 6.73 0 0 1 2.727.557c.85.371 1.592.876 2.229 1.515a7.197 7.197 0 0 1 1.51 2.236 6.79 6.79 0 0 1 .555 2.736c0 .972-.185 1.886-.555 2.744a7.17 7.17 0 0 1-1.51 2.244 7.172 7.172 0 0 1-2.229 1.515c-.849.371-1.758.55-2.727.55h-8.534v9.393h-4.687V36.696h13.221z"
-    />
-  </g>
-</svg>
-
-<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="display: none;">
-  <defs>
-    <g id="icon-angle-left" viewBox="0 0 23 60">
-      <title>Go Back</title>
-      <path d="M20.993 18.214c0 0.268-0.134 0.569-0.335 0.77l-13.158 13.158 13.158 13.158c0.201 0.201 0.335 0.502 0.335 0.77s-0.134 0.569-0.335 0.77l-1.674 1.674c-0.201 0.201-0.502 0.335-0.77 0.335s-0.569-0.134-0.77-0.335l-15.603-15.603c-0.201-0.201-0.335-0.502-0.335-0.77s0.134-0.569 0.335-0.77l15.603-15.603c0.201-0.201 0.502-0.335 0.77-0.335s0.569 0.134 0.77 0.335l1.674 1.674c0.201 0.201 0.335 0.469 0.335 0.77z"></path>
-    </g>
-  </defs>
-</svg>
-<ngx-smart-loader identifier="myLoader">
-  <div class="ngSfLoader loader" aria-hidden="true">
-    <div class="circle">
-      <!-- <svg version="1.1" id="loader-1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-        width="40px" height="40px" viewBox="0 0 40 40" enable-background="new 0 0 40 40" xml:space="preserve">
-        <path opacity="0.2" fill="#000" d="M20.201,5.169c-8.254,0-14.946,6.692-14.946,14.946c0,8.255,6.692,14.946,14.946,14.946 s14.946-6.691,14.946-14.946C35.146,11.861,28.455,5.169,20.201,5.169z M20.201, 31.749c-6.425,0-11.634-5.208-11.634-11.634 c0-6.425,5.209-11.634,11.634-11.634c6.425,0,11.633,5.209,11.633,11.634C31.834,26.541,26.626,31.749,20.201,31.749z"
-        />
-        <path fill="#000" d="M26.013,10.047l1.654-2.866c-2.198-1.272-4.743-2.012-7.466-2.012h0v3.312h0 C22.32,8.481,24.301,9.057,26.013,10.047z">
-          <animateTransform attributeType="xml" attributeName="transform" type="rotate" from="0 20 20" to="360 20 20" dur="0.5s" repeatCount="indefinite"
-          />
-        </path>
-      </svg> -->
-      <img src="assets/images/spinner.gif" alt="Loading Spinner" width="75" height="50">
-    </div>
   </div>
-</ngx-smart-loader>
+</main>
