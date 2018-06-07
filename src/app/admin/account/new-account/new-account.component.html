@@ -12,15 +12,16 @@
     <div class="row justify-content-center">
       <div class="col-md-4 text-center mt-5">
         <a href="/login">
-          <img class="idLink-logo" src="/assets/images/logo.jpg" alt="IDLink">
+          <img class="idLink-logo" src="/assets/images/logo.svg" alt="SafeProfile">
         </a>
       </div>
     </div>
     <div class="login-container row justify-content-center">
       <div class="col-md-3 mt-5">
         <div class="">
-          <div class="sfRegistrationStepper">
+          <div class="">
             <h1>{{pageTitle}}</h1>
+            <br/>
             <div *ngIf="serverError" class="row">
               <div class="col">
                 <span class="errorMessages pl-4" *ngFor="let error of serverError">
@@ -156,7 +157,7 @@
 </div>
 <ng-template #content let-c="close" let-d="dismiss">
   <div class="modal-header">
-    <div class="modal-title">IDLink terms of service</div>
+    <div class="modal-title">SafeProfile terms of service</div>
   </div>
   <div class="modal-body termsModal">
     <iframe src="https://www.idlink.eu/subscription-agreement" width="600" height="400" scrolling="auto"></iframe>
