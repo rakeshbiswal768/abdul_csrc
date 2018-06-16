@@ -1,9 +1,28 @@
-<main id="maincontent" [ngClass]="{'content-column': isUserLoggedIn, 'heightWrapper': !isUserLoggedIn}" role="main">
+<!-- <main id="maincontent" [ngClass]="{'content-column': isUserLoggedIn, 'heightWrapper': !isUserLoggedIn}" role="main">
   <div id="content-column" [ngClass]="{'container-fluid': isUserLoggedIn, 'heightWrapper': !isUserLoggedIn}">
     <div [ngClass]="{'row': isUserLoggedIn, 'heightWrapper': !isUserLoggedIn}">
       <div [ngClass]="{'col': isUserLoggedIn, 'heightWrapper': !isUserLoggedIn}">
-        <router-outlet></router-outlet>
+        
       </div>
     </div>
   </div>
-</main>
+</main> -->
+<div class="row">
+  <div class="col-md-3 leftArea">
+    <div class="leftLogo">
+      <img src="/assets/images/logo1.jpg" class="sfIconTrans" alt="" />
+      <span>Safe Profile</span>
+    </div>
+    <div class="profileImg">
+      <img src="/assets/images/step1-profile-img.jpg" class="sfIconTrans" alt="" />
+    </div>
+    <ul class="leftNav">
+      <li><a href="#"><span><img src="/assets/images/dashboard-icon.jpg"/></span> dashboard</a></li>
+      <li><a href="#"><span><img src="/assets/images/masterp-icon.jpg"/></span> my master data</a></li>
+      <li><a href="#"><span><img src="/assets/images/dashboard-icon.jpg"/></span> history</a></li>
+    </ul>
+  </div>
+  <div class="col-md-9 mt-9">
+    <router-outlet></router-outlet>
+  </div>
+</div>

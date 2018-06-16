@@ -2,12 +2,11 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { NgxSmartLoaderModule, NgxSmartLoaderService } from 'ngx-smart-loader';
 import { RouterModule } from '@angular/router';
-import { childRoutes } from './admin.router';
+import { childRoutes } from './welcome.router';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MatStepperModule } from '@angular/material';
-import { NewAccountComponent } from './account/new-account/new-account.component';
-import { ForgotPwdComponent } from './account/forgot-pwd/forgot-pwd.component'
-import { LoginComponent } from './login/login.component';
+import { Step1Component } from './step1/step1.component';
+import { Step2Component } from './step2/step2.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { InputMaskModule, GrowlModule } from 'primeng/primeng';
 
@@ -28,9 +27,8 @@ import { InputMaskModule, GrowlModule } from 'primeng/primeng';
   providers: [NgxSmartLoaderService],
   declarations:
     [
-      LoginComponent,
-      NewAccountComponent,
-      ForgotPwdComponent,
+      Step1Component,
+      Step2Component
     ]
 })
-export class AdminModule { }
+export class WelcomeModule { }

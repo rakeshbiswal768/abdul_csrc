@@ -16,6 +16,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { DragDropModule, AccordionModule } from 'primeng/primeng';
 import { BaseRequestOptions } from '@angular/http';
 import { AdminModule } from './admin/admin.module';
+import { WelcomeModule } from './welcome/welcome.module';
 import { CommonApiService } from './api/common-api.service'
 import { MessageService } from 'primeng/components/common/messageservice';
 
@@ -34,6 +35,7 @@ import { MessageService } from 'primeng/components/common/messageservice';
     HttpClientModule,
     NgbModule.forRoot(),
     AdminModule,
+    WelcomeModule,
     MatSlideToggleModule,
     DragDropModule,
     AccordionModule,
