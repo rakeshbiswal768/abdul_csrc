@@ -1,9 +1,22 @@
-<main id="maincontent" [ngClass]="{'content-column': isUserLoggedIn, 'heightWrapper': !isUserLoggedIn}" role="main">
+<!-- <main id="maincontent" [ngClass]="{'content-column': isUserLoggedIn, 'heightWrapper': !isUserLoggedIn}" role="main">
   <div id="content-column" [ngClass]="{'container-fluid': isUserLoggedIn, 'heightWrapper': !isUserLoggedIn}">
     <div [ngClass]="{'row': isUserLoggedIn, 'heightWrapper': !isUserLoggedIn}">
       <div [ngClass]="{'col': isUserLoggedIn, 'heightWrapper': !isUserLoggedIn}">
-        <router-outlet></router-outlet>
+        
       </div>
     </div>
   </div>
-</main>
+</main> -->
+<div class="row">
+  <div class="col-md-12 mt-12">
+    Header....
+  </div>
+</div>
+<div class="row">
+  <div class="col-md-3 mt-3">
+    Left....
+  </div>
+  <div class="col-md-9 mt-9">
+    <router-outlet></router-outlet>
+  </div>
+</div>
